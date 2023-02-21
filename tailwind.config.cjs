@@ -16,12 +16,12 @@ module.exports = {
         xs: "374px",
       },
       colors: {
-        gray: colors.slate,
+        gray: colors.zinc,
         primary: {
           DEFAULT: colors.yellow[300],
           ...colors.yellow,
         },
-        mate: colors.sky,
+        mate: colors.cyan,
         original: colors.emerald,
       },
       backgroundImage: {

@@ -289,7 +289,7 @@ export default function Header() {
               <li>
                 <Button intent="white">EN</Button>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <Button>E-shop</Button>
               </li>
             </ul>

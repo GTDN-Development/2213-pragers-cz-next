@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+
 export const routes = [
   {
     href: "/",
@@ -36,13 +38,11 @@ export const socials = [
   {
     href: "https://www.facebook.com/",
     label: "Facebook",
+    icon: FaFacebook,
   },
   {
     href: "https://www.instagram.com/",
     label: "Instagram",
-  },
-  {
-    href: "https://www.linkedin.com/",
-    label: "LinkedIn",
+    icon: FaInstagram,
   },
 ];

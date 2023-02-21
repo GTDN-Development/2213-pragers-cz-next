@@ -4,7 +4,9 @@ import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
 import CtaContact from "@/components/pages/home/CtaContact";
 import CtaPrager from "@/components/pages/home/CtaPrager";
+import CtaProductLine from "@/components/pages/home/CtaProductLine";
 import Hero from "@/components/pages/home/Hero";
+import ScrollBadge from "@/components/pages/home/ScrollBadge";
 import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
@@ -37,6 +39,7 @@ function ImageBody({
         alt={alt}
         width={width}
         height={height}
+        loading="lazy"
         className="aspect-[16/10] w-full object-cover"
         {...props}
       />
@@ -137,33 +140,17 @@ export default function Home() {
                 height={950}
                 className="md:col-span-7"
               />
+              <Reveal className="mt-20 ml-auto w-max md:mr-auto">
+                <ScrollBadge />
+              </Reveal>
             </div>
           </div>
         </Container>
       </Container>
 
+      <CtaProductLine />
       <CtaContact />
       <CtaPrager />
-      <Container py="xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
-        quasi? Aliquam, similique nihil fugit voluptates architecto in minus.
-        Aliquid, distinctio?
-      </Container>
-      <Container py="xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
-        quasi? Aliquam, similique nihil fugit voluptates architecto in minus.
-        Aliquid, distinctio?
-      </Container>
-      <Container py="xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
-        quasi? Aliquam, similique nihil fugit voluptates architecto in minus.
-        Aliquid, distinctio?
-      </Container>
-      <Container py="xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
-        quasi? Aliquam, similique nihil fugit voluptates architecto in minus.
-        Aliquid, distinctio?
-      </Container>
     </Layout>
   );
 }

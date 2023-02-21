@@ -12,17 +12,21 @@ export default function CtaPrager({ className = "" }: Props) {
   return (
     <div
       className={clsx(
-        "relative w-screen overflow-hidden py-16 sm:py-28 xl:py-40",
+        "relative w-screen overflow-hidden py-16 sm:py-28 xl:py-52",
         className
       )}
     >
-      <Parallax className="absolute inset-0 -z-10 w-full">
+      <Parallax
+        offset={40}
+        className="absolute inset-0 -z-10 w-full opacity-70"
+      >
         <Image
           src="/fh-prager/prager-bg.jpg"
           alt="F.H. Prager ilustrace"
           width={1440}
           height={950}
-          className="w-full -translate-y-14"
+          loading="lazy"
+          className="w-full scale-125 sm:-translate-y-14 md:scale-100"
         />
       </Parallax>
       <div className="absolute inset-0 -z-10 w-full bg-gradient-to-r from-gray-900/90" />
@@ -38,7 +42,7 @@ export default function CtaPrager({ className = "" }: Props) {
             height={83}
           />
         </div>
-        <Button href="https://fhprager.cz" intent="white">
+        <Button href="https://fhprager.cz" intent="white" size="lg">
           Přejít na web F.H. Prager
         </Button>
       </Container>

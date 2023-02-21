@@ -13,9 +13,16 @@
   }
 }
 
-/* @layer components {
-  ...
-} */
+@layer components {
+  .pattern-white {
+    @apply bg-hero-pattern-white opacity-[0.08];
+    background-size: 240px;
+  }
+  .pattern-black {
+    @apply bg-hero-pattern-black opacity-[0.05];
+    background-size: 240px;
+  }
+}
 
 /* @layer utilities {
   ...

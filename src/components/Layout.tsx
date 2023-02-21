@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 type LayoutProps = {
@@ -11,6 +12,7 @@ export default function Layout({ children }: LayoutProps) {
         <Header />
       </header>
       <main id="content">{children}</main>
+      <Footer />
     </>
   );
 }
