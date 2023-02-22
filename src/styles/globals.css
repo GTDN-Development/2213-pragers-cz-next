@@ -15,7 +15,7 @@
 
 @layer components {
   .pattern-white {
-    @apply bg-hero-pattern-white opacity-[0.08];
+    @apply bg-hero-pattern-white opacity-[0.06];
     background-size: 240px;
   }
   .pattern-black {

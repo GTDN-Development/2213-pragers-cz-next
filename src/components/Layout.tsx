@@ -8,9 +8,7 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main id="content">{children}</main>
       <Footer />
     </>

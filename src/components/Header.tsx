@@ -164,7 +164,7 @@ function TouchMenu() {
                 opacity: 0,
                 transition: { duration: 0.15, ease: [0.33, 1, 0.68, 1] },
               }}
-              className="fixed inset-0 z-offcanvas min-h-screen w-screen bg-gray-800"
+              className="fixed inset-0 z-offcanvas min-h-screen bg-gray-800"
             >
               {/* Menu */}
               <Container
@@ -259,47 +259,52 @@ export default function Header() {
   }, [scrollY, setIsVisible, setIsScrolled]);
 
   return (
-    <header>
-      <Container
-        as="nav"
-        size="md"
-        className={clsx(
-          "fixed inset-x-0 top-2 z-fixed rounded-full bg-gray-900/30 py-2.5 pl-6 pr-2.5 backdrop-blur-md transition duration-500 ease-out lg:py-3.5 lg:pr-3.5",
-          isScrolled && "",
-          !isVisible && "translate-y-[calc(-100%-0.5rem)] shadow-none"
-        )}
-      >
-        <div className="flex items-center justify-between gap-4">
-          {/* Logo */}
-          <UiLink href={"/"} className="relative z-offcanvas-above mr-auto">
-            <Logo />
-          </UiLink>
+    <header
+      className={clsx(
+        "fixed inset-x-0 top-0 isolate z-fixed block w-screen pt-2 transition duration-500 ease-out",
+        !isVisible && "-translate-y-full"
+      )}
+    >
+      <Container size="md">
+        <nav
+          className={clsx(
+            "w-full rounded-full py-2.5 pl-6 pr-2.5 transition-colors duration-500 lg:py-3.5 lg:pr-3.5",
+            isScrolled ? "bg-gray-900/90" : "bg-gray-900/25"
+          )}
+        >
+          {/* <div className="absolute inset-0 z-fixed-below h-full w-full rounded-full backdrop-blur-md" /> */}
+          <div className="flex items-center justify-between gap-4">
+            {/* Logo */}
+            <UiLink href={"/"} className="z-offcanvas-above mr-auto">
+              <Logo />
+            </UiLink>
 
-          {/* Desktop navigation */}
-          <div className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
-            <ul className="flex gap-5 xl:gap-8">
-              {routes.map((route, i) => (
-                <DesktopNavLink key={i} {...route} />
-              ))}
-            </ul>
-          </div>
+            {/* Desktop navigation */}
+            <div className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 translate-y-[calc(-50%+0.3rem)] lg:block">
+              <ul className="flex gap-5 xl:gap-8">
+                {routes.map((route, i) => (
+                  <DesktopNavLink key={i} {...route} />
+                ))}
+              </ul>
+            </div>
 
-          <div>
-            <ul className="flex gap-3 xl:gap-6">
-              <li>
-                <Button intent="white">EN</Button>
-              </li>
-              <li className="hidden md:block">
-                <Button>E-shop</Button>
-              </li>
-            </ul>
-          </div>
+            <div>
+              <ul className="flex gap-3 xl:gap-6">
+                <li>
+                  <Button intent="white">EN</Button>
+                </li>
+                <li className="hidden md:block">
+                  <Button>E-shop</Button>
+                </li>
+              </ul>
+            </div>
 
-          {/* Mobile navigation */}
-          <div className="lg:hidden">
-            <TouchMenu />
+            {/* Mobile navigation */}
+            <div className="">
+              <TouchMenu />
+            </div>
           </div>
-        </div>
+        </nav>
       </Container>
     </header>
   );

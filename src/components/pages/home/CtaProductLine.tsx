@@ -38,7 +38,7 @@ export default function CtaProductLine({
           <BackgroundText className="-skew-x-12" />
         </Container>
       </div>
-      <Container py="xl" className="relative">
+      <Container py="lg" className="relative">
         <img
           src="/svgs/bg-text-cz-produkty.svg"
           alt="Nápis Produkty"

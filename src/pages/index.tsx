@@ -7,52 +7,17 @@ import CtaPrager from "@/components/pages/home/CtaPrager";
 import CtaProductLine from "@/components/pages/home/CtaProductLine";
 import Hero from "@/components/pages/home/Hero";
 import ScrollBadge from "@/components/pages/home/ScrollBadge";
+import BodyImage from "@/components/pages/shared/BodyImage";
 import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
-import clsx from "clsx";
-import Image from "next/image";
-
-function ImageBody({
-  className = "",
-  src = "",
-  alt = "",
-  width = 0,
-  height = 0,
-  ...props
-}: {
-  className?: string;
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-}) {
-  return (
-    <Reveal
-      className={clsx(
-        "aspect-[16/10] overflow-hidden rounded-2xl bg-gray-700",
-        className
-      )}
-    >
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        loading="lazy"
-        className="aspect-[16/10] w-full object-cover"
-        {...props}
-      />
-    </Reveal>
-  );
-}
 
 export default function Home() {
   return (
     <Layout>
       <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
       <Hero />
-      <Container py="lg">
+      <Container py="md">
         <Reveal className="pb-10">
           <Heading
             level={2}
@@ -90,7 +55,7 @@ export default function Home() {
               </p>
             </Reveal>
           </div>
-          <ImageBody
+          <BodyImage
             src="/fh-prager/prager-bg.jpg"
             alt="DOPLNIT!"
             width={1440}
@@ -99,7 +64,7 @@ export default function Home() {
           />
         </Container>
 
-        <Container isInner py="md">
+        <Container isInner py="sm">
           <Reveal>
             <Heading
               level={"none"}
@@ -124,7 +89,7 @@ export default function Home() {
                   Soluta iure ab labore iusto cupiditate consectetur!
                 </p>
               </Reveal>
-              <ImageBody
+              <BodyImage
                 src="/fh-prager/prager-bg.jpg"
                 alt="DOPLNIT!"
                 width={1440}
@@ -133,14 +98,14 @@ export default function Home() {
               />
             </div>
             <div className="col-span-1 md:order-1">
-              <ImageBody
+              <BodyImage
                 src="/fh-prager/prager-bg.jpg"
                 alt="DOPLNIT!"
                 width={1440}
                 height={950}
                 className="md:col-span-7"
               />
-              <Reveal className="mt-20 ml-auto w-max md:mr-auto">
+              <Reveal className="mt-14 mb-4 ml-auto w-max md:mr-auto">
                 <ScrollBadge />
               </Reveal>
             </div>

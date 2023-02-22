@@ -6,12 +6,12 @@ export const routes = [
     label: "Domů",
   },
   {
-    href: "/about",
+    href: "/o-nas",
     label: "O nás",
   },
   {
-    href: "/products",
-    label: "Produkty",
+    href: "/kombucha",
+    label: "Kombucha",
   },
   {
     href: "/contact",
