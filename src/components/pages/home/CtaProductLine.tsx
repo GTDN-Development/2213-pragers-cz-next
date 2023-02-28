@@ -8,7 +8,7 @@ import Image from "next/image";
 function BackgroundText({ className = "" }: { className?: string }) {
   return (
     <img
-      src="/svgs/bg-text-cz-produkty.svg"
+      src="/svgs/text-produkty-white.svg"
       alt="Nápis Produkty"
       width="1488"
       height="353"

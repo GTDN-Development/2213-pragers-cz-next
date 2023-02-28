@@ -16,10 +16,11 @@ export default function ScrollBadge({ className = "" }: Props) {
       aria-hidden="true"
     >
       <img
-        src="/svgs/circuler-text-white.svg"
+        src="/svgs/rotating-badge-text.svg"
         alt="Fermented Handcrafted badge"
         loading="lazy"
         className="absolute inset-0 -z-10 h-full w-full origin-center animate-[spin_10s_linear_infinite]"
+        aria-hidden="true"
       />
       <div className="relative z-30 flex items-end justify-center">
         <span className="block h-20 w-1 origin-top rounded-full bg-primary" />

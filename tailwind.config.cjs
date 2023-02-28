@@ -21,7 +21,7 @@ module.exports = {
           DEFAULT: colors.yellow[300],
           ...colors.yellow,
         },
-        mate: colors.cyan,
+        mate: colors.blue,
         original: colors.emerald,
       },
       backgroundImage: {

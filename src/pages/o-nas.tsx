@@ -106,9 +106,9 @@ export default function About() {
         <div className="pattern-white absolute inset-0 z-10 h-full w-full" />
         <Container
           py="xl"
-          className="relative z-20 grid items-center gap-20 sm:gap-8 md:grid-cols-2 lg:gap-16"
+          className="relative z-20 grid items-center gap-20 sm:gap-8 md:grid-cols-2 lg:gap-12"
         >
-          <Reveal className="col-span-1 flex flex-col items-start justify-center gap-8">
+          <Reveal className="col-span-1 flex flex-col items-start justify-center gap-10">
             <IoLeafOutline className="h-24 w-24 text-primary" />
             <Heading level={2} size="lg">
               Udržitelnost

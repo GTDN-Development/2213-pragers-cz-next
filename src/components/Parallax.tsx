@@ -8,7 +8,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 type ParallaxProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   offset?: number;
   className?: string;
   [x: string]: any;
