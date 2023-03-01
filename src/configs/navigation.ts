@@ -14,8 +14,8 @@ export const routes = [
     label: "Kombucha",
   },
   {
-    href: "/contact",
-    label: "Contact",
+    href: "/original",
+    label: "Kombucha Original",
   },
   {
     href: "",

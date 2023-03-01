@@ -269,7 +269,7 @@ export default function Header() {
         <nav
           className={clsx(
             "w-full rounded-full py-2.5 pl-6 pr-2.5 transition-colors duration-500 lg:py-3.5 lg:pr-3.5",
-            isScrolled ? "bg-gray-900/90" : "bg-gray-900/25"
+            isScrolled ? "bg-gray-900/95" : "bg-gray-900/35"
           )}
         >
           {/* <div className="absolute inset-0 z-fixed-below h-full w-full rounded-full backdrop-blur-md" /> */}

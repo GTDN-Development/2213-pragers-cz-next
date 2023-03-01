@@ -4,26 +4,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { useId, useState } from "react";
 
-function ChevronDownIcon({ ...props }: { [x: string]: any }) {
-  return (
-    <svg
-      width="15"
-      height="15"
-      viewBox="0 0 15 15"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-        fill="currentColor"
-        fillRule="evenodd"
-        clipRule="evenodd"
-      ></path>
-    </svg>
-  );
-}
+import { RxCross2 } from "react-icons/rx";
 
 //
 // Collapse Group component
@@ -42,7 +23,7 @@ export function CollapseGroup({
 }: CollapseGroupProps) {
   return (
     <div className={className} {...props}>
-      <div className="divide-gray-900/15 dark:divide-white/15 flex flex-col divide-y">
+      <div className="flex flex-col divide-y divide-gray-900/15 dark:divide-white/15">
         {children}
       </div>
     </div>
@@ -91,13 +72,13 @@ export function Collapse({
           aria-expanded={isOpen ? "true" : "false"}
           className="flex w-full items-center justify-between py-4 text-gray-900 hover:text-primary dark:text-white dark:hover:text-primary"
         >
-          <span className="block w-full text-left text-base font-semibold transition-colors duration-300 sm:text-lg">
+          <span className="block w-full text-left text-lg font-extrabold uppercase transition-colors duration-300 sm:text-xl">
             {title}
           </span>
-          <ChevronDownIcon
+          <RxCross2
             className={clsx(
-              "h-5 w-5 shrink-0 origin-center transition duration-300 ease-out",
-              isOpen && "rotate-180"
+              "h-6 w-6 shrink-0 origin-center transition duration-300 ease-out",
+              isOpen ? "rotate-0 scale-105" : "rotate-[225deg]"
             )}
           />
         </button>

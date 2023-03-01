@@ -35,7 +35,7 @@ const componentVariants = {
 export default function Heading({
   level = 2,
   size = "md",
-  color = "inherit",
+  color = "rich",
   hasMarginBottom = false,
   className = "",
   children,

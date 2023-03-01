@@ -8,13 +8,236 @@ import Image from "next/image";
 import { useRef } from "react";
 import { GiFlamedLeaf } from "react-icons/gi";
 
-type IngredientsFlavoursProps = {
-  className?: string;
-};
-
-export default function IngredientsFlavours({
+export function IngredientsFlavoursMobile({
   className = "",
-}: IngredientsFlavoursProps) {
+}: {
+  className?: string;
+}) {
+  const originalRef = useRef<HTMLDivElement>(null);
+  const yerbaRef = useRef<HTMLDivElement>(null);
+
+  const originalInView = useInView(originalRef, { margin: "-45%" });
+  const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
+  return (
+    <section
+      className={clsx(
+        "transition-colors duration-700 ease-in-out",
+        className,
+        originalInView
+          ? "bg-original-800"
+          : yerbaInView
+          ? "bg-mate-900"
+          : "bg-gray-900"
+      )}
+    >
+      {/* Vlastnosti */}
+      <div>
+        <Container py="xl">
+          <Reveal>
+            <Heading level={2} size="xl" color="primary" hasMarginBottom>
+              Vlastnosti
+            </Heading>
+          </Reveal>
+
+          <div className="grid grid-cols-5 gap-5 pt-5">
+            <div className="col-span-3 flex flex-col gap-10">
+              <Reveal>
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+              <Reveal>
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+              <Reveal>
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+              <Reveal>
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+            </div>
+            <Image
+              src="/images/kombucha/original/kombucha-original-render-bottle.png"
+              alt="Lahev Pragers Kombucha"
+              width={1080}
+              height={1920}
+              className="col-span-2 h-full translate-x-1/2 scale-[2.2] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              loading="lazy"
+            />
+          </div>
+        </Container>
+      </div>
+
+      {/* Originál */}
+      <div ref={originalRef} className="relative">
+        <Container py="xl" className="relative z-20">
+          <Reveal>
+            <Heading level={2} size="xl" color="rich" hasMarginBottom>
+              Original
+            </Heading>
+          </Reveal>
+
+          <div className="grid grid-cols-5 gap-5 pt-5">
+            <div className="col-span-3 flex flex-col gap-10">
+              <Reveal>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+                <div className="flex flex-wrap gap-5 pt-5">
+                  <Button>Zjistit více</Button>
+                  <Button>E-shop</Button>
+                </div>
+              </Reveal>
+              <Reveal className="pt-16">
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+              <Reveal>
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+            </div>
+            <Image
+              src="/images/kombucha/original/kombucha-original-render-bottle.png"
+              alt="Lahev Pragers Kombucha"
+              width={1080}
+              height={1920}
+              className="col-span-2 h-full translate-x-1/2 scale-[2.2] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              loading="lazy"
+            />
+          </div>
+        </Container>
+        <img
+          src="/svgs/text-original-vertical.svg"
+          alt="Original"
+          width="392"
+          height="1002"
+          loading="lazy"
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 -right-20 z-10 h-full origin-right opacity-20"
+        />
+      </div>
+
+      {/* Yerba */}
+      <div ref={yerbaRef} className="relative">
+        <Container py="xl" className="relative z-20">
+          <Reveal>
+            <Heading level={2} size="xl" color="rich" hasMarginBottom>
+              Yerba maté
+            </Heading>
+          </Reveal>
+
+          <div className="grid grid-cols-5 gap-5 pt-5">
+            <div className="col-span-3 flex flex-col gap-10">
+              <Reveal>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+                <div className="flex flex-wrap gap-5 pt-5">
+                  <Button>Zjistit více</Button>
+                  <Button>E-shop</Button>
+                </div>
+              </Reveal>
+              <Reveal className="pt-16">
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+              <Reveal>
+                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  Lorem ipsum
+                </Heading>
+                <p className="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio iusto, atque facilis repellat unde ratione nam fuga
+                  voluptatibus tempora excepturi!
+                </p>
+              </Reveal>
+            </div>
+            <Image
+              src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
+              alt="Lahev Pragers Kombucha"
+              width={1080}
+              height={1920}
+              className="col-span-2 h-full translate-x-1/2 scale-[2.2] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              loading="lazy"
+            />
+          </div>
+        </Container>
+        <img
+          src="/svgs/text-yerba-vertical.svg"
+          alt="Original"
+          width="392"
+          height="1002"
+          loading="lazy"
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 -right-4 z-10 h-full origin-right scale-[0.85] opacity-20"
+        />
+      </div>
+    </section>
+  );
+}
+
+export function IngredientsFlavours({
+  className = "",
+}: {
+  className?: string;
+}) {
   const originalRef = useRef<HTMLDivElement>(null);
   const yerbaRef = useRef<HTMLDivElement>(null);
 
@@ -24,7 +247,7 @@ export default function IngredientsFlavours({
   return (
     <div
       className={clsx(
-        "relative transition-colors duration-500",
+        "relative transition-colors duration-700 ease-in-out",
         className,
         originalInView
           ? "bg-original-800"
@@ -38,24 +261,28 @@ export default function IngredientsFlavours({
       <Container className="absolute inset-0 grid h-full w-full grid-cols-3 items-start justify-start gap-10">
         <div className="sticky top-0 z-sticky col-span-1 col-start-2 col-end-3 flex h-screen items-center justify-center">
           <div className="relative h-max w-max pt-8">
-            {yerbaInView ? (
+            {!yerbaInView ? (
               <div>
                 <Image
-                  src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
-                  alt="Kombucha originál ve flašce"
+                  src="/images/kombucha/original/kombucha-original-render-bottle.png"
+                  alt="Lahev Pragers Kombucha"
                   width={1080}
                   height={1920}
                   className="origin-center scale-95 object-contain"
+                  loading="lazy"
                 />
               </div>
             ) : (
-              <Image
-                src="/images/kombucha/original/kombucha-original-render-bottle.png"
-                alt="Kombucha originál ve flašce"
-                width={1080}
-                height={1920}
-                className="origin-center scale-95 object-contain"
-              />
+              <div>
+                <Image
+                  src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
+                  alt="Lahev Pragers Kombucha"
+                  width={1080}
+                  height={1920}
+                  className="origin-center scale-95 object-contain"
+                  loading="lazy"
+                />
+              </div>
             )}
           </div>
         </div>
@@ -68,10 +295,10 @@ export default function IngredientsFlavours({
         <div className="col-span-1 col-start-1 col-end-2 flex flex-col items-start justify-between gap-10">
           <Reveal>
             <Heading level={2} size="xl" color="primary" hasMarginBottom>
-              Složení
+              Vlastnosti
             </Heading>
           </Reveal>
-          <Reveal className="mt-auto">
+          <Reveal delay={0.1} className="mt-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               Lorem ipsum
@@ -82,7 +309,7 @@ export default function IngredientsFlavours({
               tempora excepturi!
             </p>
           </Reveal>
-          <Reveal className="mb-auto">
+          <Reveal delay={0.2} className="mb-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               Lorem ipsum
@@ -96,7 +323,7 @@ export default function IngredientsFlavours({
         </div>
         {/* Right side */}
         <div className="col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
-          <Reveal className="mt-auto">
+          <Reveal delay={0.3} className="mt-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               Lorem ipsum
@@ -107,7 +334,7 @@ export default function IngredientsFlavours({
               tempora excepturi!
             </p>
           </Reveal>
-          <Reveal className="mb-auto">
+          <Reveal delay={0.4} className="mb-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               Lorem ipsum
@@ -144,21 +371,21 @@ export default function IngredientsFlavours({
                 Original
               </Heading>
             </Reveal>
-            <Reveal>
+            <Reveal delay={0.1}>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
                 harum ipsa possimus accusantium fugit rerum exercitationem
                 excepturi officiis voluptas?
               </p>
             </Reveal>
-            <Reveal className="flex gap-6 pt-8">
+            <Reveal delay={0.2} className="flex gap-6 pt-8">
               <Button size="lg">Zobrazit více</Button>
               <Button size="lg">E-shop</Button>
             </Reveal>
           </div>
           {/* Right side */}
           <div className="relative z-20 col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
-            <Reveal className="mt-auto">
+            <Reveal delay={0.3} className="mt-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 Lorem ipsum
@@ -169,7 +396,7 @@ export default function IngredientsFlavours({
                 tempora excepturi!
               </p>
             </Reveal>
-            <Reveal className="mb-auto">
+            <Reveal delay={0.4} className="mb-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 Lorem ipsum
@@ -207,21 +434,21 @@ export default function IngredientsFlavours({
                 Yerba Maté
               </Heading>
             </Reveal>
-            <Reveal>
+            <Reveal delay={0.1}>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
                 harum ipsa possimus accusantium fugit rerum exercitationem
                 excepturi officiis voluptas?
               </p>
             </Reveal>
-            <Reveal className="flex gap-6 pt-8">
+            <Reveal delay={0.2} className="flex gap-6 pt-8">
               <Button size="lg">Zobrazit více</Button>
               <Button size="lg">E-shop</Button>
             </Reveal>
           </div>
           {/* Right side */}
           <div className="relative z-20 col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
-            <Reveal className="mt-auto">
+            <Reveal delay={0.3} className="mt-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 Lorem ipsum
@@ -232,7 +459,7 @@ export default function IngredientsFlavours({
                 tempora excepturi!
               </p>
             </Reveal>
-            <Reveal className="mb-auto">
+            <Reveal delay={0.4} className="mb-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 Lorem ipsum

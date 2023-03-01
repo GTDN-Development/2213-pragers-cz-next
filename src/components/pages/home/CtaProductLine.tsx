@@ -40,7 +40,7 @@ export default function CtaProductLine({
       </div>
       <Container py="lg" className="relative">
         <img
-          src="/svgs/bg-text-cz-produkty.svg"
+          src="/svgs/text-produkty-white.svg"
           alt="Nápis Produkty"
           width="1488"
           height="353"
