@@ -71,7 +71,7 @@ export default function Hero({
   return (
     <section
       className={clsx(
-        "relative h-[calc(100vh-5rem)] min-h-[540px]",
+        "relative h-[calc(100vh-5rem)] min-h-[540px] overflow-x-hidden",
         variant === "original" ? "bg-original-700" : "bg-mate-700",
         className
       )}

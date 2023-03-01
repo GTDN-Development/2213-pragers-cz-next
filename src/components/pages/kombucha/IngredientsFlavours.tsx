@@ -21,7 +21,7 @@ export function IngredientsFlavoursMobile({
   return (
     <section
       className={clsx(
-        "transition-colors duration-700 ease-in-out",
+        "overflow-x-hidden transition-colors duration-700 ease-in-out",
         className,
         originalInView
           ? "bg-original-800"
@@ -31,7 +31,7 @@ export function IngredientsFlavoursMobile({
       )}
     >
       {/* Vlastnosti */}
-      <div>
+      <div className="overflow-x-hidden">
         <Container py="xl">
           <Reveal>
             <Heading level={2} size="xl" color="primary" hasMarginBottom>
@@ -99,8 +99,8 @@ export function IngredientsFlavoursMobile({
       </div>
 
       {/* Originál */}
-      <div ref={originalRef} className="relative">
-        <Container py="xl" className="relative z-20">
+      <div ref={originalRef} className="relative overflow-x-hidden">
+        <Container py="xl" className="relative z-20 overflow-x-hidden">
           <Reveal>
             <Heading level={2} size="xl" color="rich" hasMarginBottom>
               Original
@@ -165,8 +165,8 @@ export function IngredientsFlavoursMobile({
       </div>
 
       {/* Yerba */}
-      <div ref={yerbaRef} className="relative">
-        <Container py="xl" className="relative z-20">
+      <div ref={yerbaRef} className="relative overflow-x-hidden">
+        <Container py="xl" className="relative z-20 overflow-x-hidden">
           <Reveal>
             <Heading level={2} size="xl" color="rich" hasMarginBottom>
               Yerba maté
