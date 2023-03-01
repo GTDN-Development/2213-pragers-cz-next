@@ -31,7 +31,7 @@ export function IngredientsFlavoursMobile({
       )}
     >
       {/* Vlastnosti */}
-      <div className="overflow-x-hidden">
+      <div className="overflow-hidden">
         <Container py="xl">
           <Reveal>
             <Heading level={2} size="xl" color="primary" hasMarginBottom>
@@ -99,8 +99,8 @@ export function IngredientsFlavoursMobile({
       </div>
 
       {/* Originál */}
-      <div ref={originalRef} className="relative overflow-x-hidden">
-        <Container py="xl" className="relative z-20 overflow-x-hidden">
+      <div ref={originalRef} className="relative overflow-hidden">
+        <Container py="xl" className="relative z-20">
           <Reveal>
             <Heading level={2} size="xl" color="rich" hasMarginBottom>
               Original
@@ -165,8 +165,8 @@ export function IngredientsFlavoursMobile({
       </div>
 
       {/* Yerba */}
-      <div ref={yerbaRef} className="relative overflow-x-hidden">
-        <Container py="xl" className="relative z-20 overflow-x-hidden">
+      <div ref={yerbaRef} className="relative overflow-hidden">
+        <Container py="xl" className="relative z-20">
           <Reveal>
             <Heading level={2} size="xl" color="rich" hasMarginBottom>
               Yerba maté
