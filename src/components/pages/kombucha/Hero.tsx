@@ -19,8 +19,8 @@ export function HeroMobile({ className = "" }: { className?: string }) {
         <Image
           src="/images/kombucha/original/kombucha-original-illustration.jpg"
           alt="Kombucha original ilustrace"
-          width={3840}
-          height={4037}
+          width={1920}
+          height={2018}
           className="absolute inset-0 -z-10 h-full object-cover opacity-50"
         />
         <Container className="relative z-10 flex flex-col items-start justify-start">

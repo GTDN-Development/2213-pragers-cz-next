@@ -148,7 +148,7 @@ export function IngredientsFlavoursMobile({
               alt="Lahev Pragers Kombucha"
               width={1080}
               height={1920}
-              className="col-span-2 h-full translate-x-1/2 scale-[2.2] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              className="col-span-2 h-full translate-x-1/2 scale-[2.4] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
               loading="lazy"
             />
           </div>
@@ -160,7 +160,7 @@ export function IngredientsFlavoursMobile({
           height="1002"
           loading="lazy"
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 -right-20 z-10 h-full origin-right opacity-20"
+          className="pointer-events-none absolute inset-y-0 -right-0 z-10 h-full origin-right scale-[0.6] opacity-20"
         />
       </div>
 
@@ -214,7 +214,7 @@ export function IngredientsFlavoursMobile({
               alt="Lahev Pragers Kombucha"
               width={1080}
               height={1920}
-              className="col-span-2 h-full translate-x-1/2 scale-[2.2] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              className="col-span-2 h-full translate-x-1/2 scale-[2.4] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
               loading="lazy"
             />
           </div>
@@ -226,7 +226,7 @@ export function IngredientsFlavoursMobile({
           height="1002"
           loading="lazy"
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 -right-4 z-10 h-full origin-right scale-[0.85] opacity-20"
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 h-full origin-right scale-50 opacity-20"
         />
       </div>
     </section>

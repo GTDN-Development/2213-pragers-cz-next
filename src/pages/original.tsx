@@ -130,8 +130,8 @@ export default function Home() {
             <CtaCard
               href="/"
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
-              width={3840}
-              height={4037}
+              width={960}
+              height={1009}
               title="Pragers Kombucha"
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
             />
@@ -140,8 +140,8 @@ export default function Home() {
             <CtaCard
               href="/"
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
-              width={3840}
-              height={4037}
+              width={960}
+              height={1009}
               title="Pragers Kombucha"
               text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
             />
