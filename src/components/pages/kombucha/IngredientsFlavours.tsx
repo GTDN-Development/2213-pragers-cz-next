@@ -26,7 +26,7 @@ export function IngredientsFlavoursMobile({
         originalInView
           ? "bg-original-800"
           : yerbaInView
-          ? "bg-mate-900"
+          ? "bg-yerba-900"
           : "bg-gray-900"
       )}
     >
@@ -252,7 +252,7 @@ export function IngredientsFlavours({
         originalInView
           ? "bg-original-800"
           : yerbaInView
-          ? "bg-mate-900"
+          ? "bg-yerba-900"
           : "bg-gray-900"
       )}
     >
@@ -476,7 +476,7 @@ export function IngredientsFlavours({
 
       {/* *** */}
       {/* Blank template for next screen */}
-      {/* <section className="bg-mate-600">
+      {/* <section className="bg-yerba-600">
         <Container py="xl" className="relative grid min-h-screen grid-cols-3 gap-10">
           <div className="col-start-1 col-end-2 col-span-1"></div>
           <div className="col-start-3 col-end-4 col-span-1"></div>

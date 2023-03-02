@@ -1,11 +1,14 @@
 import clsx from "clsx";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 type Props = {
   className?: string;
 };
 
 export default function ScrollBadge({ className = "" }: Props) {
-  // useScroll value of framer motion and transform it to use this value as rotate property of svg
+  const { scrollYProgress } = useScroll();
+  const rotateRange = useTransform(scrollYProgress, [0, 1], [0, 360]);
+  const rotate = useSpring(rotateRange, { stiffness: 400, damping: 90 });
 
   return (
     <div
@@ -15,11 +18,12 @@ export default function ScrollBadge({ className = "" }: Props) {
       )}
       aria-hidden="true"
     >
-      <img
+      <motion.img
+        style={{ rotate }}
         src="/svgs/rotating-badge-text.svg"
         alt="Fermented Handcrafted badge"
         loading="lazy"
-        className="absolute inset-0 -z-10 h-full w-full origin-center animate-[spin_10s_linear_infinite]"
+        className="absolute inset-0 -z-10 h-full w-full origin-center"
         aria-hidden="true"
       />
       <div className="relative z-30 flex items-end justify-center">

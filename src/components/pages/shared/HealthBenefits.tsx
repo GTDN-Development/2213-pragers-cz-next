@@ -16,7 +16,7 @@ export default function HealthBenefits({
       className={clsx(
         "relative w-screen",
         variant === "original" && "bg-original-800",
-        variant === "yerba" && "bg-mate-800",
+        variant === "yerba" && "bg-yerba-800",
         variant === "default" && "bg-gray-800",
         className
       )}
@@ -42,7 +42,7 @@ export default function HealthBenefits({
               className={clsx(
                 "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
-                variant === "yerba" && "bg-mate-700",
+                variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
@@ -61,7 +61,7 @@ export default function HealthBenefits({
               className={clsx(
                 "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
-                variant === "yerba" && "bg-mate-700",
+                variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
@@ -80,7 +80,7 @@ export default function HealthBenefits({
               className={clsx(
                 "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
-                variant === "yerba" && "bg-mate-700",
+                variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
@@ -99,7 +99,7 @@ export default function HealthBenefits({
               className={clsx(
                 "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
-                variant === "yerba" && "bg-mate-700",
+                variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
