@@ -17,10 +17,10 @@ export const routes = [
     href: "/original",
     label: "Kombucha Original",
   },
-  {
-    href: "",
-    label: "F.H. Prager",
-  },
+  // {
+  //   href: "",
+  //   label: "F.H. Prager",
+  // },
 ];
 
 export const contact = [
