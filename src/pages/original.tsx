@@ -3,8 +3,8 @@ import Collapse from "@/components/Collapse";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
-import CtaCard from "@/components/pages/product-detail/CtaCard";
 import Hero from "@/components/pages/product-detail/Hero";
+import CtaCard from "@/components/pages/shared/CtaCard";
 import HealthBenefits from "@/components/pages/shared/HealthBenefits";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
@@ -55,7 +55,7 @@ export default function Home() {
             className="flex items-center justify-center sm:col-span-5"
           >
             <Image
-              src="/images/kombucha/original/kombucha-original-render-can.png"
+              src="/images/kombucha/original/kombucha-original-render-can-outline.png"
               alt="Plechovka kombuchy - originál"
               width="2560"
               height="2560"

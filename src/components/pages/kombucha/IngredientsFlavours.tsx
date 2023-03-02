@@ -260,30 +260,32 @@ export function IngredientsFlavours({
       {/* Bottle grid - spanning the whole area and keeping the same grid layout as sections inner */}
       <Container className="absolute inset-0 grid h-full w-full grid-cols-3 items-start justify-start gap-10">
         <div className="sticky top-0 z-sticky col-span-1 col-start-2 col-end-3 flex h-screen items-center justify-center">
-          <div className="relative h-max w-max pt-8">
-            {!yerbaInView ? (
-              <div>
-                <Image
-                  src="/images/kombucha/original/kombucha-original-render-bottle.png"
-                  alt="Lahev Pragers Kombucha"
-                  width={1080}
-                  height={1920}
-                  className="origin-center scale-95 object-contain"
-                  loading="lazy"
-                />
-              </div>
-            ) : (
-              <div>
-                <Image
-                  src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
-                  alt="Lahev Pragers Kombucha"
-                  width={1080}
-                  height={1920}
-                  className="origin-center scale-95 object-contain"
-                  loading="lazy"
-                />
-              </div>
-            )}
+          <div className="relative my-auto h-full max-h-[675px] w-full pt-8">
+            <div className="absolute inset-0 z-20 h-full w-full">
+              <Image
+                src="/images/kombucha/original/kombucha-original-render-bottle.png"
+                alt="Lahev Pragers Kombucha"
+                width={1080}
+                height={1920}
+                className="w-full origin-center scale-95 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div
+              className={clsx(
+                "absolute inset-0 z-30 h-full w-full transition-opacity duration-700",
+                yerbaInView ? "opacity-100" : "opacity-0"
+              )}
+            >
+              <Image
+                src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
+                alt="Lahev Pragers Kombucha"
+                width={1080}
+                height={1920}
+                className="w-full origin-center scale-95 object-contain"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </Container>

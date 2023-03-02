@@ -300,7 +300,7 @@ export default function Header() {
             </div>
 
             {/* Mobile navigation */}
-            <div className="">
+            <div className="lg:hidden">
               <TouchMenu />
             </div>
           </div>

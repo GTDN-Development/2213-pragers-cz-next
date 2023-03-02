@@ -6,6 +6,7 @@ import {
   IngredientsFlavours,
   IngredientsFlavoursMobile,
 } from "@/components/pages/kombucha/IngredientsFlavours";
+import CtaCard from "@/components/pages/shared/CtaCard";
 import HealthBenefits from "@/components/pages/shared/HealthBenefits";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
@@ -200,6 +201,48 @@ export default function Kombucha() {
 
       {/*Sekce: Zdravotní benefity */}
       <HealthBenefits />
+
+      {/* Další odkazy - kam dál */}
+      <section className="bg-gray-800">
+        <Container py="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-2">
+          <Reveal className="sm:col-span-2">
+            <Heading
+              level={2}
+              size="xl"
+              hasMarginBottom
+              className="text-center"
+            >
+              Zjistěte více o našich produktech
+            </Heading>
+          </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/"
+              src="/images/kombucha/original/kombucha-original-illustration.jpg"
+              width={960}
+              height={1009}
+              disableBg
+              disableShadow
+              title="Kombucha Original"
+              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
+              className="bg-original-900"
+            />
+          </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/"
+              src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
+              width={960}
+              height={1009}
+              disableBg
+              disableShadow
+              title="Kombucha Yerba maté"
+              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
+              className="bg-yerba-900"
+            />
+          </Reveal>
+        </Container>
+      </section>
     </Layout>
   );
 }
