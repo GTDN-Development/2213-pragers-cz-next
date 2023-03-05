@@ -10,9 +10,11 @@ import CtaCard from "@/components/pages/shared/CtaCard";
 import HealthBenefits from "@/components/pages/shared/HealthBenefits";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
-import ExportedImage from "next-image-export-optimizer";
+import { useTranslation } from "@/hooks/useTranslation";
+import Image from "next/image";
 
 export default function Kombucha() {
+  const t = useTranslation();
   return (
     <Layout>
       <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
@@ -20,37 +22,45 @@ export default function Kombucha() {
       <HeroMobile />
 
       {/*Sekce: Co je kombucha? */}
-      <section className="bg-gray-900">
+      <section id="vice" className="bg-gray-900">
         <Container py="lg" className="grid gap-10 lg:grid-cols-2">
           <Reveal className="pb-10 lg:col-span-2">
             <Heading level={2} size="xl" className="mx-auto text-center">
-              Co je kombucha?
+              {t.kombucha.aboutKombucha.title}
             </Heading>
           </Reveal>
           <div className="flex items-center justify-start">
             <Reveal className="pb-10">
               <Heading
                 level={"none"}
-                size="md"
+                size="sm"
                 color="primary"
-                className="text-center !leading-tight lg:text-left"
+                className="text-center !leading-relaxed lg:text-left"
                 hasMarginBottom
               >
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et velit interdum, ac aliquet odio mattis.
-                </p>
+                <p>{t.kombucha.aboutKombucha.paragraph1}</p>
+              </Heading>
+              <Heading
+                level={"none"}
+                size="sm"
+                color="primary"
+                className="pt-10 text-center !leading-relaxed lg:text-left"
+                hasMarginBottom
+              >
+                <p>{t.kombucha.aboutKombucha.paragraph2}</p>
               </Heading>
             </Reveal>
           </div>
           <Reveal className="flex items-center justify-start">
-            <ExportedImage
-              src="/images/kombucha/original/kombucha-original-illustration.jpg"
-              alt="Kombucha original ilustrace"
-              width={3840}
-              height={4037}
-              className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary object-cover"
-            />
+            <div className="aspect-square h-max w-full">
+              <Image
+                src="/images/kombucha/original/kombucha-original-illustration.jpg"
+                alt="Kombucha original ilustrace"
+                width={3840}
+                height={4037}
+                className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary object-cover"
+              />
+            </div>
           </Reveal>
         </Container>
       </section>
@@ -83,10 +93,10 @@ export default function Kombucha() {
               className="mx-auto md:mx-0"
               hasMarginBottom
             >
-              V čem jsme jiní
+              {t.kombucha.whyWeAreDifferent.kicker}
             </Heading>
             <Heading level={2} size="xl" className="mx-auto md:mx-0">
-              Výroba
+              {t.kombucha.whyWeAreDifferent.title}
             </Heading>
           </Reveal>
 
@@ -95,7 +105,7 @@ export default function Kombucha() {
             <div className="grid gap-10 md:grid-cols-3">
               <Reveal className="flex items-center justify-center md:col-start-2">
                 <div className="flex aspect-square h-40 w-40 items-center justify-center rounded-full bg-primary p-10 md:h-56 md:w-56 xl:h-64 xl:w-64">
-                  <ExportedImage
+                  <Image
                     src="/images/kombucha/glass-1.png"
                     alt="sklenice"
                     width={165}
@@ -114,12 +124,11 @@ export default function Kombucha() {
                 >
                   1
                 </Heading>
-                <Heading level={3} size="xs">
-                  Lorem ipsum
+                <Heading level={3} size="sm" hasMarginBottom>
+                  {t.kombucha.whyWeAreDifferent.subtitle1}
                 </Heading>
                 <p className="max-w-md text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                  totam in expedita dignissimos voluptates accusamus?
+                  {t.kombucha.whyWeAreDifferent.content1}
                 </p>
               </Reveal>
             </div>
@@ -135,17 +144,16 @@ export default function Kombucha() {
                 >
                   2
                 </Heading>
-                <Heading level={3} size="xs">
-                  Lorem ipsum
+                <Heading level={3} size="sm" hasMarginBottom>
+                  {t.kombucha.whyWeAreDifferent.subtitle2}
                 </Heading>
                 <p className="max-w-md text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                  totam in expedita dignissimos voluptates accusamus?
+                  {t.kombucha.whyWeAreDifferent.content2}
                 </p>
               </Reveal>
               <Reveal className="row-start-1 flex items-center justify-center md:row-start-auto">
                 <div className="flex aspect-square h-40 w-40 items-center justify-center rounded-full bg-primary p-10 md:h-56 md:w-56 xl:h-64 xl:w-64">
-                  <ExportedImage
+                  <Image
                     src="/images/kombucha/glass-2.png"
                     alt="sklenice"
                     width={165}
@@ -161,7 +169,7 @@ export default function Kombucha() {
             <div className="grid gap-10 md:grid-cols-3">
               <Reveal className="flex items-center justify-center md:col-start-2">
                 <div className="flex aspect-square h-40 w-40 items-center justify-center rounded-full bg-primary p-10 md:h-56 md:w-56 xl:h-64 xl:w-64">
-                  <ExportedImage
+                  <Image
                     src="/images/kombucha/glass-3.png"
                     alt="sklenice"
                     width={165}
@@ -180,12 +188,11 @@ export default function Kombucha() {
                 >
                   3
                 </Heading>
-                <Heading level={3} size="xs">
-                  Lorem ipsum
+                <Heading level={3} size="sm" hasMarginBottom>
+                  {t.kombucha.whyWeAreDifferent.subtitle3}
                 </Heading>
                 <p className="max-w-md text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                  totam in expedita dignissimos voluptates accusamus?
+                  {t.kombucha.whyWeAreDifferent.content3}
                 </p>
               </Reveal>
             </div>
@@ -212,7 +219,7 @@ export default function Kombucha() {
               hasMarginBottom
               className="text-center"
             >
-              Zjistěte více o našich produktech
+              {t.kombucha.learnMore}
             </Heading>
           </Reveal>
           <Reveal>
@@ -223,8 +230,8 @@ export default function Kombucha() {
               height={1009}
               disableBg
               disableShadow
-              title="Kombucha Original"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
+              title={t.common.ctaCards.original.title}
+              text={t.common.ctaCards.original.content}
               className="bg-original-900"
             />
           </Reveal>
@@ -236,8 +243,8 @@ export default function Kombucha() {
               height={1009}
               disableBg
               disableShadow
-              title="Kombucha Yerba maté"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
+              title={t.common.ctaCards.yerba.title}
+              text={t.common.ctaCards.yerba.content}
               className="bg-yerba-900"
             />
           </Reveal>

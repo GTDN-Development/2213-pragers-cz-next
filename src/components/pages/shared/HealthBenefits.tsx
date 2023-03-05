@@ -1,16 +1,23 @@
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
 import { GiFlamedLeaf } from "react-icons/gi";
 
 export default function HealthBenefits({
+  title,
   className = "",
   variant = "default",
 }: {
+  title?: string;
   className?: string;
   variant?: "default" | "original" | "yerba";
 }) {
+  const t = useTranslation();
+
+  const defaultTitle = t.common.healthBenefits.title;
+
   return (
     <section
       className={clsx(
@@ -33,83 +40,95 @@ export default function HealthBenefits({
             className="mx-auto text-center"
             hasMarginBottom
           >
-            Zdravotní benefity
+            {!title ? defaultTitle : title}
           </Heading>
         </Reveal>
         <div className="grid w-full sm:grid-cols-2 sm:gap-10 xl:grid-cols-4">
           <Reveal className="col-span-1 flex items-center justify-start sm:justify-center">
             <div
               className={clsx(
-                "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
+                "flex h-72 w-72 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-3 h-10 w-10 text-primary" />
-              <Heading level={3} size="xs" hasMarginBottom>
-                Lorem ipsum
+              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <Heading
+                level={3}
+                size="sm"
+                className="max-w-[260px]"
+                hasMarginBottom
+              >
+                {t.common.healthBenefits.subtitle1}
               </Heading>
-              <p className="max-w-[11rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              {/* <p className="max-w-[11rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> */}
             </div>
           </Reveal>
 
           <Reveal className="col-span-1 flex items-center justify-end sm:justify-center">
             <div
               className={clsx(
-                "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
+                "flex h-72 w-72 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-3 h-10 w-10 text-primary" />
-              <Heading level={3} size="xs" hasMarginBottom>
-                Lorem ipsum
+              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <Heading
+                level={3}
+                size="sm"
+                className="max-w-[260px]"
+                hasMarginBottom
+              >
+                {t.common.healthBenefits.subtitle2}
               </Heading>
-              <p className="max-w-[11rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              {/* <p className="max-w-[11rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> */}
             </div>
           </Reveal>
 
           <Reveal className="col-span-1 flex items-center justify-start sm:justify-center">
             <div
               className={clsx(
-                "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
+                "flex h-72 w-72 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-3 h-10 w-10 text-primary" />
-              <Heading level={3} size="xs" hasMarginBottom>
-                Lorem ipsum
+              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <Heading
+                level={3}
+                size="sm"
+                className="max-w-[260px]"
+                hasMarginBottom
+              >
+                {t.common.healthBenefits.subtitle3}
               </Heading>
-              <p className="max-w-[11rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              {/* <p className="max-w-[11rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> */}
             </div>
           </Reveal>
 
           <Reveal className="col-span-1 flex items-center justify-end sm:justify-center">
             <div
               className={clsx(
-                "flex h-64 w-64 flex-col items-center justify-center rounded-full text-center",
+                "flex h-72 w-72 flex-col items-center justify-center rounded-full text-center",
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-3 h-10 w-10 text-primary" />
-              <Heading level={3} size="xs" hasMarginBottom>
-                Lorem ipsum
+              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <Heading
+                level={3}
+                size="sm"
+                className="max-w-[260px]"
+                hasMarginBottom
+              >
+                {t.common.healthBenefits.subtitle4}
               </Heading>
-              <p className="max-w-[11rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
+              {/* <p className="max-w-[11rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> */}
             </div>
           </Reveal>
         </div>

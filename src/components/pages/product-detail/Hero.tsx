@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import clsx from "clsx";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 function LargeBadge({ className = "" }: { className?: string }) {
   return (
@@ -64,9 +64,21 @@ function Message({
 export default function Hero({
   className = "",
   variant = "original",
+  title1 = "Lorem ipsum",
+  content1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  title2 = "Lorem ipsum",
+  content2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  title3 = "Lorem ipsum",
+  content3 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 }: {
   className?: string;
   variant: "original" | "yerba";
+  title1: string;
+  content1: string;
+  title2: string;
+  content2: string;
+  title3: string;
+  content3: string;
 }) {
   return (
     <section
@@ -86,8 +98,12 @@ export default function Hero({
           )}
         />
         <div className="absolute inset-y-0 left-1/2 z-20 h-full w-72 -translate-x-1/2 sm:w-96">
-          <ExportedImage
-            src="/images/kombucha/original/kombucha-original-render-bottle.png"
+          <Image
+            src={
+              variant === "original"
+                ? "/images/kombucha/original/kombucha-original-render-bottle.png"
+                : "/images/kombucha/mate/kombucha-mate-render-bottle.png"
+            }
             alt="Lahev Pragers Kombucha"
             width={1080}
             height={1920}
@@ -96,17 +112,25 @@ export default function Hero({
             priority
           />
         </div>
-        <Message className="top-1/3 left-[55%] z-30" dotPosition="left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          doloremque?
+        <Message
+          title={title1}
+          className="top-1/3 left-[55%] z-30"
+          dotPosition="left"
+        >
+          {content1}
         </Message>
-        <Message className="top-1/2 right-[55%] z-30 -translate-y-1/2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          doloremque?
+        <Message
+          title={title2}
+          className="top-1/2 right-[55%] z-30 -translate-y-1/2"
+        >
+          {content2}
         </Message>
-        <Message className="top-2/3 left-[55%] z-30" dotPosition="left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          doloremque?
+        <Message
+          title={title3}
+          className="top-2/3 left-[55%] z-30"
+          dotPosition="left"
+        >
+          {content3}
         </Message>
       </Container>
     </section>

@@ -12,12 +12,15 @@ import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
 
+import { useTranslation } from "@/hooks/useTranslation";
+
 export default function Home() {
+  const t = useTranslation();
   return (
     <Layout>
       <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
       <Hero />
-      <Container py="md">
+      <Container as={"section"} id="vice" py="md">
         <Reveal className="pb-10">
           <Heading
             level={2}
@@ -26,13 +29,10 @@ export default function Home() {
             hasMarginBottom
             className="mx-auto text-center"
           >
-            Co je Pragers?
+            {t.home.about.title}
           </Heading>
           <p className="mx-auto max-w-prose text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-            delectus possimus enim, autem, dolores, laudantium nisi commodi
-            deserunt itaque excepturi illum. Dolorum, est quo doloribus ut
-            aliquam nostrum minus pariatur!
+            {t.home.about.perex}
           </p>
         </Reveal>
 
@@ -47,12 +47,9 @@ export default function Home() {
             </Parallax>
             <Reveal hasTriggerMargin={false}>
               <Heading level={3} size="xs" hasMarginBottom>
-                Lorem ipsum
+                {t.home.about.subtitle1}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                iure ab labore iusto cupiditate consectetur!
-              </p>
+              <p>{t.home.about.content1}</p>
             </Reveal>
           </div>
           <BodyImage
@@ -73,8 +70,7 @@ export default function Home() {
               className="!leading-tight"
               hasMarginBottom
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
+              {t.home.about.largeText}
             </Heading>
           </Reveal>
 
@@ -82,12 +78,9 @@ export default function Home() {
             <div className="col-span-1 space-y-8 md:order-2">
               <Reveal className="max-w-md pb-12">
                 <Heading level={3} size="xs" hasMarginBottom>
-                  Lorem ipsum
+                  {t.home.about.subtitle2}
                 </Heading>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta iure ab labore iusto cupiditate consectetur!
-                </p>
+                <p>{t.home.about.content2}</p>
               </Reveal>
               <BodyImage
                 src="/fh-prager/prager-bg.jpg"
@@ -113,7 +106,7 @@ export default function Home() {
         </Container>
       </Container>
 
-      <CtaProductLine />
+      <CtaProductLine as={"section"} />
       <CtaContact />
       <CtaPrager />
     </Layout>

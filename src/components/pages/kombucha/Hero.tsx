@@ -4,19 +4,21 @@ import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 export function HeroMobile({ className = "" }: { className?: string }) {
+  const t = useTranslation();
   return (
     <>
-      <div
+      <section
         className={clsx(
           "items-srart relative flex h-[calc(100vh-5rem)] min-h-[400px] w-screen flex-col justify-start pt-36 lg:hidden",
           className
         )}
       >
-        <ExportedImage
+        <Image
           src="/images/kombucha/original/kombucha-original-illustration.jpg"
           alt="Kombucha original ilustrace"
           width={1920}
@@ -25,22 +27,23 @@ export function HeroMobile({ className = "" }: { className?: string }) {
         />
         <Container className="relative z-10 flex flex-col items-start justify-start">
           <Heading level={1} size="2xl" color="rich" hasMarginBottom>
-            Pragers
-            <br />
-            Kombucha
+            {t.kombucha.hero.title}
           </Heading>
-          <Button size="lg">Zjistit více</Button>
+          <Button href="#vice" size="lg">
+            {t.kombucha.hero.buttonLabel}
+          </Button>
         </Container>
-      </div>
+      </section>
       <BrandStrip className="lg:hidden" />
     </>
   );
 }
 
 export function Hero({ className = "" }: { className?: string }) {
+  const t = useTranslation();
   return (
     <>
-      <div
+      <section
         className={clsx(
           "relative isolate hidden h-[100rem] w-screen overflow-hidden bg-gray-900 lg:block",
           className
@@ -70,8 +73,7 @@ export function Hero({ className = "" }: { className?: string }) {
               size="inherit"
               className="text-center text-9xl text-white 2xl:text-[10.5rem]"
             >
-              Pragers <br />
-              Kombucha
+              {t.kombucha.hero.title}
             </Heading>
           </Reveal>
         </Parallax>
@@ -103,7 +105,7 @@ export function Hero({ className = "" }: { className?: string }) {
             }}
           />
         </Parallax>
-      </div>
+      </section>
       <BrandStrip className="hidden lg:block" />
     </>
   );

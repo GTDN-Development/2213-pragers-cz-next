@@ -1,16 +1,18 @@
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Parallax from "@/components/Parallax";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 type Props = {
   className?: string;
 };
 
 export default function CtaPrager({ className = "" }: Props) {
+  const t = useTranslation();
   return (
-    <div
+    <section
       className={clsx(
         "relative w-screen overflow-hidden py-16 sm:py-28 xl:py-52",
         className
@@ -20,7 +22,7 @@ export default function CtaPrager({ className = "" }: Props) {
         offset={40}
         className="absolute inset-0 -z-10 w-full opacity-70"
       >
-        <ExportedImage
+        <Image
           src="/fh-prager/prager-bg.jpg"
           alt="F.H. Prager ilustrace"
           width={1440}
@@ -43,9 +45,9 @@ export default function CtaPrager({ className = "" }: Props) {
           />
         </div>
         <Button href="https://fhprager.cz" intent="white" size="lg">
-          Přejít na web F.H. Prager
+          {t.home.ctaPrager}
         </Button>
       </Container>
-    </div>
+    </section>
   );
 }

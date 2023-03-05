@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+// import Button from "@/components/Button";
 import Collapse from "@/components/Collapse";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
@@ -8,20 +8,30 @@ import CtaCard from "@/components/pages/shared/CtaCard";
 import HealthBenefits from "@/components/pages/shared/HealthBenefits";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
-import ExportedImage from "next-image-export-optimizer";
+import { useTranslation } from "@/hooks/useTranslation";
+import Image from "next/image";
 import { GiFlamedLeaf, GiMapleLeaf } from "react-icons/gi";
 
 export default function Home() {
+  const t = useTranslation();
   return (
     <Layout>
       <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
-      <Hero variant="original" />
+      <Hero
+        variant="original"
+        title1={t.kombuchaDetailPages.original.hero.title1}
+        content1={t.kombuchaDetailPages.original.hero.content1}
+        title2={t.kombuchaDetailPages.original.hero.title2}
+        content2={t.kombuchaDetailPages.original.hero.content2}
+        title3={t.kombuchaDetailPages.original.hero.title3}
+        content3={t.kombuchaDetailPages.original.hero.content3}
+      />
       <section className="bg-original-800">
         <Container py="xl" className="relative">
           <div className="relative z-20 pt-10">
             <Reveal>
               <Heading level={1} size="2xl" color="rich" hasMarginBottom>
-                Original
+                {t.kombuchaDetailPages.original.about.title}
               </Heading>
             </Reveal>
             <Reveal>
@@ -32,15 +42,14 @@ export default function Home() {
                 className="!leading-tight"
                 hasMarginBottom
               >
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et velit interdum, ac aliquet odio mattis.
-                </p>
+                <p>{t.kombuchaDetailPages.original.about.perex}</p>
               </Heading>
             </Reveal>
-            <Reveal className="pt-10">
-              <Button size="xl">Zobrazit v e-shopu</Button>
-            </Reveal>
+            {/* <Reveal className="pt-10">
+              <Button href="https://eshop.fhprager.cz" size="xl">
+                {t.kombuchaDetailPages.original.about.buttonLabel}
+              </Button>
+            </Reveal> */}
           </div>
           <Reveal noVertical>
             <GiMapleLeaf className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-original-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3" />
@@ -54,7 +63,7 @@ export default function Home() {
             noVertical
             className="flex items-center justify-center sm:col-span-5"
           >
-            <ExportedImage
+            <Image
               src="/images/kombucha/original/kombucha-original-render-can-outline.png"
               alt="Plechovka kombuchy - originál"
               width="2560"
@@ -68,25 +77,17 @@ export default function Home() {
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombuchaDetailPages.original.about.subtitle1}
                 </Heading>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p>{t.kombuchaDetailPages.original.about.content1}</p>
               </Reveal>
             </div>
             <Reveal className="my-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                Lorem ipsum
+                {t.kombuchaDetailPages.original.about.subtitle2}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-                iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-                tempora excepturi!
-              </p>
+              <p>{t.kombuchaDetailPages.original.about.content2}</p>
             </Reveal>
           </div>
         </Container>
@@ -94,25 +95,21 @@ export default function Home() {
         <Container className="grid gap-12 sm:grid-cols-12">
           <Reveal className="sm:col-span-7 sm:col-start-6">
             <Heading level={3} size="md" color="primary" hasMarginBottom>
-              Další informace
+              {t.kombuchaDetailPages.original.otherInfo.title}
             </Heading>
             <Collapse.Group>
-              <Collapse title="Výživové údaje">
+              <Collapse
+                title={t.kombuchaDetailPages.original.otherInfo.collapse1.title}
+              >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  repudiandae eveniet minus harum necessitatibus temporibus quam
-                  ex non ratione placeat tempora similique molestiae, cum
-                  aliquid saepe possimus iure totam quae maxime! Veniam corporis
-                  quod minima aspernatur, distinctio porro sint! Expedita?
+                  {t.kombuchaDetailPages.original.otherInfo.collapse1.content}
                 </p>
               </Collapse>
-              <Collapse title="Výživové údaje">
+              <Collapse
+                title={t.kombuchaDetailPages.original.otherInfo.collapse2.title}
+              >
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  repudiandae eveniet minus harum necessitatibus temporibus quam
-                  ex non ratione placeat tempora similique molestiae, cum
-                  aliquid saepe possimus iure totam quae maxime! Veniam corporis
-                  quod minima aspernatur, distinctio porro sint! Expedita?
+                  {t.kombuchaDetailPages.original.otherInfo.collapse2.content}
                 </p>
               </Collapse>
             </Collapse.Group>
@@ -121,7 +118,10 @@ export default function Home() {
       </section>
 
       {/*Sekce: Zdravotní benefity */}
-      <HealthBenefits variant="original" />
+      <HealthBenefits
+        variant="original"
+        title={t.kombuchaDetailPages.original.healthBenefitsTitle}
+      />
 
       {/* Další odkazy - kam dál */}
       <section className="bg-original-800">
@@ -132,18 +132,18 @@ export default function Home() {
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
               width={960}
               height={1009}
-              title="Pragers Kombucha"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
+              title={t.common.ctaCards.kombucha.title}
+              text={t.common.ctaCards.kombucha.content}
             />
           </Reveal>
           <Reveal>
             <CtaCard
               href="/"
-              src="/images/kombucha/original/kombucha-original-illustration.jpg"
+              src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
               width={960}
               height={1009}
-              title="Pragers Kombucha"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum voluptatibus mollitia doloremque distinctio ullam reiciendis nam consequuntur atque debitis."
+              title={t.common.ctaCards.yerba.title}
+              text={t.common.ctaCards.yerba.content}
             />
           </Reveal>
         </Container>

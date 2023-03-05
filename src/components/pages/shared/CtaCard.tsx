@@ -1,7 +1,7 @@
 import Heading from "@/components/Heading";
 import UiLink from "@/components/UiLink";
 import clsx from "clsx";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 export default function CtaCard({
   className = "",
@@ -28,14 +28,14 @@ export default function CtaCard({
     <UiLink
       href={href}
       className={clsx(
-        "group flex flex-col overflow-hidden rounded-3xl transition-all duration-300 ease-in-out hover:scale-95",
+        "group flex h-full flex-col overflow-hidden rounded-3xl transition-all duration-300 ease-in-out hover:scale-95",
         !disableBg && "bg-gray-800",
         !disableShadow && "shadow-2xl shadow-gray-900/50 hover:shadow-none",
         className
       )}
     >
       <div className="aspect-[16/10] w-full overflow-hidden">
-        <ExportedImage
+        <Image
           src={src}
           alt={title}
           width={width}

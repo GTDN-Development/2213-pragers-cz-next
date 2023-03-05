@@ -1,5 +1,4 @@
 import BadgeCircle from "@/components/BadgeCircle";
-import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
@@ -7,16 +6,20 @@ import Hero from "@/components/pages/about/Hero";
 import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
+import { useTranslation } from "@/hooks/useTranslation";
 import { IoLeafOutline } from "react-icons/io5";
 
 import BodyImage from "@/components/pages/shared/BodyImage";
 
 export default function About() {
+  const t = useTranslation();
   return (
     <Layout>
       <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
       <Hero />
-      <Container py="md">
+
+      {/* Sekce: Co je pragers */}
+      <Container as="section" id="vice" py="md">
         <Reveal className="pb-10">
           <Heading
             level={2}
@@ -25,13 +28,10 @@ export default function About() {
             hasMarginBottom
             className="mx-auto text-center"
           >
-            Co je Pragers?
+            {t.about.about.title}
           </Heading>
           <p className="mx-auto max-w-prose text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-            delectus possimus enim, autem, dolores, laudantium nisi commodi
-            deserunt itaque excepturi illum. Dolorum, est quo doloribus ut
-            aliquam nostrum minus pariatur!
+            {t.about.about.perex}
           </p>
         </Reveal>
 
@@ -46,12 +46,9 @@ export default function About() {
             </Parallax>
             <Reveal hasTriggerMargin={false}>
               <Heading level={3} size="xs" hasMarginBottom>
-                Lorem ipsum
+                {t.about.about.subtitle1}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                iure ab labore iusto cupiditate consectetur!
-              </p>
+              <p>{t.about.about.content1}</p>
             </Reveal>
           </div>
           <BodyImage
@@ -72,8 +69,7 @@ export default function About() {
               className="!leading-tight"
               hasMarginBottom
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
+              <p>{t.about.about.largeText}</p>
             </Heading>
           </Reveal>
 
@@ -81,12 +77,9 @@ export default function About() {
             <div className="col-span-1 space-y-8 md:order-2">
               <Reveal className="max-w-md pb-12">
                 <Heading level={3} size="xs" hasMarginBottom>
-                  Lorem ipsum
+                  {t.about.about.subtitle2}
                 </Heading>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta iure ab labore iusto cupiditate consectetur!
-                </p>
+                <p>{t.about.about.content2}</p>
               </Reveal>
             </div>
             <div className="col-span-1 md:order-1">
@@ -102,7 +95,8 @@ export default function About() {
         </Container>
       </Container>
 
-      <div className="relative bg-emerald-800">
+      {/* Sekce: Udržitelnost */}
+      <section className="relative bg-emerald-800">
         <div className="pattern-white absolute inset-0 z-10 h-full w-full" />
         <Container
           py="xl"
@@ -111,15 +105,10 @@ export default function About() {
           <Reveal className="col-span-1 flex flex-col items-start justify-center gap-10">
             <IoLeafOutline className="h-24 w-24 text-primary" />
             <Heading level={2} size="lg">
-              Udržitelnost
+              {t.about.enviroment.title}
             </Heading>
-            <p className="max-w-prose">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-              dolorum id, quasi consequatur consequuntur et sint neque amet
-              iusto eum incidunt quaerat inventore pariatur dicta minus
-              asperiores dolorem eaque iste?
-            </p>
-            <Button size="lg">Zjistit více</Button>
+            <p className="max-w-prose">{t.about.enviroment.content}</p>
+            {/* <Button size="lg">{t.about.enviroment.buttonLabel}</Button> */}
           </Reveal>
           <BodyImage
             src="/fh-prager/prager-bg.jpg"
@@ -129,9 +118,10 @@ export default function About() {
             className="col-span-1"
           />
         </Container>
-      </div>
+      </section>
 
-      <Container pt="lg" pb="xl">
+      {/* Sekce: Naše mise */}
+      <Container as={"section"} pt="lg" pb="xl">
         <Reveal className="pb-10">
           <Heading
             level={2}
@@ -140,13 +130,10 @@ export default function About() {
             hasMarginBottom
             className="mx-auto text-center"
           >
-            Naše mise
+            {t.about.ourMission.title}
           </Heading>
           <p className="mx-auto max-w-prose text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-            delectus possimus enim, autem, dolores, laudantium nisi commodi
-            deserunt itaque excepturi illum. Dolorum, est quo doloribus ut
-            aliquam nostrum minus pariatur!
+            {t.about.ourMission.content}
           </p>
         </Reveal>
 
@@ -165,12 +152,9 @@ export default function About() {
           <Reveal className="col-span-1 flex flex-col items-start justify-center gap-5">
             <IoLeafOutline className="h-14 w-14 text-primary" />
             <Heading level={3} size="xs">
-              Lorem ipsum
+              {t.about.ourMission.subtitle1}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              illo quod? Repellendus maxime ipsum quidem?
-            </p>
+            <p>{t.about.ourMission.content1}</p>
           </Reveal>
           <Reveal
             delay={0.1}
@@ -178,12 +162,9 @@ export default function About() {
           >
             <IoLeafOutline className="h-14 w-14 text-primary" />
             <Heading level={3} size="xs">
-              Lorem ipsum
+              {t.about.ourMission.subtitle2}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              illo quod? Repellendus maxime ipsum quidem?
-            </p>
+            <p>{t.about.ourMission.content2}</p>
           </Reveal>
         </Container>
 
@@ -195,12 +176,9 @@ export default function About() {
           <Reveal className="col-span-1 flex flex-col items-start justify-center gap-5">
             <IoLeafOutline className="h-14 w-14 text-primary" />
             <Heading level={3} size="xs">
-              Lorem ipsum
+              {t.about.ourMission.subtitle3}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              illo quod? Repellendus maxime ipsum quidem?
-            </p>
+            <p>{t.about.ourMission.content3}</p>
           </Reveal>
           <Reveal
             delay={0.1}
@@ -208,12 +186,9 @@ export default function About() {
           >
             <IoLeafOutline className="h-14 w-14 text-primary" />
             <Heading level={3} size="xs">
-              Lorem ipsum
+              {t.about.ourMission.subtitle4}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              illo quod? Repellendus maxime ipsum quidem?
-            </p>
+            <p>{t.about.ourMission.content4}</p>
           </Reveal>
           <BodyImage
             src="/fh-prager/prager-bg.jpg"

@@ -2,9 +2,10 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
 import { useInView } from "framer-motion";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { useRef } from "react";
 import { GiFlamedLeaf } from "react-icons/gi";
 
@@ -18,6 +19,8 @@ export function IngredientsFlavoursMobile({
 
   const originalInView = useInView(originalRef, { margin: "-45%" });
   const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
+
+  const t = useTranslation();
   return (
     <section
       className={clsx(
@@ -35,7 +38,7 @@ export function IngredientsFlavoursMobile({
         <Container py="xl">
           <Reveal>
             <Heading level={2} size="xl" color="primary" hasMarginBottom>
-              Vlastnosti
+              {t.kombucha.properties.title}
             </Heading>
           </Reveal>
 
@@ -44,49 +47,33 @@ export function IngredientsFlavoursMobile({
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.properties.subtitle1}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.properties.content1}</p>
               </Reveal>
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.properties.subtitle2}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.properties.content2}</p>
               </Reveal>
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.properties.subtitle3}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.properties.content3}</p>
               </Reveal>
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.properties.subtitle4}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.properties.content4}</p>
               </Reveal>
             </div>
-            <ExportedImage
+            <Image
               src="/images/kombucha/original/kombucha-original-render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
@@ -103,47 +90,39 @@ export function IngredientsFlavoursMobile({
         <Container py="xl" className="relative z-20">
           <Reveal>
             <Heading level={2} size="xl" color="rich" hasMarginBottom>
-              Original
+              {t.kombucha.original.title}
             </Heading>
           </Reveal>
 
           <div className="grid grid-cols-5 gap-5 pt-5">
             <div className="col-span-3 flex flex-col gap-10">
               <Reveal>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p>{t.kombucha.original.description}</p>
                 <div className="flex flex-wrap gap-5 pt-5">
-                  <Button>Zjistit více</Button>
-                  <Button>E-shop</Button>
+                  <Button href="/kombucha/original">
+                    {t.kombucha.original.buttonLabel}
+                  </Button>
+                  {/* <Button href="https://eshop.fhprager.cz">
+                    {t.kombucha.original.buttonLabelShop}
+                  </Button> */}
                 </div>
               </Reveal>
               <Reveal className="pt-16">
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.original.subtitle1}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.original.content1}</p>
               </Reveal>
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.original.subtitle2}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.original.content2}</p>
               </Reveal>
             </div>
-            <ExportedImage
+            <Image
               src="/images/kombucha/original/kombucha-original-render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
@@ -169,47 +148,39 @@ export function IngredientsFlavoursMobile({
         <Container py="xl" className="relative z-20">
           <Reveal>
             <Heading level={2} size="xl" color="rich" hasMarginBottom>
-              Yerba maté
+              {t.kombucha.yerba.title}
             </Heading>
           </Reveal>
 
           <div className="grid grid-cols-5 gap-5 pt-5">
             <div className="col-span-3 flex flex-col gap-10">
               <Reveal>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p>{t.kombucha.yerba.description}</p>
                 <div className="flex flex-wrap gap-5 pt-5">
-                  <Button>Zjistit více</Button>
-                  <Button>E-shop</Button>
+                  <Button href="/kombucha/yerba-mate">
+                    {t.kombucha.yerba.buttonLabel}
+                  </Button>
+                  {/* <Button href="https://eshop.fhprager.cz">
+                    {t.kombucha.yerba.buttonLabelShop}
+                  </Button> */}
                 </div>
               </Reveal>
               <Reveal className="pt-16">
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.yerba.subtitle1}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.yerba.content1}</p>
               </Reveal>
               <Reveal>
                 <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                  Lorem ipsum
+                  {t.kombucha.yerba.subtitle2}
                 </Heading>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Optio iusto, atque facilis repellat unde ratione nam fuga
-                  voluptatibus tempora excepturi!
-                </p>
+                <p className="text-sm">{t.kombucha.yerba.content2}</p>
               </Reveal>
             </div>
-            <ExportedImage
+            <Image
               src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
@@ -244,8 +215,10 @@ export function IngredientsFlavours({
   const originalInView = useInView(originalRef, { margin: "-45%" });
   const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
 
+  const t = useTranslation();
+
   return (
-    <div
+    <section
       className={clsx(
         "relative transition-colors duration-700 ease-in-out",
         className,
@@ -262,7 +235,7 @@ export function IngredientsFlavours({
         <div className="sticky top-0 z-sticky col-span-1 col-start-2 col-end-3 flex h-screen items-center justify-center">
           <div className="relative my-auto h-full max-h-[675px] w-full pt-8">
             <div className="absolute inset-0 z-20 h-full w-full">
-              <ExportedImage
+              <Image
                 src="/images/kombucha/original/kombucha-original-render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
@@ -277,7 +250,7 @@ export function IngredientsFlavours({
                 yerbaInView ? "opacity-100" : "opacity-0"
               )}
             >
-              <ExportedImage
+              <Image
                 src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
@@ -297,30 +270,22 @@ export function IngredientsFlavours({
         <div className="col-span-1 col-start-1 col-end-2 flex flex-col items-start justify-between gap-10">
           <Reveal>
             <Heading level={2} size="xl" color="primary" hasMarginBottom>
-              Vlastnosti
+              {t.kombucha.properties.title}
             </Heading>
           </Reveal>
           <Reveal delay={0.1} className="mt-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
-              Lorem ipsum
+              {t.kombucha.properties.subtitle1}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-              tempora excepturi!
-            </p>
+            <p>{t.kombucha.properties.content1}</p>
           </Reveal>
           <Reveal delay={0.2} className="mb-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
-              Lorem ipsum
+              {t.kombucha.properties.subtitle2}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-              tempora excepturi!
-            </p>
+            <p>{t.kombucha.properties.content2}</p>
           </Reveal>
         </div>
         {/* Right side */}
@@ -328,24 +293,16 @@ export function IngredientsFlavours({
           <Reveal delay={0.3} className="mt-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
-              Lorem ipsum
+              {t.kombucha.properties.subtitle3}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-              tempora excepturi!
-            </p>
+            <p>{t.kombucha.properties.content3}</p>
           </Reveal>
           <Reveal delay={0.4} className="mb-auto">
             <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
-              Lorem ipsum
+              {t.kombucha.properties.subtitle4}
             </Heading>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-              iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-              tempora excepturi!
-            </p>
+            <p>{t.kombucha.properties.content4}</p>
           </Reveal>
         </div>
       </Container>
@@ -370,19 +327,19 @@ export function IngredientsFlavours({
           <div className="relative z-20 col-span-1 col-start-1 col-end-2">
             <Reveal>
               <Heading level={2} size="xl" color="rich" hasMarginBottom>
-                Original
+                {t.kombucha.original.title}
               </Heading>
             </Reveal>
             <Reveal delay={0.1}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
-                harum ipsa possimus accusantium fugit rerum exercitationem
-                excepturi officiis voluptas?
-              </p>
+              <p>{t.kombucha.original.description}</p>
             </Reveal>
             <Reveal delay={0.2} className="flex gap-6 pt-8">
-              <Button size="lg">Zobrazit více</Button>
-              <Button size="lg">E-shop</Button>
+              <Button href="/kombucha/original" size="lg">
+                {t.kombucha.original.buttonLabel}
+              </Button>
+              {/* <Button href="https://eshop.fhprager.cz" size="lg">
+                {t.kombucha.original.buttonLabelShop}
+              </Button> */}
             </Reveal>
           </div>
           {/* Right side */}
@@ -390,24 +347,16 @@ export function IngredientsFlavours({
             <Reveal delay={0.3} className="mt-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                Lorem ipsum
+                {t.kombucha.original.subtitle1}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-                iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-                tempora excepturi!
-              </p>
+              <p>{t.kombucha.original.content1}</p>
             </Reveal>
             <Reveal delay={0.4} className="mb-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                Lorem ipsum
+                {t.kombucha.original.subtitle2}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-                iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-                tempora excepturi!
-              </p>
+              <p>{t.kombucha.original.content2}</p>
             </Reveal>
           </div>
         </Container>
@@ -433,19 +382,19 @@ export function IngredientsFlavours({
           <div className="relative z-20 col-span-1 col-start-1 col-end-2">
             <Reveal>
               <Heading level={2} size="xl" color="rich" hasMarginBottom>
-                Yerba Maté
+                {t.kombucha.yerba.title}
               </Heading>
             </Reveal>
             <Reveal delay={0.1}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a
-                harum ipsa possimus accusantium fugit rerum exercitationem
-                excepturi officiis voluptas?
-              </p>
+              <p>{t.kombucha.yerba.description}</p>
             </Reveal>
             <Reveal delay={0.2} className="flex gap-6 pt-8">
-              <Button size="lg">Zobrazit více</Button>
-              <Button size="lg">E-shop</Button>
+              <Button href="/kombucha/yerba-mate" size="lg">
+                {t.kombucha.yerba.buttonLabel}
+              </Button>
+              {/* <Button href="https://eshop.fhprager.cz" size="lg">
+                {t.kombucha.yerba.buttonLabelShop}
+              </Button> */}
             </Reveal>
           </div>
           {/* Right side */}
@@ -453,37 +402,20 @@ export function IngredientsFlavours({
             <Reveal delay={0.3} className="mt-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                Lorem ipsum
+                {t.kombucha.yerba.subtitle1}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-                iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-                tempora excepturi!
-              </p>
+              <p>{t.kombucha.yerba.content1}</p>
             </Reveal>
             <Reveal delay={0.4} className="mb-auto">
               <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
-                Lorem ipsum
+                {t.kombucha.yerba.subtitle2}
               </Heading>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-                iusto, atque facilis repellat unde ratione nam fuga voluptatibus
-                tempora excepturi!
-              </p>
+              <p>{t.kombucha.yerba.content2}</p>
             </Reveal>
           </div>
         </Container>
       </div>
-
-      {/* *** */}
-      {/* Blank template for next screen */}
-      {/* <section className="bg-yerba-600">
-        <Container py="xl" className="relative grid min-h-screen grid-cols-3 gap-10">
-          <div className="col-start-1 col-end-2 col-span-1"></div>
-          <div className="col-start-3 col-end-4 col-span-1"></div>
-        </Container>
-      </section> */}
-    </div>
+    </section>
   );
 }

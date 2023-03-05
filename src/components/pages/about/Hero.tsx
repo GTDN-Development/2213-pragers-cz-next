@@ -3,14 +3,16 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 type Props = {
   className?: string;
 };
 
 export default function Hero({ className = "" }: Props) {
+  const t = useTranslation();
   return (
     <>
       <div
@@ -26,31 +28,33 @@ export default function Hero({ className = "" }: Props) {
         >
           <Reveal
             hasTriggerMargin={false}
-            delay={0.1}
+            delay={0.15}
+            noVertical
             className="col-span-1 flex flex-col items-start justify-center gap-10 md:col-span-6 xl:col-span-7"
           >
-            <Heading
-              level={1}
-              size="inherit"
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
-            >
-              Lorem ipsum dolor
-            </Heading>
-            <p className="max-w-prose">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
-              saepe ea totam dolor libero consectetur, ullam facilis temporibus
-              placeat veniam?
-            </p>
-            <Button size="lg">Zjistit více</Button>
+            <Reveal>
+              <Heading
+                level={1}
+                size="inherit"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+              >
+                {t.about.hero.title}
+              </Heading>
+            </Reveal>
+            {/* <p className="max-w-prose">{t.about.hero.description}</p> */}
+            <Reveal delay={0.3}>
+              <Button href="#vice" size="lg">
+                {t.about.hero.buttonLabel}
+              </Button>
+            </Reveal>
           </Reveal>
           <Reveal
             hasTriggerMargin={false}
-            delay={0.2}
-            noVertical
+            delay={0.3}
             className="relative isolate z-0 col-span-1 flex items-center justify-center md:col-span-6 xl:col-span-5"
           >
             <div className="aspect-square overflow-hidden rounded-full ring-8 ring-primary">
-              <ExportedImage
+              <Image
                 src="/images/kombucha/original/kombucha-original-illustration.jpg"
                 alt="Kombucha ilustrace"
                 width={960}

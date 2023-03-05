@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply scroll-pt-28 scroll-smooth font-sans accent-primary selection:bg-primary-400/80 selection:text-white;
+    @apply scroll-pt-16 scroll-smooth font-sans accent-primary selection:bg-primary-400/80 selection:text-white;
   }
 
   body {

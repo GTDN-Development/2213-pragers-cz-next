@@ -2,13 +2,21 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 function BackgroundText({ className = "" }: { className?: string }) {
+  const router = useRouter();
+  const { locale } = router;
   return (
     <img
-      src="/svgs/text-produkty-white.svg"
+      src={
+        locale === "cs"
+          ? "/svgs/text-produkty-white.svg"
+          : "/svgs/text-products-white.svg"
+      }
       alt="Nápis Produkty"
       width="1488"
       height="353"
@@ -28,6 +36,9 @@ export default function CtaProductLine({
   as: Component = "div",
   className = "",
 }: Props) {
+  const router = useRouter();
+  const { locale } = router;
+  const t = useTranslation();
   return (
     <Component className={clsx("relative", className)}>
       <div className="absolute inset-0 flex h-full w-full skew-y-12 scale-y-[1.15] bg-gray-900 sm:skew-y-0 sm:scale-y-100">
@@ -40,7 +51,11 @@ export default function CtaProductLine({
       </div>
       <Container py="lg" className="relative">
         <img
-          src="/svgs/text-produkty-white.svg"
+          src={
+            locale === "cs"
+              ? "/svgs/text-produkty-white.svg"
+              : "/svgs/text-products-white.svg"
+          }
           alt="Nápis Produkty"
           width="1488"
           height="353"
@@ -55,19 +70,17 @@ export default function CtaProductLine({
               size="md"
               className="mx-auto max-w-lg text-center"
             >
-              Prager`s Kombucha
+              {t.home.productKombucha.title}
             </Heading>
             <p className="mx-auto max-w-lg text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              voluptatibus aspernatur dignissimos aliquid delectus eum quis
-              consequatur nesciunt, temporibus unde?
+              {t.home.productKombucha.description}
             </p>
             <Button href="/kombucha" size="lg">
-              Zobrazit více
+              {t.home.productKombucha.buttonLabel}
             </Button>
           </Reveal>
           <Reveal className="order-1 col-span-1 sm:order-2">
-            <ExportedImage
+            <Image
               src="/images/kombucha/original/kombucha-original-render-can.png"
               alt="Plechovka kombuchy - originál"
               width="2560"

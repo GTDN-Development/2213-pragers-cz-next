@@ -1,10 +1,13 @@
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
+import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
 import Marquee from "react-fast-marquee";
 
 function ContactStrip({ className = "" }: { className?: string }) {
+  const t = useTranslation();
+  const marqueeLabel = t.home.ctaContact.marquee;
   return (
     <div
       className={clsx("relative h-16 overflow-hidden bg-gray-800", className)}
@@ -21,7 +24,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 sm:mx-6 lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -29,7 +32,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 sm:mx-6 lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -37,7 +40,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 sm:mx-6 lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -45,7 +48,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 sm:mx-6 lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -53,7 +56,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 sm:block lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -61,7 +64,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 sm:block lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -69,7 +72,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 sm:block lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -77,7 +80,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 sm:block lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -85,7 +88,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -93,7 +96,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -101,7 +104,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -109,7 +112,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>{" "}
         <Heading
           level={"none"}
@@ -117,7 +120,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 sm:block lg:mx-8"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -125,7 +128,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -133,7 +136,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
         <Heading
           level={"none"}
@@ -141,7 +144,7 @@ function ContactStrip({ className = "" }: { className?: string }) {
           color="primary"
           className="mx-4 hidden sm:mx-6 lg:mx-8 xl:block"
         >
-          @ Kontakt
+          {marqueeLabel}
         </Heading>
       </Marquee>
     </div>
@@ -153,10 +156,11 @@ type CtaProps = {
 };
 
 export default function CtaContact({ className = "" }: CtaProps) {
+  const t = useTranslation();
   return (
     <>
       <ContactStrip />
-      <div
+      <section
         className={clsx(
           className,
           "group relative flex w-screen items-center justify-center overflow-hidden bg-primary-400 py-16 sm:py-28 xl:py-44"
@@ -167,17 +171,16 @@ export default function CtaContact({ className = "" }: CtaProps) {
 
         <Container className="relative z-30 flex h-full flex-col items-center justify-center gap-5 sm:gap-8">
           <Heading level={3} size="lg" color="black" className="text-center">
-            Napište nám!
+            {t.home.ctaContact.title}
           </Heading>
           <p className="max-w-md text-center text-gray-800 lg:max-w-prose">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam qui
-            iure rem corporis delectus vitae minima!
+            {t.home.ctaContact.description}
           </p>
           <Button href="/kontakt" intent="black" size="lg">
-            Přejít na kontakt
+            {t.home.ctaContact.buttonLabel}
           </Button>
         </Container>
-      </div>
+      </section>
     </>
   );
 }

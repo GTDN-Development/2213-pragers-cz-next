@@ -2,11 +2,14 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import UiLink from "@/components/UiLink";
-import { contact, routes, socials } from "@/configs/navigation";
+import { contact, socials } from "@/configs/navigation";
 import clsx from "clsx";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+
+// i18n
+import { useTranslation } from "@/hooks/useTranslation";
+import { useRouter } from "next/router";
 
 // ToDo
 // - Rewrite styling to be more pretty and easier to customize
@@ -147,6 +150,9 @@ function TouchMenu() {
     };
   }, [router, isOpen, setIsOpen]);
 
+  // i18n
+  const t = useTranslation();
+
   return (
     <>
       <BurgerButton isOpen={isOpen} onClick={toggleMenu} />
@@ -178,9 +184,34 @@ function TouchMenu() {
                       Menu
                     </span>
                     <ul className="flex flex-col items-start gap-y-2 lg:gap-y-5">
-                      {routes.map((route, i) => (
-                        <TouchNavLink key={i} i={i} {...route} />
-                      ))}
+                      <li>
+                        <TouchNavLink
+                          href={t.common.routes.home.href}
+                          label={t.common.routes.home.label}
+                          i={0}
+                        />
+                      </li>
+                      <li>
+                        <TouchNavLink
+                          href={t.common.routes.about.href}
+                          label={t.common.routes.about.label}
+                          i={1}
+                        />
+                      </li>
+                      <li>
+                        <TouchNavLink
+                          href={t.common.routes.kombucha.href}
+                          label={t.common.routes.kombucha.label}
+                          i={2}
+                        />
+                      </li>
+                      <li>
+                        <TouchNavLink
+                          href={t.common.routes.contact.href}
+                          label={t.common.routes.contact.label}
+                          i={3}
+                        />
+                      </li>
                     </ul>
                   </div>
 
@@ -258,6 +289,16 @@ export default function Header() {
     });
   }, [scrollY, setIsVisible, setIsScrolled]);
 
+  // i18n
+  const router = useRouter();
+  const { locale } = router;
+  const t = useTranslation();
+
+  function changeLanguage() {
+    const newLocale = locale === "cs" ? "en" : "cs";
+    router.push(router.pathname, router.pathname, { locale: newLocale });
+  }
+
   return (
     <header
       className={clsx(
@@ -282,19 +323,42 @@ export default function Header() {
             {/* Desktop navigation */}
             <div className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 translate-y-[calc(-50%+0.3rem)] lg:block">
               <ul className="flex gap-5 xl:gap-8">
-                {routes.map((route, i) => (
-                  <DesktopNavLink key={i} {...route} />
-                ))}
+                <li>
+                  <DesktopNavLink
+                    href={t.common.routes.home.href}
+                    label={t.common.routes.home.label}
+                  />
+                </li>
+                <li>
+                  <DesktopNavLink
+                    href={t.common.routes.about.href}
+                    label={t.common.routes.about.label}
+                  />
+                </li>
+                <li>
+                  <DesktopNavLink
+                    href={t.common.routes.kombucha.href}
+                    label={t.common.routes.kombucha.label}
+                  />
+                </li>
+                <li>
+                  <DesktopNavLink
+                    href={t.common.routes.contact.href}
+                    label={t.common.routes.contact.label}
+                  />
+                </li>
               </ul>
             </div>
 
             <div>
               <ul className="flex gap-3 xl:gap-6">
                 <li>
-                  <Button intent="white">EN</Button>
+                  <Button onClick={changeLanguage} intent="white">{`${
+                    locale === "cs" ? "EN" : "CZ"
+                  }`}</Button>
                 </li>
                 <li className="hidden md:block">
-                  <Button>E-shop</Button>
+                  <Button href="https://eshop.fhprager.cz">E-shop</Button>
                 </li>
               </ul>
             </div>
