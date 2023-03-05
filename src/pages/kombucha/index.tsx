@@ -61,7 +61,7 @@ export default function Kombucha() {
                 alt="pragers"
                 width={1920}
                 height={1280}
-                className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary object-cover"
+                className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary bg-gray-800 object-cover"
               />
             </div>
           </Reveal>
