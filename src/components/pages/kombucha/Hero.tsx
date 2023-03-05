@@ -5,7 +5,7 @@ import Heading from "@/components/Heading";
 import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export function HeroMobile({ className = "" }: { className?: string }) {
   return (
@@ -16,7 +16,7 @@ export function HeroMobile({ className = "" }: { className?: string }) {
           className
         )}
       >
-        <Image
+        <ExportedImage
           src="/images/kombucha/original/kombucha-original-illustration.jpg"
           alt="Kombucha original ilustrace"
           width={1920}

@@ -4,7 +4,7 @@ import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
 import clsx from "clsx";
 import { useInView } from "framer-motion";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { useRef } from "react";
 import { GiFlamedLeaf } from "react-icons/gi";
 
@@ -86,7 +86,7 @@ export function IngredientsFlavoursMobile({
                 </p>
               </Reveal>
             </div>
-            <Image
+            <ExportedImage
               src="/images/kombucha/original/kombucha-original-render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
@@ -143,7 +143,7 @@ export function IngredientsFlavoursMobile({
                 </p>
               </Reveal>
             </div>
-            <Image
+            <ExportedImage
               src="/images/kombucha/original/kombucha-original-render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
@@ -209,7 +209,7 @@ export function IngredientsFlavoursMobile({
                 </p>
               </Reveal>
             </div>
-            <Image
+            <ExportedImage
               src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
@@ -262,7 +262,7 @@ export function IngredientsFlavours({
         <div className="sticky top-0 z-sticky col-span-1 col-start-2 col-end-3 flex h-screen items-center justify-center">
           <div className="relative my-auto h-full max-h-[675px] w-full pt-8">
             <div className="absolute inset-0 z-20 h-full w-full">
-              <Image
+              <ExportedImage
                 src="/images/kombucha/original/kombucha-original-render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
@@ -277,7 +277,7 @@ export function IngredientsFlavours({
                 yerbaInView ? "opacity-100" : "opacity-0"
               )}
             >
-              <Image
+              <ExportedImage
                 src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}

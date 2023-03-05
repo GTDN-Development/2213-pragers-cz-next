@@ -8,7 +8,7 @@ import CtaCard from "@/components/pages/shared/CtaCard";
 import HealthBenefits from "@/components/pages/shared/HealthBenefits";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { GiFlamedLeaf, GiMapleLeaf } from "react-icons/gi";
 
 export default function Home() {
@@ -54,7 +54,7 @@ export default function Home() {
             noVertical
             className="flex items-center justify-center sm:col-span-5"
           >
-            <Image
+            <ExportedImage
               src="/images/kombucha/original/kombucha-original-render-can-outline.png"
               alt="Plechovka kombuchy - originál"
               width="2560"

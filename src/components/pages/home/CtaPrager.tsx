@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Parallax from "@/components/Parallax";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 type Props = {
   className?: string;
@@ -20,7 +20,7 @@ export default function CtaPrager({ className = "" }: Props) {
         offset={40}
         className="absolute inset-0 -z-10 w-full opacity-70"
       >
-        <Image
+        <ExportedImage
           src="/fh-prager/prager-bg.jpg"
           alt="F.H. Prager ilustrace"
           width={1440}

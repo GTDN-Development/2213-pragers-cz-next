@@ -1,7 +1,7 @@
 import Heading from "@/components/Heading";
 import UiLink from "@/components/UiLink";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function CtaCard({
   className = "",
@@ -35,7 +35,7 @@ export default function CtaCard({
       )}
     >
       <div className="aspect-[16/10] w-full overflow-hidden">
-        <Image
+        <ExportedImage
           src={src}
           alt={title}
           width={width}

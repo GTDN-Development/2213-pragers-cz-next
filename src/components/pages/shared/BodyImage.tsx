@@ -1,6 +1,6 @@
 import Reveal from "@/components/Reveal";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 type BodyImageProps = {
   className?: string;
@@ -25,7 +25,7 @@ export default function BodyImage({
         className
       )}
     >
-      <Image
+      <ExportedImage
         src={src}
         alt={alt}
         width={width}

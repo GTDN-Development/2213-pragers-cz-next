@@ -10,7 +10,7 @@ import CtaCard from "@/components/pages/shared/CtaCard";
 import HealthBenefits from "@/components/pages/shared/HealthBenefits";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Kombucha() {
   return (
@@ -44,7 +44,7 @@ export default function Kombucha() {
             </Reveal>
           </div>
           <Reveal className="flex items-center justify-start">
-            <Image
+            <ExportedImage
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
               alt="Kombucha original ilustrace"
               width={3840}
@@ -95,7 +95,7 @@ export default function Kombucha() {
             <div className="grid gap-10 md:grid-cols-3">
               <Reveal className="flex items-center justify-center md:col-start-2">
                 <div className="flex aspect-square h-40 w-40 items-center justify-center rounded-full bg-primary p-10 md:h-56 md:w-56 xl:h-64 xl:w-64">
-                  <Image
+                  <ExportedImage
                     src="/images/kombucha/glass-1.png"
                     alt="sklenice"
                     width={165}
@@ -145,7 +145,7 @@ export default function Kombucha() {
               </Reveal>
               <Reveal className="row-start-1 flex items-center justify-center md:row-start-auto">
                 <div className="flex aspect-square h-40 w-40 items-center justify-center rounded-full bg-primary p-10 md:h-56 md:w-56 xl:h-64 xl:w-64">
-                  <Image
+                  <ExportedImage
                     src="/images/kombucha/glass-2.png"
                     alt="sklenice"
                     width={165}
@@ -161,7 +161,7 @@ export default function Kombucha() {
             <div className="grid gap-10 md:grid-cols-3">
               <Reveal className="flex items-center justify-center md:col-start-2">
                 <div className="flex aspect-square h-40 w-40 items-center justify-center rounded-full bg-primary p-10 md:h-56 md:w-56 xl:h-64 xl:w-64">
-                  <Image
+                  <ExportedImage
                     src="/images/kombucha/glass-3.png"
                     alt="sklenice"
                     width={165}

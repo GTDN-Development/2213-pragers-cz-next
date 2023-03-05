@@ -3,7 +3,7 @@ import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 function BackgroundText({ className = "" }: { className?: string }) {
   return (
@@ -67,7 +67,7 @@ export default function CtaProductLine({
             </Button>
           </Reveal>
           <Reveal className="order-1 col-span-1 sm:order-2">
-            <Image
+            <ExportedImage
               src="/images/kombucha/original/kombucha-original-render-can.png"
               alt="Plechovka kombuchy - originál"
               width="2560"

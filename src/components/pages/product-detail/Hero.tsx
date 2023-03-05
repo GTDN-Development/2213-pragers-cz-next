@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 function LargeBadge({ className = "" }: { className?: string }) {
   return (
@@ -86,7 +86,7 @@ export default function Hero({
           )}
         />
         <div className="absolute inset-y-0 left-1/2 z-20 h-full w-72 -translate-x-1/2 sm:w-96">
-          <Image
+          <ExportedImage
             src="/images/kombucha/original/kombucha-original-render-bottle.png"
             alt="Lahev Pragers Kombucha"
             width={1080}

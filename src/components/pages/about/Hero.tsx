@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
 import clsx from "clsx";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 type Props = {
   className?: string;
@@ -50,11 +50,12 @@ export default function Hero({ className = "" }: Props) {
             className="relative isolate z-0 col-span-1 flex items-center justify-center md:col-span-6 xl:col-span-5"
           >
             <div className="aspect-square overflow-hidden rounded-full ring-8 ring-primary">
-              <Image
+              <ExportedImage
                 src="/images/kombucha/original/kombucha-original-illustration.jpg"
                 alt="Kombucha ilustrace"
                 width={960}
                 height={1009}
+                loading="eager"
                 priority
                 className="object-cover"
               />

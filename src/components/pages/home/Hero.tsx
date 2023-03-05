@@ -5,7 +5,7 @@ import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
 import clsx from "clsx";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 type Props = {
   className?: string;
@@ -53,12 +53,13 @@ export default function Hero({ className = "" }: Props) {
           >
             <div className="aspect-square w-full rounded-full bg-yerba-800"></div>
             <Reveal hasTriggerMargin={false} delay={0.2} noVertical>
-              <Image
+              <ExportedImage
                 src="/images/kombucha/original/kombucha-original-render-bottle-outline.png"
                 alt="Lahev pragers kombucha originál"
                 width={1080}
                 height={1920}
                 priority
+                loading="eager"
                 className="absolute top-1/2 left-1/2 z-10 origin-center -translate-x-1/2 -translate-y-1/2 -rotate-6 scale-75 object-contain md:translate-y-[calc(-50%+3rem)] md:scale-[0.85]"
               />
             </Reveal>
