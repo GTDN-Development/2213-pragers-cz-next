@@ -36,12 +36,12 @@ export const contact = [
 
 export const socials = [
   {
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/Pragers-114791901544641",
     label: "Facebook",
     icon: FaFacebook,
   },
   {
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/pragers_/",
     label: "Instagram",
     icon: FaInstagram,
   },

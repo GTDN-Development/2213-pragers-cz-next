@@ -7,15 +7,15 @@ import Parallax from "@/components/Parallax";
 import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
 import { useTranslation } from "@/hooks/useTranslation";
-import { IoLeafOutline } from "react-icons/io5";
 
+import CustomIcon from "@/components/CustomIcon";
 import BodyImage from "@/components/pages/shared/BodyImage";
 
 export default function About() {
   const t = useTranslation();
   return (
     <Layout>
-      <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
+      <Seo title={t.about.seo.title} description={t.about.seo.description} />
       <Hero />
 
       {/* Sekce: Co je pragers */}
@@ -52,10 +52,10 @@ export default function About() {
             </Reveal>
           </div>
           <BodyImage
-            src="/fh-prager/prager-bg.jpg"
-            alt="DOPLNIT!"
-            width={1440}
-            height={950}
+            src="/images/common/photo-4.jpg"
+            alt="pragers"
+            width={1920}
+            height={1280}
             className="md:col-span-7"
           />
         </Container>
@@ -84,10 +84,10 @@ export default function About() {
             </div>
             <div className="col-span-1 md:order-1">
               <BodyImage
-                src="/fh-prager/prager-bg.jpg"
-                alt="DOPLNIT!"
-                width={1440}
-                height={950}
+                src="/images/common/photo-3.jpg"
+                alt="pragers"
+                width={1920}
+                height={1280}
                 className="md:col-span-7"
               />
             </div>
@@ -103,7 +103,7 @@ export default function About() {
           className="relative z-20 grid items-center gap-20 sm:gap-8 md:grid-cols-2 lg:gap-12"
         >
           <Reveal className="col-span-1 flex flex-col items-start justify-center gap-10">
-            <IoLeafOutline className="h-24 w-24 text-primary" />
+            <CustomIcon iconNumber={8} isLarge />
             <Heading level={2} size="lg">
               {t.about.enviroment.title}
             </Heading>
@@ -111,10 +111,10 @@ export default function About() {
             {/* <Button size="lg">{t.about.enviroment.buttonLabel}</Button> */}
           </Reveal>
           <BodyImage
-            src="/fh-prager/prager-bg.jpg"
-            alt="DOPLNIT!"
-            width={1440}
-            height={950}
+            src="/images/kombucha/original/kombucha-original-illustration.jpg"
+            alt="Kombucha original illustration"
+            width={1920}
+            height={2019}
             className="col-span-1"
           />
         </Container>
@@ -143,14 +143,14 @@ export default function About() {
           className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4 lg:gap-x-12"
         >
           <BodyImage
-            src="/fh-prager/prager-bg.jpg"
-            alt="DOPLNIT!"
-            width={1440}
-            height={950}
+            src="/images/common/photo-6.jpg"
+            alt="pragers"
+            width={1920}
+            height={1280}
             className="col-span-2"
           />
           <Reveal className="col-span-1 flex flex-col items-start justify-center gap-5">
-            <IoLeafOutline className="h-14 w-14 text-primary" />
+            <CustomIcon iconNumber={7} />
             <Heading level={3} size="xs">
               {t.about.ourMission.subtitle1}
             </Heading>
@@ -160,7 +160,7 @@ export default function About() {
             delay={0.1}
             className="col-span-1 flex flex-col items-start justify-center gap-5"
           >
-            <IoLeafOutline className="h-14 w-14 text-primary" />
+            <CustomIcon iconNumber={6} />
             <Heading level={3} size="xs">
               {t.about.ourMission.subtitle2}
             </Heading>
@@ -174,7 +174,7 @@ export default function About() {
           className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4 lg:gap-x-12"
         >
           <Reveal className="col-span-1 flex flex-col items-start justify-center gap-5">
-            <IoLeafOutline className="h-14 w-14 text-primary" />
+            <CustomIcon iconNumber={3} />
             <Heading level={3} size="xs">
               {t.about.ourMission.subtitle3}
             </Heading>
@@ -184,17 +184,17 @@ export default function About() {
             delay={0.1}
             className="col-span-1 flex flex-col items-start justify-center gap-5"
           >
-            <IoLeafOutline className="h-14 w-14 text-primary" />
+            <CustomIcon iconNumber={4} />
             <Heading level={3} size="xs">
               {t.about.ourMission.subtitle4}
             </Heading>
             <p>{t.about.ourMission.content4}</p>
           </Reveal>
           <BodyImage
-            src="/fh-prager/prager-bg.jpg"
-            alt="DOPLNIT!"
-            width={1440}
-            height={950}
+            src="/images/common/photo-7.jpg"
+            alt="pragers"
+            width={1920}
+            height={1280}
             className="col-span-2"
           />
         </Container>

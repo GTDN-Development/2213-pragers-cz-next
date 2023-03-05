@@ -20,7 +20,7 @@ export const cs = {
     },
     nav: {
       menu: "Menu",
-      otherLinks: "Další odkazy",
+      otherLinks: "Kontakt",
       socialFollow: "Sledujte nás",
     },
     footer: {
@@ -55,12 +55,12 @@ export const cs = {
     seo: {
       title: "První dobrá kombucha",
       description:
-        "Co bylo dřív – jablko, nebo čaj? V roce 2021 jsme pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Nealkoholický cider F.H. Prager byl náš vstup do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
     },
     hero: {
       title: "První dobrá kombucha",
       description:
-        "Co bylo dřív – jablko, nebo čaj? V roce 2021 jsme pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
       buttonLabel: "Zjistit více",
     },
     about: {
@@ -92,9 +92,9 @@ export const cs = {
   },
   about: {
     seo: {
-      title: "Pragers",
+      title: "O nás",
       description:
-        "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+        "ealkoholický cider F.H. Prager byl náš vstup do světa nízkoalkoholické fermentace. A to byl počátek PRAGER’S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
     },
     hero: {
       title: "O nás",
@@ -141,9 +141,9 @@ export const cs = {
   },
   kombucha: {
     seo: {
-      title: "Pragers",
+      title: "Kombucha",
       description:
-        "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+        "Kombucha je lidstvu známá už po staletí. Jedná se o blahodárný nápoj, který vzniká fermentací čaje pomocí symbiotické kultury bakterií a kvasinek. ",
     },
     hero: {
       title: "Prager's Komucha",
@@ -215,9 +215,9 @@ export const cs = {
   kombuchaDetailPages: {
     original: {
       seo: {
-        title: "Pragers Original",
+        title: "Prager's Kombucha Original",
         description:
-          "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+          "Hlavní složku našeho Originálu tvoří zelený čaj. Původem z Indie a Číny, odrůda tohoto čaje se vyznačuje intenzivní, ale vyváženou a svěží chutí.",
       },
       hero: {
         title1: "čaj",
@@ -258,9 +258,9 @@ export const cs = {
     },
     yerba: {
       seo: {
-        title: "Pragers Yerba maté",
+        title: "Prager's Kombucha Yerba Maté",
         description:
-          "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+          "Typická pro Jižní Ameriku, Yerba Maté se stává stále více populární. Je to především díky její lahodné chuti, která se vyznačuje bylinnými a ovocnými tóny.",
       },
       hero: {
         title1: "Probiotické kultury",
@@ -296,6 +296,25 @@ export const cs = {
         },
       },
       healthBenefitsTitle: "Ideální start dne začíná bublinkami...",
+    },
+  },
+  contact: {
+    seo: {
+      title: "Kontakt",
+      description: "",
+    },
+    title: "Kontakt",
+    item1: {
+      title: "Telefon / E-mail",
+    },
+    item2: {
+      title: "Adresa",
+      content: "U Národní galerie 470, 156 00 Zbraslav, Česká republika",
+    },
+    item3: {
+      title: "Fakturace",
+      content:
+        "F.H.Prager s.r.o. U Národní galerie 470, Zbraslav, 156 00 Praha, IČO: 29153379",
     },
   },
 };

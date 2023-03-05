@@ -21,7 +21,7 @@ export default function BodyImage({
   return (
     <Reveal
       className={clsx(
-        "aspect-[16/10] overflow-hidden rounded-2xl bg-gray-700",
+        "aspect-[16/10] overflow-hidden rounded-3xl bg-gray-700",
         className
       )}
     >

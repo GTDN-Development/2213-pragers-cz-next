@@ -1,6 +1,7 @@
 // import Button from "@/components/Button";
 import Collapse from "@/components/Collapse";
 import Container from "@/components/Container";
+import CustomIcon from "@/components/CustomIcon";
 import Heading from "@/components/Heading";
 import Layout from "@/components/Layout";
 import Hero from "@/components/pages/product-detail/Hero";
@@ -10,13 +11,15 @@ import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
-import { GiFlamedLeaf, GiMapleLeaf } from "react-icons/gi";
 
 export default function Home() {
   const t = useTranslation();
   return (
     <Layout>
-      <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
+      <Seo
+        title={t.kombuchaDetailPages.original.seo.title}
+        description={t.kombuchaDetailPages.original.seo.description}
+      />
       <Hero
         variant="original"
         title1={t.kombuchaDetailPages.original.hero.title1}
@@ -52,7 +55,16 @@ export default function Home() {
             </Reveal> */}
           </div>
           <Reveal noVertical>
-            <GiMapleLeaf className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-original-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3" />
+            <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-original-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
+              <img
+                src="/icons/leaf-original.svg"
+                alt="leaf"
+                aria-hidden="true"
+                width="720"
+                height="720"
+                className="w-full object-contain opacity-10"
+              />
+            </div>
           </Reveal>
         </Container>
       </section>
@@ -75,7 +87,7 @@ export default function Home() {
           <div className="grid gap-x-10 gap-y-8 xs:grid-cols-2 sm:col-span-7">
             <div className="my-auto">
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={2} />
                 <Heading level={3} size="sm" color="rich" hasMarginBottom>
                   {t.kombuchaDetailPages.original.about.subtitle1}
                 </Heading>
@@ -83,7 +95,7 @@ export default function Home() {
               </Reveal>
             </div>
             <Reveal className="my-auto">
-              <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+              <CustomIcon iconNumber={3} />
               <Heading level={3} size="sm" color="rich" hasMarginBottom>
                 {t.kombuchaDetailPages.original.about.subtitle2}
               </Heading>
@@ -105,13 +117,13 @@ export default function Home() {
                   {t.kombuchaDetailPages.original.otherInfo.collapse1.content}
                 </p>
               </Collapse>
-              <Collapse
+              {/* <Collapse
                 title={t.kombuchaDetailPages.original.otherInfo.collapse2.title}
               >
                 <p>
                   {t.kombuchaDetailPages.original.otherInfo.collapse2.content}
                 </p>
-              </Collapse>
+              </Collapse> */}
             </Collapse.Group>
           </Reveal>
         </Container>
@@ -128,7 +140,7 @@ export default function Home() {
         <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-2">
           <Reveal>
             <CtaCard
-              href="/"
+              href="/kombucha"
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
               width={960}
               height={1009}
@@ -138,7 +150,7 @@ export default function Home() {
           </Reveal>
           <Reveal>
             <CtaCard
-              href="/"
+              href="/kombucha/yerba-mate"
               src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
               width={960}
               height={1009}

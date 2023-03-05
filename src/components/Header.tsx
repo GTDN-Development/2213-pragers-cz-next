@@ -179,9 +179,16 @@ function TouchMenu() {
               >
                 <div className="grid w-full gap-8 lg:grid-cols-7 lg:pb-16">
                   {/* Navigace */}
-                  <div className="col-span-1 lg:order-3 lg:col-span-2">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: 1,
+                      transition: { duration: 0.4, ease: [0.33, 1, 0.68, 1] },
+                    }}
+                    className="col-span-1 lg:order-3 lg:col-span-2"
+                  >
                     <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
-                      Menu
+                      {t.common.nav.menu}
                     </span>
                     <ul className="flex flex-col items-start gap-y-2 lg:gap-y-5">
                       <li>
@@ -213,12 +220,24 @@ function TouchMenu() {
                         />
                       </li>
                     </ul>
-                  </div>
+                  </motion.div>
 
                   {/* Kontaktní údaje */}
-                  <div className="col-span-1 lg:order-2 lg:col-span-2">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 0.4,
+                        delay: 0.7,
+                        ease: [0.33, 1, 0.68, 1],
+                      },
+                    }}
+                    className="col-span-1 lg:order-2 lg:col-span-2"
+                  >
                     <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
-                      Kontakt
+                      {t.common.nav.otherLinks}
                     </span>
                     <ul className="flex flex-col items-start gap-y-2">
                       {contact.map((contactLink, i) => (
@@ -233,12 +252,24 @@ function TouchMenu() {
                         </UiLink>
                       ))}
                     </ul>
-                  </div>
+                  </motion.div>
 
                   {/* Sociální sítě */}
-                  <div className="col-span-1 lg:order-1 lg:col-span-2">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                      transition: {
+                        duration: 0.4,
+                        delay: 0.9,
+                        ease: [0.33, 1, 0.68, 1],
+                      },
+                    }}
+                    className="col-span-1 lg:order-1 lg:col-span-2"
+                  >
                     <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
-                      Sociální sítě
+                      {t.common.nav.socialFollow}
                     </span>
                     <ul className="flex flex-col items-start gap-y-2">
                       {socials.map((social, i) => (
@@ -252,7 +283,7 @@ function TouchMenu() {
                         </UiLink>
                       ))}
                     </ul>
-                  </div>
+                  </motion.div>
                 </div>
               </Container>
             </motion.div>

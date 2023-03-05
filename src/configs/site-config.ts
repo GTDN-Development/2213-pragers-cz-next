@@ -1,12 +1,12 @@
 export const siteConfig = {
   seo: {
-    url: "https://www.example.com",
-    shortUrl: "example.com",
-    titleTemplate: "%s | Název webu",
+    url: "https://www.pragers.cz",
+    shortUrl: "pragers.cz",
+    titleTemplate: "%s | Prager's",
     defaultDescription: "Popis webu",
   },
   theme: {
-    domainKey: "example",
+    domainKey: "pragers",
     enableSystemTheme: true,
     disableTransitionOnChange: true,
   },

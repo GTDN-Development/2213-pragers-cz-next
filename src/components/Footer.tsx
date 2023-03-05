@@ -1,10 +1,12 @@
 import Container from "@/components/Container";
 import { Logo } from "@/components/Logo";
-import { contact, routes, socials } from "@/configs/navigation";
+import { contact, socials } from "@/configs/navigation";
+import { useTranslation } from "@/hooks/useTranslation";
 import Heading from "./Heading";
 import UiLink from "./UiLink";
 
 export default function Footer() {
+  const t = useTranslation();
   return (
     <footer className="bg-gray-900">
       <Container>
@@ -13,25 +15,50 @@ export default function Footer() {
           <Logo background="dark" className="col-span-1 md:hidden" />
           <div className="col-span-1">
             <Heading level={"none"} size="xs" color="primary" hasMarginBottom>
-              Menu
+              {t.common.nav.menu}
             </Heading>
             <ul className="flex flex-col gap-1">
-              {routes.map((route) => (
-                <li key={route.label}>
-                  <UiLink
-                    href={route.href}
-                    hoverEffect="scale-up"
-                    className="font-bold uppercase"
-                  >
-                    {route.label}
-                  </UiLink>
-                </li>
-              ))}
+              <li>
+                <UiLink
+                  href={t.common.routes.home.href}
+                  hoverEffect="scale-up"
+                  className="font-bold uppercase"
+                >
+                  {t.common.routes.home.label}
+                </UiLink>
+              </li>
+              <li>
+                <UiLink
+                  href={t.common.routes.about.href}
+                  hoverEffect="scale-up"
+                  className="font-bold uppercase"
+                >
+                  {t.common.routes.about.label}
+                </UiLink>
+              </li>
+              <li>
+                <UiLink
+                  href={t.common.routes.kombucha.href}
+                  hoverEffect="scale-up"
+                  className="font-bold uppercase"
+                >
+                  {t.common.routes.kombucha.label}
+                </UiLink>
+              </li>
+              <li>
+                <UiLink
+                  href={t.common.routes.contact.href}
+                  hoverEffect="scale-up"
+                  className="font-bold uppercase"
+                >
+                  {t.common.routes.contact.label}
+                </UiLink>
+              </li>
             </ul>
           </div>
           <div className="col-span-1">
             <Heading level={"none"} size="xs" color="primary" hasMarginBottom>
-              Další odkazy
+              {t.common.nav.otherLinks}
             </Heading>
             <ul className="flex flex-col gap-1">
               {contact.map((item) => (
@@ -55,7 +82,7 @@ export default function Footer() {
               hasMarginBottom
               className="font-bold uppercase"
             >
-              Sledujte nás
+              {t.common.nav.socialFollow}
             </Heading>
             <ul className="mb-auto flex gap-5">
               {socials.map((item) => (

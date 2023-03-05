@@ -23,9 +23,7 @@ export function CollapseGroup({
 }: CollapseGroupProps) {
   return (
     <div className={className} {...props}>
-      <div className="flex flex-col divide-y divide-gray-900/15 dark:divide-white/15">
-        {children}
-      </div>
+      <div className="flex flex-col divide-y divide-white/15">{children}</div>
     </div>
   );
 }

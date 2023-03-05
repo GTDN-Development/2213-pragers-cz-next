@@ -36,7 +36,7 @@ export default function Hero({ className = "" }: Props) {
               <Heading
                 level={1}
                 size="inherit"
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
               >
                 {t.about.hero.title}
               </Heading>
@@ -55,7 +55,7 @@ export default function Hero({ className = "" }: Props) {
           >
             <div className="aspect-square overflow-hidden rounded-full ring-8 ring-primary">
               <Image
-                src="/images/kombucha/original/kombucha-original-illustration.jpg"
+                src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
                 alt="Kombucha ilustrace"
                 width={960}
                 height={1009}

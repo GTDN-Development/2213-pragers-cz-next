@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Container from "@/components/Container";
+import CustomIcon from "@/components/CustomIcon";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -7,7 +8,6 @@ import clsx from "clsx";
 import { useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import { GiFlamedLeaf } from "react-icons/gi";
 
 export function IngredientsFlavoursMobile({
   className = "",
@@ -45,28 +45,28 @@ export function IngredientsFlavoursMobile({
           <div className="grid grid-cols-5 gap-5 pt-5">
             <div className="col-span-3 flex flex-col gap-10">
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={10} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.properties.subtitle1}
                 </Heading>
                 <p className="text-sm">{t.kombucha.properties.content1}</p>
               </Reveal>
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={7} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.properties.subtitle2}
                 </Heading>
                 <p className="text-sm">{t.kombucha.properties.content2}</p>
               </Reveal>
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={2} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.properties.subtitle3}
                 </Heading>
                 <p className="text-sm">{t.kombucha.properties.content3}</p>
               </Reveal>
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={1} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.properties.subtitle4}
                 </Heading>
@@ -108,14 +108,14 @@ export function IngredientsFlavoursMobile({
                 </div>
               </Reveal>
               <Reveal className="pt-16">
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={2} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.original.subtitle1}
                 </Heading>
                 <p className="text-sm">{t.kombucha.original.content1}</p>
               </Reveal>
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={3} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.original.subtitle2}
                 </Heading>
@@ -166,14 +166,14 @@ export function IngredientsFlavoursMobile({
                 </div>
               </Reveal>
               <Reveal className="pt-16">
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={9} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.yerba.subtitle1}
                 </Heading>
                 <p className="text-sm">{t.kombucha.yerba.content1}</p>
               </Reveal>
               <Reveal>
-                <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+                <CustomIcon iconNumber={7} />
                 <Heading level={3} size="xs" color="rich" hasMarginBottom>
                   {t.kombucha.yerba.subtitle2}
                 </Heading>
@@ -259,6 +259,20 @@ export function IngredientsFlavours({
                 loading="lazy"
               />
             </div>
+            <div
+              className={clsx(
+                "absolute left-16 top-2/3 z-40 h-24 w-24 -rotate-12 transition-opacity duration-700",
+                originalInView || yerbaInView ? "opacity-100" : "opacity-0"
+              )}
+            >
+              <img
+                src="/svgs/badge-leros-yellow.svg"
+                alt="Leros badge"
+                width="96"
+                height="96"
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </Container>
@@ -274,14 +288,14 @@ export function IngredientsFlavours({
             </Heading>
           </Reveal>
           <Reveal delay={0.1} className="mt-auto">
-            <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+            <CustomIcon iconNumber={10} />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               {t.kombucha.properties.subtitle1}
             </Heading>
             <p>{t.kombucha.properties.content1}</p>
           </Reveal>
           <Reveal delay={0.2} className="mb-auto">
-            <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+            <CustomIcon iconNumber={7} />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               {t.kombucha.properties.subtitle2}
             </Heading>
@@ -291,14 +305,14 @@ export function IngredientsFlavours({
         {/* Right side */}
         <div className="col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
           <Reveal delay={0.3} className="mt-auto">
-            <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+            <CustomIcon iconNumber={2} />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               {t.kombucha.properties.subtitle3}
             </Heading>
             <p>{t.kombucha.properties.content3}</p>
           </Reveal>
           <Reveal delay={0.4} className="mb-auto">
-            <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+            <CustomIcon iconNumber={1} />
             <Heading level={3} size="xs" color="rich" hasMarginBottom>
               {t.kombucha.properties.subtitle4}
             </Heading>
@@ -345,14 +359,14 @@ export function IngredientsFlavours({
           {/* Right side */}
           <div className="relative z-20 col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
             <Reveal delay={0.3} className="mt-auto">
-              <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+              <CustomIcon iconNumber={2} />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 {t.kombucha.original.subtitle1}
               </Heading>
               <p>{t.kombucha.original.content1}</p>
             </Reveal>
             <Reveal delay={0.4} className="mb-auto">
-              <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+              <CustomIcon iconNumber={3} />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 {t.kombucha.original.subtitle2}
               </Heading>
@@ -400,14 +414,14 @@ export function IngredientsFlavours({
           {/* Right side */}
           <div className="relative z-20 col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
             <Reveal delay={0.3} className="mt-auto">
-              <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+              <CustomIcon iconNumber={9} />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 {t.kombucha.yerba.subtitle1}
               </Heading>
               <p>{t.kombucha.yerba.content1}</p>
             </Reveal>
             <Reveal delay={0.4} className="mb-auto">
-              <GiFlamedLeaf className="mb-4 h-10 w-10 text-primary" />
+              <CustomIcon iconNumber={7} />
               <Heading level={3} size="xs" color="rich" hasMarginBottom>
                 {t.kombucha.yerba.subtitle2}
               </Heading>

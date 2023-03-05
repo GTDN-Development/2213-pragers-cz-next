@@ -1,9 +1,9 @@
 import Container from "@/components/Container";
+import CustomIcon from "@/components/CustomIcon";
 import Heading from "@/components/Heading";
 import Reveal from "@/components/Reveal";
 import { useTranslation } from "@/hooks/useTranslation";
 import clsx from "clsx";
-import { GiFlamedLeaf } from "react-icons/gi";
 
 export default function HealthBenefits({
   title,
@@ -53,7 +53,7 @@ export default function HealthBenefits({
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <CustomIcon iconNumber={1} />
               <Heading
                 level={3}
                 size="sm"
@@ -75,7 +75,7 @@ export default function HealthBenefits({
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <CustomIcon iconNumber={5} />
               <Heading
                 level={3}
                 size="sm"
@@ -97,7 +97,7 @@ export default function HealthBenefits({
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <CustomIcon iconNumber={10} />
               <Heading
                 level={3}
                 size="sm"
@@ -119,7 +119,7 @@ export default function HealthBenefits({
                 variant === "default" && "bg-gray-900"
               )}
             >
-              <GiFlamedLeaf className="mb-5 h-16 w-16 text-primary" />
+              <CustomIcon iconNumber={2} />
               <Heading
                 level={3}
                 size="sm"

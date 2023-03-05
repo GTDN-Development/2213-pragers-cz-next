@@ -17,7 +17,10 @@ export default function Kombucha() {
   const t = useTranslation();
   return (
     <Layout>
-      <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
+      <Seo
+        title={t.kombucha.seo.title}
+        description={t.kombucha.seo.description}
+      />
       <Hero />
       <HeroMobile />
 
@@ -54,10 +57,10 @@ export default function Kombucha() {
           <Reveal className="flex items-center justify-start">
             <div className="aspect-square h-max w-full">
               <Image
-                src="/images/kombucha/original/kombucha-original-illustration.jpg"
-                alt="Kombucha original ilustrace"
-                width={3840}
-                height={4037}
+                src="/images/common/photo-1.jpg"
+                alt="pragers"
+                width={1920}
+                height={1280}
                 className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary object-cover"
               />
             </div>
@@ -224,7 +227,7 @@ export default function Kombucha() {
           </Reveal>
           <Reveal>
             <CtaCard
-              href="/"
+              href="/kombucha/original"
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
               width={960}
               height={1009}
@@ -232,12 +235,12 @@ export default function Kombucha() {
               disableShadow
               title={t.common.ctaCards.original.title}
               text={t.common.ctaCards.original.content}
-              className="bg-original-900"
+              className="bg-original-800"
             />
           </Reveal>
           <Reveal>
             <CtaCard
-              href="/"
+              href="/kombucha/yerba-mate"
               src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
               width={960}
               height={1009}
@@ -245,7 +248,7 @@ export default function Kombucha() {
               disableShadow
               title={t.common.ctaCards.yerba.title}
               text={t.common.ctaCards.yerba.content}
-              className="bg-yerba-900"
+              className="bg-yerba-800"
             />
           </Reveal>
         </Container>

@@ -20,7 +20,7 @@ export const en = {
     },
     nav: {
       menu: "Menu",
-      otherLinks: "Other links",
+      otherLinks: "Contact",
       socialFollow: "Follow us",
     },
     footer: {
@@ -53,14 +53,14 @@ export const en = {
   },
   home: {
     seo: {
-      title: "The first tasty kombucha",
+      title: "The first tasty Kombucha",
       description:
-        "What came first - apple or tea? In 2021, under the brand of F.H. Prager, we introduced the the very first non-alcoholic cider to the Czechoslovak market. This was our ticket to the world of low-alcohol fermentation. And it was also the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
+        "Non-Alcoholic Cider F.H. Prager was our entry into the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
     },
     hero: {
       title: "The first tasty kombucha",
       description:
-        "What came first - apple or tea? In 2021, under the brand of F.H. Prager, we introduced the the very first non-alcoholic cider to the Czechoslovak market. This was our ticket to the world of low-alcohol fermentation. And it was also the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
+        "Under the brand of F.H. Prager, they introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
       buttonLabel: "Learn more",
     },
     about: {
@@ -95,7 +95,7 @@ export const en = {
     seo: {
       title: "Pragers",
       description:
-        "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+        "Non-Alcoholic Cider F.H. Prager was our entry into the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
     },
     hero: {
       title: "About us",
@@ -142,9 +142,9 @@ export const en = {
   },
   kombucha: {
     seo: {
-      title: "Pragers",
+      title: "Kombucha",
       description:
-        "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+        "Kombucha has been known to mankind for centuries. It is a beneficial drink that is created by fermenting tea using a symbiotic culture of bacteria and yeast.",
     },
     hero: {
       title: "Prager's Komucha",
@@ -216,9 +216,9 @@ export const en = {
   kombuchaDetailPages: {
     original: {
       seo: {
-        title: "Pragers Original",
+        title: "Prager's Kombucha Original",
         description:
-          "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+          "The main ingredient in our Original is green tea. Originating from India and China, this variety of tea is characterized by an intense but balanced and fresh taste.",
       },
       hero: {
         title1: "Tea",
@@ -259,9 +259,9 @@ export const en = {
     },
     yerba: {
       seo: {
-        title: "Pragers Yerba maté",
+        title: "Prager's Kombucha Yerba Maté",
         description:
-          "Pragers kombucha je probiotický nápoj, který se vyrábí fermentací čaje s kvasnicí a sladidlem. Kombucha je bohatý na vitamíny, minerály a enzymy. Je vhodný pro všechny věkové kategorie a je vhodný pro vegetariány i vegany.",
+          "Typical of South America, Yerba Maté is becoming increasingly popular. This is mainly due to its delicious taste, which is characterized by herbal and fruity notes.",
       },
       hero: {
         title1: "Tea",
@@ -298,6 +298,25 @@ export const en = {
         },
       },
       healthBenefitsTitle: "Let's start the day with something fresh benefity",
+    },
+  },
+  contact: {
+    seo: {
+      title: "Contact",
+      description: "",
+    },
+    title: "Contact",
+    item1: {
+      title: "Phone / E-mail",
+    },
+    item2: {
+      title: "Adress",
+      content: "U Národní galerie 470, 156 00 Zbraslav, Česká republika",
+    },
+    item3: {
+      title: "Billing information",
+      content:
+        "F.H.Prager s.r.o. U Národní galerie 470, Zbraslav, 156 00 Praha, IČO: 29153379",
     },
   },
 };

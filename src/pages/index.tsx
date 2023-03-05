@@ -18,7 +18,7 @@ export default function Home() {
   const t = useTranslation();
   return (
     <Layout>
-      <Seo title="Hlavní stránka" description="Lorem ipsum dolor" />
+      <Seo title={t.home.seo.title} description={t.home.seo.description} />
       <Hero />
       <Container as={"section"} id="vice" py="md">
         <Reveal className="pb-10">
@@ -53,10 +53,10 @@ export default function Home() {
             </Reveal>
           </div>
           <BodyImage
-            src="/fh-prager/prager-bg.jpg"
-            alt="DOPLNIT!"
-            width={1440}
-            height={950}
+            src="/images/common/photo-4.jpg"
+            alt="pragers"
+            width={1920}
+            height={1280}
             className="md:col-span-7"
           />
         </Container>
@@ -83,19 +83,19 @@ export default function Home() {
                 <p>{t.home.about.content2}</p>
               </Reveal>
               <BodyImage
-                src="/fh-prager/prager-bg.jpg"
-                alt="DOPLNIT!"
-                width={1440}
-                height={950}
+                src="/images/common/photo-5.jpg"
+                alt="pragers"
+                width={1920}
+                height={1280}
                 className="md:col-span-7"
               />
             </div>
             <div className="col-span-1 md:order-1">
               <BodyImage
-                src="/fh-prager/prager-bg.jpg"
-                alt="DOPLNIT!"
-                width={1440}
-                height={950}
+                src="/images/common/photo-3.jpg"
+                alt="pragers"
+                width={1920}
+                height={1280}
                 className="md:col-span-7"
               />
               <Reveal className="mt-14 mb-4 ml-auto w-max md:mr-auto">
