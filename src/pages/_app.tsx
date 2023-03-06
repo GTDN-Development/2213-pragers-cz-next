@@ -22,6 +22,23 @@ export default function App({ Component, pageProps }: AppProps) {
     });
   });
 
+  // Fixing the horizontal scroll on the homepage
+  const isHomePage = router.pathname === "/";
+
+  useEffect(() => {
+    if (isHomePage) {
+      document.documentElement.classList.add(
+        "max-w-[100vw]",
+        "overflow-x-hidden"
+      );
+    } else {
+      document.documentElement.classList.remove(
+        "max-w-[100vw]",
+        "overflow-x-hidden"
+      );
+    }
+  }, [isHomePage]);
+
   return (
     <LayoutRoot>
       <Component {...pageProps} />
