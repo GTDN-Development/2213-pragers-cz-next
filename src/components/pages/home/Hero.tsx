@@ -22,7 +22,7 @@ export default function Hero({ className = "" }: Props) {
     <>
       <section
         className={clsx(
-          "relative w-screen bg-yerba-700 md:h-[calc(100vh-5rem)] md:max-h-[1100px] md:min-h-[580px] xl:min-h-[700px]",
+          "relative w-screen overflow-hidden bg-yerba-700 md:h-[calc(100vh-5rem)] md:max-h-[1100px] md:min-h-[580px] md:overflow-visible xl:min-h-[700px]",
           className
         )}
       >
