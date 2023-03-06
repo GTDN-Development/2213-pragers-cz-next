@@ -24,7 +24,7 @@ export default function Contact() {
           <Container
             isInner
             py="md"
-            className="grid w-full sm:grid-cols-2 sm:gap-10 xl:grid-cols-4"
+            className="grid w-full gap-y-8 sm:grid-cols-2 sm:gap-x-10 xl:grid-cols-4"
           >
             <Reveal className="col-span-1 flex items-center justify-start sm:justify-center">
               <div

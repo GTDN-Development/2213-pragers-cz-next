@@ -245,9 +245,9 @@ export const en = {
       otherInfo: {
         title: "Other information",
         collapse1: {
-          title: "nutrition facts",
+          title: "Nutritional information per 100ml",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
         },
         collapse2: {
           title: "Skladování",
@@ -287,9 +287,9 @@ export const en = {
       otherInfo: {
         title: "Další informace",
         collapse1: {
-          title: "nutrition facts",
+          title: "Nutritional information per 100ml",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
         },
         collapse2: {
           title: "Skladování",

@@ -244,9 +244,9 @@ export const cs = {
       otherInfo: {
         title: "Další informace",
         collapse1: {
-          title: "Výživové údaje",
+          title: "Výživové údaje na 100ml",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
         },
         collapse2: {
           title: "Skladování",
@@ -285,9 +285,9 @@ export const cs = {
       otherInfo: {
         title: "Další informace",
         collapse1: {
-          title: "Výživové údaje",
+          title: "Výživové údaje na 100ml",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
         },
         collapse2: {
           title: "Skladování",
