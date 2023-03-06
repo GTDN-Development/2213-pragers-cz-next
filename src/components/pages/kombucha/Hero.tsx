@@ -71,7 +71,7 @@ export function Hero({ className = "" }: { className?: string }) {
             <Heading
               level={1}
               size="inherit"
-              className="text-center text-9xl text-white 2xl:text-[10.5rem]"
+              className="mx-auto max-w-6xl text-center text-9xl text-white 2xl:text-[10.5rem]"
             >
               {t.kombucha.hero.title}
             </Heading>
