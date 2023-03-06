@@ -23,23 +23,23 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   // Fixing the horizontal scroll on the homepage
-  const isHomePage = router.pathname === "/";
+  // const isHomePage = router.pathname === "/";
 
-  useEffect(() => {
-    if (isHomePage) {
-      document.documentElement.classList.add(
-        "max-w-[100vw]",
-        "md:max-w-none",
-        "overflow-x-hidden"
-      );
-    } else {
-      document.documentElement.classList.remove(
-        "max-w-[100vw]",
-        "md:max-w-none",
-        "overflow-x-hidden"
-      );
-    }
-  }, [isHomePage]);
+  // useEffect(() => {
+  //   if (isHomePage) {
+  //     document.documentElement.classList.add(
+  //       "max-w-[100vw]",
+  //       "md:max-w-none",
+  //       "overflow-x-hidden"
+  //     );
+  //   } else {
+  //     document.documentElement.classList.remove(
+  //       "max-w-[100vw]",
+  //       "md:max-w-none",
+  //       "overflow-x-hidden"
+  //     );
+  //   }
+  // }, [isHomePage]);
 
   return (
     <LayoutRoot>
