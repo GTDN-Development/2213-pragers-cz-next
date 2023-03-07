@@ -75,7 +75,7 @@ export default function CtaProductLine({
             <p className="mx-auto max-w-lg text-center">
               {t.home.productKombucha.description}
             </p>
-            <Button href="/kombucha" size="lg">
+            <Button href="/kombucha" size="xl">
               {t.home.productKombucha.buttonLabel}
             </Button>
           </Reveal>

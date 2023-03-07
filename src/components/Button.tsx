@@ -93,7 +93,7 @@ const componentVariants = {
     sm: "py-1 px-2 text-xs leading-5 md:px-3",
     md: "py-1 px-3 text-xs leading-5 md:py-1.5 md:px-4 md:text-sm md:leading-5",
     lg: "py-1.5 px-4 text-sm leading-5 md:py-2 md:px-5 md:text-base md:leading-6",
-    xl: "py-2 px-5 text-base leading-6 md:py-3 md:px-6 md:text-lg md:leading-6",
+    xl: "py-2.5 px-5 text-base leading-6 md:py-3.5 md:px-7 md:text-xl md:leading-6",
   },
   radius: "rounded-full",
   isFullWidth: "w-full",
