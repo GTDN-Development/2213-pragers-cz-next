@@ -35,9 +35,9 @@ export const en = {
     },
     ctaCards: {
       kombucha: {
-        title: "Kombucha",
+        title: "About kombucha",
         content:
-          "Tea tree leaves support cognitive and mental health. The tea for our Original was grown in the motherland of tea in distant China and is ideal for daily invigoration.",
+          "Fermented tea, or kombucha, is a beverage that has been known to mankind for centuries. It is a nutritious beverage that is created by fermenting tea using a symbiotic culture of bacteria and yeast.",
       },
       original: {
         title: "Kombucha original",
@@ -147,7 +147,7 @@ export const en = {
         "Kombucha has been known to mankind for centuries. It is a beneficial drink that is created by fermenting tea using a symbiotic culture of bacteria and yeast.",
     },
     hero: {
-      title: "Prager's Komucha",
+      title: "Prager's Kombucha",
       buttonLabel: "Learn more",
     },
     aboutKombucha: {

@@ -150,8 +150,8 @@ export default function Yerba() {
               src="/images/kombucha/original/kombucha-original-illustration.jpg"
               width={960}
               height={1009}
-              title={t.common.ctaCards.kombucha.title}
-              text={t.common.ctaCards.kombucha.content}
+              title={t.common.ctaCards.original.title}
+              text={t.common.ctaCards.original.content}
             />
           </Reveal>
         </Container>

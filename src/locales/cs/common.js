@@ -35,9 +35,9 @@ export const cs = {
     },
     ctaCards: {
       kombucha: {
-        title: "Kombucha",
+        title: "O kombuche",
         content:
-          "Listy čajovníku podporují kognitivní a duševní zdraví. Čaj pro náš Original byl vypěstován v pravlasti čaje v daleké Číně a je ideální ke každodennímu povzbuzení.",
+          "Fermentovaný čaj, neboli kombucha, je produkt, který je lidstvu známý už po staletí. Jedná se o blahodárný nápoj, který vzniká fermentací čaje pomocí symbiotické kultury bakterií a kvasinek.",
       },
       original: {
         title: "Kombucha original",
@@ -146,13 +146,13 @@ export const cs = {
         "Kombucha je lidstvu známá už po staletí. Jedná se o blahodárný nápoj, který vzniká fermentací čaje pomocí symbiotické kultury bakterií a kvasinek. ",
     },
     hero: {
-      title: "Prager's Komucha",
+      title: "Prager's Kombucha",
       buttonLabel: "Zjistit více",
     },
     aboutKombucha: {
       title: "Co je to Kombucha?",
       paragraph1:
-        "Fermentovaný čaj, neboli kombucha,, je produkt, který je lidstvu známý už po staletí. Jedná se o blahodárný nápoj, který vzniká fermentací čaje pomocí symbiotické kultury bakterií a kvasinek.",
+        "Fermentovaný čaj, neboli kombucha, je produkt, který je lidstvu známý už po staletí. Jedná se o blahodárný nápoj, který vzniká fermentací čaje pomocí symbiotické kultury bakterií a kvasinek.",
       paragraph2:
         "Kombucha bývá často považována za zdraví prospěšný nápoj, protože obsahuje živé kultury bakterií, které mají pozitivní přínos pro trávicí systém.",
     },

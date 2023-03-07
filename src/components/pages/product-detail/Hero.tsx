@@ -47,13 +47,14 @@ function Message({
       >
         {title}
       </Heading>
-      <p className="text-sm md:text-base">{children}</p>
+      <p className="text-xs md:text-sm xl:text-base">{children}</p>
       <div
         className={clsx(
           "absolute -top-3 flex h-9 w-9 origin-center items-center justify-center",
           dotPosition === "left" ? "-left-3" : "-right-3"
         )}
       >
+        {/* Dots */}
         <div className="relative z-20 h-4 w-4 rounded-full bg-primary"></div>
         <div className="absolute h-6 w-6 origin-center animate-ping rounded-full bg-white"></div>
       </div>
