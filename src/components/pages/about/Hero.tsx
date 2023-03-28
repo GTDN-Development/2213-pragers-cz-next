@@ -55,13 +55,13 @@ export default function Hero({ className = "" }: Props) {
           >
             <div className="aspect-square overflow-hidden rounded-full bg-gray-700 ring-8 ring-primary">
               <Image
-                src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
-                alt="Kombucha ilustrace"
-                width={960}
-                height={1009}
+                src="/images/common/pragers-common-6.jpg"
+                alt="Pragers"
+                width={1920}
+                height={1280}
                 loading="eager"
                 priority
-                className="object-cover"
+                className="h-full w-full object-cover"
               />
             </div>
           </Reveal>

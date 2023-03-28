@@ -53,7 +53,7 @@ export default function Home() {
             </Reveal>
           </div>
           <BodyImage
-            src="/images/common/photo-4.jpg"
+            src="/images/common/pragers-common-1.jpg"
             alt="pragers"
             width={1920}
             height={1280}
@@ -83,7 +83,7 @@ export default function Home() {
                 <p>{t.home.about.content2}</p>
               </Reveal>
               <BodyImage
-                src="/images/common/photo-5.jpg"
+                src="/images/common/pragers-common-3.jpg"
                 alt="pragers"
                 width={1920}
                 height={1280}
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
             <div className="col-span-1 md:order-1">
               <BodyImage
-                src="/images/common/photo-3.jpg"
+                src="/images/common/pragers-common-4.jpg"
                 alt="pragers"
                 width={1920}
                 height={1280}

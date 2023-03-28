@@ -378,6 +378,12 @@ export default function Header() {
                     label={t.common.routes.contact.label}
                   />
                 </li>
+                <li>
+                  <DesktopNavLink
+                    href={t.common.fhpLink.href}
+                    label={t.common.fhpLink.label}
+                  />
+                </li>
               </ul>
             </div>
 

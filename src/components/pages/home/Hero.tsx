@@ -22,7 +22,7 @@ export default function Hero({ className = "" }: Props) {
     <>
       <section
         className={clsx(
-          "relative w-screen max-w-[100vw] overflow-hidden bg-yerba-700 md:h-[calc(100vh-5rem)] md:max-h-[1100px] md:min-h-[580px] md:overflow-visible xl:min-h-[700px]",
+          "relative w-screen max-w-[100vw] overflow-hidden bg-original-700 md:h-[calc(100vh-5rem)] md:max-h-[1100px] md:min-h-[580px] md:overflow-visible xl:min-h-[700px]",
           className
         )}
       >
@@ -41,7 +41,7 @@ export default function Hero({ className = "" }: Props) {
               <Heading
                 level={1}
                 size="inherit"
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[5.0625rem]"
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-[4.45rem]"
               >
                 {t.home.hero.title}
               </Heading>
@@ -59,7 +59,7 @@ export default function Hero({ className = "" }: Props) {
             style={{ rotate }}
             className="relative isolate z-0 col-span-1 flex items-center justify-center md:col-span-6 xl:col-span-5"
           >
-            <div className="aspect-square w-full rounded-full bg-yerba-800"></div>
+            <div className="aspect-square w-full rounded-full bg-original-800"></div>
             <Reveal hasTriggerMargin={false} delay={0.2} noVertical>
               <Image
                 src="/images/kombucha/original/kombucha-original-render-bottle-outline.png"

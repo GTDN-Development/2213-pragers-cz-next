@@ -23,6 +23,10 @@ export const cs = {
       otherLinks: "Kontakt",
       socialFollow: "Sledujte nás",
     },
+    fhpLink: {
+      label: "F.H. Prager",
+      href: "https://fhprager.cz",
+    },
     footer: {
       copyright: "",
     },
@@ -53,25 +57,25 @@ export const cs = {
   },
   home: {
     seo: {
-      title: "První dobrá kombucha",
+      title: "První skutečně dobrá kombucha",
       description:
-        "Nealkoholický cider F.H. Prager byl náš vstup do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Nealkoholický cider F.H. Prager byl náš vstup do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
     },
     hero: {
-      title: "První dobrá kombucha",
+      title: "První skutečně dobrá kombucha",
       description:
-        "Pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
       buttonLabel: "Zjistit více",
     },
     about: {
       title: "Co je Pragers?",
       perex:
-        "Co bylo dřív – jablko, nebo čaj? V roce 2021 jsme pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Co bylo dřív - jablko, nebo čaj? V roce 2021 jsme pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projektu, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
       subtitle1: "Z jablka do čaje",
       content1:
         "Naše první krůčky nízkoalkoholickou fermentací začaly s Nealko ciderem...",
       largeText:
-        "Hledali jsme, co dalšího bychom mohli ještě zkvasit a favoritem se staly čaje. Vznikla naše první kombucha.",
+        "Vedle jablek nás učaroval čaj a jeho fermentace. Začali jsme experimentovat s kvasnými kulturami a různými typy čajů, až jsme našli perfektní kombinaci čaje prémiové kvality a kyselin vzniklých fermentací. VZNIKLA NAŠE PRVNÍ KOMBUCHA.",
       subtitle2: "Teprve začátek",
       content2:
         "Projekt PRAGER'S plánujeme do budoucna rozšiřovat o další fermentované nápoje. Ať už to jsou recepty dlouho zapomenuté historií, nebo třeba ještě ani neexistují, budeme hledat ty nejzajímavější chutě a nápady...",
@@ -94,23 +98,22 @@ export const cs = {
     seo: {
       title: "O nás",
       description:
-        "ealkoholický cider F.H. Prager byl náš vstup do světa nízkoalkoholické fermentace. A to byl počátek PRAGER’S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "ealkoholický cider F.H. Prager byl náš vstup do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
     },
     hero: {
       title: "O nás",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+      description: "",
       buttonLabel: "Zjistit více",
     },
     about: {
       title: "Co je Pragers?",
       perex:
-        "Co bylo dřív – jablko, nebo čaj? V roce 2021 jsme pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S – projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Co bylo dřív - jablko, nebo čaj? V roce 2021 jsme pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projektu, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
       subtitle1: "Z jablka do čaje",
       content1:
         "Naše první krůčky nízkoalkoholickou fermentací začaly s Nealko ciderem...",
       largeText:
-        "Hledali jsme, co dalšího bychom mohli ještě zkvasit a favoritem se staly čaje. Vznikla naše první kombucha.",
+        "Vedle jablek nás učaroval čaj a jeho fermentace. Začali jsme experimentovat s kvasnými kulturami a různými typy čajů, až jsme našli perfektní kombinaci čaje prémiové kvality a kyselin vzniklých fermentací. VZNIKLA NAŠE PRVNÍ KOMBUCHA.",
       subtitle2: "Teprve začátek",
       content2:
         "Projekt PRAGER'S plánujeme do budoucna rozšiřovat o další fermentované nápoje. Ať už to jsou recepty dlouho zapomenuté historií, nebo třeba ještě ani neexistují, budeme hledat ty nejzajímavější chutě a nápady...",

@@ -54,6 +54,15 @@ export default function Footer() {
                   {t.common.routes.contact.label}
                 </UiLink>
               </li>
+              <li className="mt-4">
+                <UiLink
+                  href={t.common.fhpLink.href}
+                  hoverEffect="scale-up"
+                  className="font-bold uppercase"
+                >
+                  {t.common.fhpLink.label}
+                </UiLink>
+              </li>
             </ul>
           </div>
           <div className="col-span-1">

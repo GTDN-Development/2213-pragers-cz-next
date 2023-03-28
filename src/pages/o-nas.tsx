@@ -52,7 +52,7 @@ export default function About() {
             </Reveal>
           </div>
           <BodyImage
-            src="/images/common/photo-4.jpg"
+            src="/images/common/pragers-common-1.jpg"
             alt="pragers"
             width={1920}
             height={1280}
@@ -84,7 +84,7 @@ export default function About() {
             </div>
             <div className="col-span-1 md:order-1">
               <BodyImage
-                src="/images/common/photo-3.jpg"
+                src="/images/common/pragers-common-3.jpg"
                 alt="pragers"
                 width={1920}
                 height={1280}
@@ -143,7 +143,7 @@ export default function About() {
           className="grid grid-cols-2 gap-x-8 gap-y-12 md:grid-cols-4 lg:gap-x-12"
         >
           <BodyImage
-            src="/images/common/photo-6.jpg"
+            src="/images/common/pragers-common-2.jpg"
             alt="pragers"
             width={1920}
             height={1280}
@@ -191,7 +191,7 @@ export default function About() {
             <p>{t.about.ourMission.content4}</p>
           </Reveal>
           <BodyImage
-            src="/images/common/photo-7.jpg"
+            src="/images/common/pragers-common-7.jpg"
             alt="pragers"
             width={1920}
             height={1280}

@@ -23,6 +23,10 @@ export const en = {
       otherLinks: "Contact",
       socialFollow: "Follow us",
     },
+    fhpLink: {
+      label: "F.H. Prager",
+      href: "https://fhprager.cz",
+    },
     footer: {
       copyright: "",
     },
@@ -60,7 +64,7 @@ export const en = {
     hero: {
       title: "The first tasty kombucha",
       description:
-        "Under the brand of F.H. Prager, they introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
+        "Under the brand of F.H. Prager, they introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea. Since then, we have been dedicated to low-alcohol fermentation and bring you the first tasty kombucha.",
       buttonLabel: "Learn more",
     },
     about: {
@@ -71,7 +75,7 @@ export const en = {
       content1:
         "Our first steps with low-alcoholic fermentation begun with the Non-alcoholic cider...",
       largeText:
-        "We were looking for what else could we ferment, and teas go tour attention. That's how our very first kombucha was made.",
+        "Besides apples, we were enchanted by tea and its fermentation. We have started to experiment with microbial cultures and various types of tea until we found the perfect combination of premium quality tea and acids created by fermentation. OUR FIRST KOMBUCHA WAS BORN.",
       subtitle2: "Just the begining",
       content2:
         "Our vision is to expand the PRAGER'S portfolio with more fermented beverages. Whether it is long forgotten recipes or drinks that might not exist yet, we will be looking for the most unique tastes and ideas.",
@@ -99,8 +103,7 @@ export const en = {
     },
     hero: {
       title: "About us",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+      description: "",
       buttonLabel: "Learn more",
     },
     about: {
@@ -111,7 +114,7 @@ export const en = {
       content1:
         "Our first steps with low-alcoholic fermentation begun with the Non-alcoholic cider...",
       largeText:
-        "We were looking for what else could we ferment, and teas go tour attention. That's how our very first kombucha was made.",
+        "Besides apples, we were enchanted by tea and its fermentation. We have started to experiment with microbial cultures and various types of tea until we found the perfect combination of premium quality tea and acids created by fermentation. OUR FIRST KOMBUCHA WAS BORN.",
       subtitle2: "Just the begining",
       content2:
         "Our vision is to expand the PRAGER'S portfolio with more fermented beverages. Whether it is long forgotten recipes or drinks that might not exist yet, we will be looking for the most unique tastes and ideas.",
