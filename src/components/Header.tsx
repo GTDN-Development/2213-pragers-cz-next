@@ -219,6 +219,13 @@ function TouchMenu() {
                           i={3}
                         />
                       </li>
+                      <li>
+                        <TouchNavLink
+                          href={t.common.fhpLink.href}
+                          label={t.common.fhpLink.label}
+                          i={4}
+                        />
+                      </li>
                     </ul>
                   </motion.div>
 
