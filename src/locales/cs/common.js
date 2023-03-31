@@ -64,7 +64,7 @@ export const cs = {
     hero: {
       title: "První skutečně dobrá kombucha",
       description:
-        "Pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem.",
+        "Pod hlavičkou F.H. Prageru uvedli na Československý trh první nealkoholický cider, což byla naše vstupenka do světa nízkoalkoholické fermentace. A to byl počátek PRAGER'S - projekt, ve kterém jsme se rozhodli experimentovat s kvašením. A začali jsme čajem. Od té doby jsme se věnovali nízkoalkoholové fermentaci a přinášíme vám první dobrou kombuchu.",
       buttonLabel: "Zjistit více",
     },
     about: {
@@ -86,7 +86,7 @@ export const cs = {
       buttonLabel: "Zjistit více",
     },
     ctaContact: {
-      marquee: "@ Kontakt",
+      marquee: "@ pragers_",
       title: "Napište nám!",
       description:
         "Chtěli by jste PRAGER'S produkty ve vaší provozovně? Nebo jen máte něco na srdci? Napište nám email!",

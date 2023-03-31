@@ -87,7 +87,7 @@ export const en = {
       buttonLabel: "Find out more",
     },
     ctaContact: {
-      marquee: "@ Contact",
+      marquee: "@ pragers_",
       title: "Let's get in touch!",
       description:
         "Do you want PRAGER'S products at your pub? Or do you just wanna chat? Send us an email!",
