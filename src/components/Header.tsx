@@ -226,6 +226,13 @@ function TouchMenu() {
                           i={4}
                         />
                       </li>
+                      <li>
+                        <TouchNavLink
+                          href={"https://eshop.fhprager.cz"}
+                          label={"E-shop"}
+                          i={5}
+                        />
+                      </li>
                     </ul>
                   </motion.div>
 
