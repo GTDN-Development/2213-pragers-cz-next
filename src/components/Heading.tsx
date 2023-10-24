@@ -17,7 +17,7 @@ const componentVariants = {
     xs: "text-base",
     sm: "text-xl lg:text-2xl",
     md: "text-2xl sm:text-3xl lg:text-4xl",
-    lg: "text-3xl sm:text-4xl lg:text-6xl",
+    lg: "text-3xl sm:text-4xl lg:text-5xl",
     xl: "text-4xl sm:text-6xl lg:text-7xl",
     "2xl": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl",
     inherit: "",
