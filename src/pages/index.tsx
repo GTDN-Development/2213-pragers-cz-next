@@ -14,6 +14,8 @@ import Seo from "@/components/Seo";
 
 import { useTranslation } from "@/hooks/useTranslation";
 
+// New mac - testing whole development enviroment on new mac
+
 export default function Home() {
   const t = useTranslation();
   return (
