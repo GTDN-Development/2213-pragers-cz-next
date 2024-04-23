@@ -102,8 +102,8 @@ export default function Hero({
           <Image
             src={
               variant === "original"
-                ? "/images/kombucha/original/kombucha-original-render-bottle.png"
-                : "/images/kombucha/mate/kombucha-mate-render-bottle.png"
+                ? "/images/kombucha/original/render-bottle.png"
+                : "/images/kombucha/yerba/render-bottle.png"
             }
             alt="Lahev Pragers Kombucha"
             width={1080}

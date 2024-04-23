@@ -74,7 +74,7 @@ export function IngredientsFlavoursMobile({
               </Reveal>
             </div>
             <Image
-              src="/images/kombucha/original/kombucha-original-render-bottle.png"
+              src="/images/kombucha/original/render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
               height={1920}
@@ -123,7 +123,7 @@ export function IngredientsFlavoursMobile({
               </Reveal>
             </div>
             <Image
-              src="/images/kombucha/original/kombucha-original-render-bottle.png"
+              src="/images/kombucha/original/render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
               height={1920}
@@ -181,7 +181,7 @@ export function IngredientsFlavoursMobile({
               </Reveal>
             </div>
             <Image
-              src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
+              src="/images/kombucha/yerba/render-bottle.png"
               alt="Lahev Pragers Kombucha"
               width={1080}
               height={1920}
@@ -251,7 +251,7 @@ export function IngredientsFlavours({
               )}
             >
               <Image
-                src="/images/kombucha/mate/kombucha-mate-render-bottle.png"
+                src="/images/kombucha/yerba/kombucha-mate-render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}

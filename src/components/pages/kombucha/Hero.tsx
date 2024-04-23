@@ -19,7 +19,7 @@ export function HeroMobile({ className = "" }: { className?: string }) {
         )}
       >
         <Image
-          src="/images/kombucha/original/kombucha-original-illustration.jpg"
+          src="/images/kombucha/original/artwork.jpg"
           alt="Kombucha original ilustrace"
           width={1920}
           height={2019}

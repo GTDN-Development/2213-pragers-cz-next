@@ -76,7 +76,7 @@ export default function Home() {
             className="flex items-center justify-center sm:col-span-5"
           >
             <Image
-              src="/images/kombucha/original/kombucha-original-render-can-outline.png"
+              src="/images/kombucha/original/render-can-outline.png"
               alt="Plechovka kombuchy - originál"
               width="2560"
               height="2560"
@@ -141,7 +141,7 @@ export default function Home() {
           <Reveal>
             <CtaCard
               href="/kombucha"
-              src="/images/kombucha/original/kombucha-original-illustration.jpg"
+              src="/images/kombucha/original/artwork.jpg"
               width={960}
               height={1009}
               title={t.common.ctaCards.kombucha.title}
@@ -151,7 +151,7 @@ export default function Home() {
           <Reveal>
             <CtaCard
               href="/kombucha/yerba-mate"
-              src="/images/kombucha/mate/kombucha-mate-illustration.jpg"
+              src="/images/kombucha/yerba/artwork.jpg"
               width={960}
               height={1009}
               title={t.common.ctaCards.yerba.title}

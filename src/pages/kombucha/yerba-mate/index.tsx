@@ -76,7 +76,7 @@ export default function Yerba() {
             className="flex items-center justify-center sm:col-span-5"
           >
             <Image
-              src="/images/kombucha/mate/kombucha-mate-render-can-outline.png"
+              src="/images/kombucha/yerba/render-can-outline.png"
               alt="Plechovka kombuchy - originál"
               width="2560"
               height="2560"
@@ -137,7 +137,7 @@ export default function Yerba() {
           <Reveal>
             <CtaCard
               href="/kombucha"
-              src="/images/kombucha/original/kombucha-original-illustration.jpg"
+              src="/images/kombucha/original/artwork.jpg"
               width={960}
               height={1009}
               title={t.common.ctaCards.kombucha.title}
@@ -147,7 +147,7 @@ export default function Yerba() {
           <Reveal>
             <CtaCard
               href="/kombucha/original"
-              src="/images/kombucha/original/kombucha-original-illustration.jpg"
+              src="/images/kombucha/original/artwork.jpg"
               width={960}
               height={1009}
               title={t.common.ctaCards.original.title}
