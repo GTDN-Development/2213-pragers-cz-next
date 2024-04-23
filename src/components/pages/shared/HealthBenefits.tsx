@@ -12,7 +12,7 @@ export default function HealthBenefits({
 }: {
   title?: string;
   className?: string;
-  variant?: "default" | "original" | "yerba" | "matcha";
+  variant?: "default" | "original" | "yerba" | "matcha" | "rooibos";
 }) {
   const t = useTranslation();
 
@@ -26,6 +26,7 @@ export default function HealthBenefits({
         variant === "yerba" && "bg-yerba-800",
         variant === "default" && "bg-gray-800",
         variant === "matcha" && "bg-matcha-800",
+        variant === "rooibos" && "bg-rooibos-800",
         className
       )}
     >
@@ -52,7 +53,8 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700"
+                variant === "matcha" && "bg-matcha-700",
+                variant === "rooibos" && "bg-rooibos-700"
               )}
             >
               <CustomIcon iconNumber={1} />
@@ -75,7 +77,8 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700"
+                variant === "matcha" && "bg-matcha-700",
+                variant === "rooibos" && "bg-rooibos-700"
               )}
             >
               <CustomIcon iconNumber={5} />
@@ -98,7 +101,8 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700"
+                variant === "matcha" && "bg-matcha-700",
+                variant === "rooibos" && "bg-rooibos-700"
               )}
             >
               <CustomIcon iconNumber={10} />
@@ -121,7 +125,8 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700"
+                variant === "matcha" && "bg-matcha-700",
+                variant === "rooibos" && "bg-rooibos-700"
               )}
             >
               <CustomIcon iconNumber={2} />
