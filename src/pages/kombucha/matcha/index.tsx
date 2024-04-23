@@ -141,7 +141,7 @@ export default function Home() {
           <Reveal>
             <CtaCard
               href="/kombucha"
-              src="/images/kombucha/matcha/artwork.jpg"
+              src="/images/kombucha/original/artwork.jpg"
               width={960}
               height={1009}
               title={t.common.ctaCards.kombucha.title}

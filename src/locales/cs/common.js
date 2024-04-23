@@ -53,6 +53,16 @@ export const cs = {
         content:
           "Pro speciální příležitosti máme speciální příchuť. Řeč je o jihoamerické Cesmíně paraguayské nebo také yerbě maté.",
       },
+      matcha: {
+        title: "Kombucha matcha",
+        content:
+          "Spojení fermentace a přírodního kofeinu tě zaručeně postaví na nohy tak, jak to příroda zamyšlela!",
+      },
+      rooibos: {
+        title: "Kombucha rooibos",
+        content:
+          "Rooibos,  vhodná volba pro ty, kteří chtějí zažít skvělou chuť kombuchy bez kofeinu.",
+      },
     },
   },
   home: {
