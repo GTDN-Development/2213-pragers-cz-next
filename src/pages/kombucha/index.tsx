@@ -228,7 +228,7 @@ export default function Kombucha() {
           <Reveal>
             <CtaCard
               href="/kombucha/original"
-              src="/images/kombucha/original/kombucha-original-illustration.jpg"
+              src="/images/kombucha/original/artwork.jpg"
               width={960}
               height={1009}
               disableBg
@@ -241,7 +241,7 @@ export default function Kombucha() {
           <Reveal>
             <CtaCard
               href="/kombucha/yerba-mate"
-              src="/images/kombucha/yerba/kombucha-mate-illustration.jpg"
+              src="/images/kombucha/yerba/artwork.jpg"
               width={960}
               height={1009}
               disableBg
