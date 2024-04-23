@@ -236,7 +236,7 @@ export function IngredientsFlavours({
           <div className="relative my-auto h-full max-h-[675px] w-full pt-8">
             <div className="absolute inset-0 z-20 h-full w-full">
               <Image
-                src="/images/kombucha/original/kombucha-original-render-bottle.png"
+                src="/images/kombucha/original/render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
@@ -251,7 +251,7 @@ export function IngredientsFlavours({
               )}
             >
               <Image
-                src="/images/kombucha/yerba/kombucha-mate-render-bottle.png"
+                src="/images/kombucha/yerba/render-bottle.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}

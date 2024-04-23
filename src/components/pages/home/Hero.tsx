@@ -62,7 +62,7 @@ export default function Hero({ className = "" }: Props) {
             <div className="aspect-square w-full rounded-full bg-original-800"></div>
             <Reveal hasTriggerMargin={false} delay={0.2} noVertical>
               <Image
-                src="/images/kombucha/original/kombucha-original-render-bottle-outline.png"
+                src="/images/kombucha/original/render-bottle-outline.png"
                 alt="Lahev pragers kombucha originál"
                 width={1080}
                 height={1920}

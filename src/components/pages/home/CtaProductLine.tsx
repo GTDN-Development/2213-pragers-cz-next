@@ -81,7 +81,7 @@ export default function CtaProductLine({
           </Reveal>
           <Reveal className="order-1 col-span-1 sm:order-2">
             <Image
-              src="/images/kombucha/original/kombucha-original-render-can.png"
+              src="/images/kombucha/original/render-can.png"
               alt="Plechovka kombuchy - originál"
               width="2560"
               height="2560"

@@ -21,8 +21,10 @@ module.exports = {
           DEFAULT: colors.yellow[300],
           ...colors.yellow,
         },
-        yerba: colors.blue,
-        original: colors.emerald,
+        original: colors.green,
+        yerba: colors.indigo,
+        rooibos: colors.orange,
+        matcha: colors.violet,
       },
       backgroundImage: {
         "hero-pattern-white": "url('/pattern/japan-pattern-white.svg')",

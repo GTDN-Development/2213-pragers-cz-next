@@ -111,7 +111,7 @@ export default function About() {
             {/* <Button size="lg">{t.about.enviroment.buttonLabel}</Button> */}
           </Reveal>
           <BodyImage
-            src="/images/kombucha/original/kombucha-original-illustration.jpg"
+            src="/images/kombucha/original/artwork.jpg"
             alt="Kombucha original illustration"
             width={1920}
             height={2019}
