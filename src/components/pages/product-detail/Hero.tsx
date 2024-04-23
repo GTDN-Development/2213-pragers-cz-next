@@ -85,11 +85,9 @@ export default function Hero({
     <section
       className={clsx(
         "relative h-[calc(100vh-5rem)] min-h-[540px] overflow-hidden sm:overflow-visible",
-        variant === "original"
-          ? "bg-original-700"
-          : variant === "matcha"
-          ? "bg-matcha-700"
-          : "bg-yerba-700",
+        variant === "original" && "bg-original-700",
+        variant === "matcha" && "bg-matcha-700",
+        variant === "yerba" && "bg-yerba-700",
         className
       )}
     >
@@ -99,11 +97,9 @@ export default function Hero({
         <LargeBadge
           className={clsx(
             "absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2",
-            variant === "original"
-              ? "bg-original-800"
-              : variant === "matcha"
-              ? "bg-matcha-800"
-              : "bg-yerba-800"
+            variant === "original" && "bg-original-800",
+            variant === "matcha" && "bg-matcha-800",
+            variant === "yerba" && "bg-yerba-800"
           )}
         />
         <div className="absolute inset-y-0 left-1/2 z-20 h-full w-72 -translate-x-1/2 sm:w-96">

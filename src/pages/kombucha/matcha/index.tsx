@@ -29,7 +29,7 @@ export default function Home() {
         title3={t.kombuchaDetailPages.original.hero.title3}
         content3={t.kombuchaDetailPages.original.hero.content3}
       />
-      <section className="bg-original-800">
+      <section className="bg-matcha-800">
         <Container py="xl" className="relative">
           <div className="relative z-20 pt-10">
             <Reveal>
@@ -55,7 +55,7 @@ export default function Home() {
             </Reveal> */}
           </div>
           <Reveal noVertical>
-            <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-original-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
+            <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-matcha-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
               <img
                 src="/icons/leaf-original.svg"
                 alt="leaf"
@@ -69,14 +69,14 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-original-800">
+      <section className="bg-matcha-800">
         <Container py="md" className="grid gap-12 sm:grid-cols-12">
           <Reveal
             noVertical
             className="flex items-center justify-center sm:col-span-5"
           >
             <Image
-              src="/images/kombucha/original/render-can-outline.png"
+              src="/images/kombucha/matcha/render-can-outline.png"
               alt="Plechovka kombuchy - originál"
               width="2560"
               height="2560"
@@ -131,17 +131,17 @@ export default function Home() {
 
       {/*Sekce: Zdravotní benefity */}
       <HealthBenefits
-        variant="original"
+        variant="matcha"
         title={t.kombuchaDetailPages.original.healthBenefitsTitle}
       />
 
       {/* Další odkazy - kam dál */}
-      <section className="bg-original-800">
+      <section className="bg-matcha-800">
         <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-2">
           <Reveal>
             <CtaCard
               href="/kombucha"
-              src="/images/kombucha/original/artwork.jpg"
+              src="/images/kombucha/matcha/artwork.jpg"
               width={960}
               height={1009}
               title={t.common.ctaCards.kombucha.title}
