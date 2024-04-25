@@ -223,6 +223,32 @@ export const cs = {
       content2:
         "Naše varianta Yerby Maté je zpracována pražením - kombucha tak má jemnou kávovou, skoro až čokoládovou, chuť.",
     },
+    matcha: {
+      title: "Matcha",
+      description:
+        "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      buttonLabel: "Zjistit více",
+      buttonLabelShop: "Koupit",
+      subtitle1: "PROBIOTICKÉ KULTURY",
+      content1:
+        "Každá naše kombucha v sobě obsahuje miliony probiotických kultur a organické kyseliny: mléčnou a octovou. Ty přirozeně vznikají fermentačním procesem.",
+      subtitle2: "Přírodní funkce na prvním místě",
+      content2:
+        "Matcha obsahuje oproti klasickému zelenému čaji zvýšené množství účinných látek, a to zejména katechiny, theanin a kofein, které ovlivňují kognitivní funkce organismu jako je pozornost, výkon a zvládání stresu.",
+    },
+    rooibos: {
+      title: "Rooibos",
+      description:
+        "Rooibos,  neboli čajovec kapský, původem z jižní Afriky, konkrétně z regionu Západního Kapska v Jihoafrické republice. Vyznačuje se jemně nasládlou chuťí a k jeho velkým výhodám patří, že neobsahuje kofein, ale zároveň je bohatý na antioxidanty.",
+      buttonLabel: "Zjistit více",
+      buttonLabelShop: "Koupit",
+      subtitle1: "Bez kofeinu",
+      content1:
+        "Kombucha Rooibos je přirozeně bez kofeinu, což jí činí skvělou volbou pro ty, kteří chtějí omezit příjem tohoto stimulantu nebo pro ty, kteří si chtějí dopřát čaj později během dne.",
+      subtitle2: "Bohatý na antioxidanty",
+      content2:
+        "Rooibos čaj obsahuje polyfenoly a flavonoidy, které jsou silnými antioxidanty. Tyto látky pomáhají neutralizovat volné radikály v těle a chrání buňky před poškozením.",
+    },
     learnMore: "Zjistit více o našich produktech",
   },
   kombuchaDetailPages: {

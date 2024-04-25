@@ -214,6 +214,32 @@ export const en = {
       content2:
         "Our Yerba Maté tea variant is processed by traditional form of roasting - the kombucha has a subtle coffee, almost chocolatelike, taste.",
     },
+    matcha: {
+      title: "Matcha",
+      description:
+        "Experience the ultimate fusion of Matcha's potency and the magic of fermentation with our Kombucha Matcha. It's your ideal, natural life booster!",
+      buttonLabel: "Find out more",
+      buttonLabelShop: "Buy now",
+      subtitle1: "Probiotic cultures",
+      content1:
+        "Each of our kombuchas contains millions of probiotic cultures and lactic and acetic acids produced by fermentation.",
+      subtitle2: "Nature first",
+      content2:
+        "Unlocking superior benefits, Matcha contains heightened levels of potent compounds like catechins, theanine, and caffeine. Enhancing cognitive functions, it elevates attention, performance, and stress resilience.",
+    },
+    rooibos: {
+      title: "Rooibos",
+      description:
+        "Rooibos, also known as the Cape bush tea, originates from South Africa, specifically from the region of Western Cape in the Republic of South Africa. It is characterized by a subtly sweet taste, and among its great advantages is that it does not contain caffeine while being rich in antioxidants.",
+      buttonLabel: "Find out more",
+      buttonLabelShop: "Buy now",
+      subtitle1: "Caffeine free",
+      content1:
+        "Rooibos kombucha is naturally caffeine-free, making it a great choice for those looking to reduce their caffeine intake or for those who simply prefer to drink tea later in the day.",
+      subtitle2: "Rich in antioxidants",
+      content2:
+        "Rooibos tea contains polyphenols and flavonoids, which are potent antioxidants. These substances help neutralize free radicals in the body and protect cells from damage.",
+    },
     learnMore: "Learn more about our products",
   },
   kombuchaDetailPages: {
