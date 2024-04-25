@@ -345,6 +345,49 @@ export const en = {
       healthBenefitsTitle:
         "The ideal start of your day begins with bubbles... tea with bubbles",
     },
+    rooibos: {
+      seo: {
+        title: "Prager's Kombucha Matcha",
+        description:
+          "Experience the ultimate fusion of Matcha's potency and the magic of fermentation with our Kombucha Matcha. It's your ideal, natural life booster!",
+      },
+      hero: {
+        title1: "Tea",
+        content1:
+          "For our kombucha, we've selected premium Matcha, typical for Japan.",
+        title2: "Probiotic cultures",
+        content2: "At least 33 million probiotic cultures in each bottle.",
+        title3: "Function",
+        content3: "Matcha is rich in natural compounds.",
+      },
+      about: {
+        title: "MATCHA",
+        perex:
+          "Experience the fusion of Matcha's potency and the magic of fermentation in our Kombucha, crafting a beverage renowned for its exquisite flavor and enriched with performance-boosting compounds like L-theanine and caffeine. Elevate your cognitive functions effortlessly.",
+        buttonLabel: "Zobrazit v e-shopu",
+        subtitle1: "L-Theanine",
+        content1:
+          "This amino acid, combined with natural caffeine (theine), can naturally enhance mental activity while keeping you relaxed.",
+        subtitle2: "Caffeine",
+        content2:
+          "In tea it is known as theine. The main difference between caffeine and theine lies in absorption. Theine in tea is found in a bound form, thus its effects are less abrupt and last longer.",
+      },
+      otherInfo: {
+        title: "Other information",
+        collapse1: {
+          title: "Nutritional information per 100ml",
+          content:
+            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
+        },
+        collapse2: {
+          title: "Skladování",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        },
+      },
+      healthBenefitsTitle:
+        "The ideal start of your day begins with bubbles... tea with bubbles",
+    },
   },
   contact: {
     seo: {

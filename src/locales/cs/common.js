@@ -353,6 +353,50 @@ export const cs = {
       healthBenefitsTitle:
         "Ideální start dne začíná bublinkami... čajem s bublinkami",
     },
+    rooibos: {
+      seo: {
+        title: "Prager's Kombucha Rooibos",
+        description:
+          "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      },
+      hero: {
+        title1: "Čaj",
+        content1:
+          "Čajovec kapský, roste výlučně v Jižní Africe, na malém území Západního Kapska. Jeho sílu využívali tamní domorodci už odpradávna.",
+        title2: "Probiotické kultury",
+        content2: "V každé láhvi minimálně 33 milionů probiotických kultur.",
+        title3: "Chuť",
+        content3:
+          "Skvělé spojení nasládlé chuti Rooibosu spolu s lehce kyselou chutí Kombuchy.",
+      },
+      about: {
+        title: "ROOIBOS",
+        perex:
+          "Jedinečná směs chuťí a blahodárnost rooibosu je z velké části připisována právě obsaženým antioxidantům, zejména polyfenolům.",
+        buttonLabel: "Zobrazit v e-shopu",
+        subtitle1: "Bez kofeinu",
+        content1:
+          "Kombucha Rooibos je přirozeně bez kofeinu, což jí činí skvělou volbou pro ty, kteří chtějí omezit příjem tohoto stimulantu nebo pro ty, kteří si chtějí dopřát čaj později během dne.",
+        subtitle2: "Bohatý na antioxidanty",
+        content2:
+          "Rooibos  obsahuje polyfenoly a flavonoidy, které jsou silnými antioxidanty. Tyto látky pomáhají neutralizovat volné radikály v těle a chrání buňky před poškozením.",
+      },
+      otherInfo: {
+        title: "Další informace",
+        collapse1: {
+          title: "Výživové údaje na 100ml",
+          content:
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
+        },
+        collapse2: {
+          title: "Skladování",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        },
+      },
+      healthBenefitsTitle:
+        "Ideální start dne začíná bublinkami... čajem s bublinkami",
+    },
   },
 
   contact: {

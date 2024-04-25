@@ -17,24 +17,24 @@ export default function Home() {
   return (
     <Layout>
       <Seo
-        title={t.kombuchaDetailPages.original.seo.title}
-        description={t.kombuchaDetailPages.original.seo.description}
+        title={t.kombuchaDetailPages.rooibos.seo.title}
+        description={t.kombuchaDetailPages.rooibos.seo.description}
       />
       <Hero
         variant="rooibos"
-        title1={t.kombuchaDetailPages.original.hero.title1}
-        content1={t.kombuchaDetailPages.original.hero.content1}
-        title2={t.kombuchaDetailPages.original.hero.title2}
-        content2={t.kombuchaDetailPages.original.hero.content2}
-        title3={t.kombuchaDetailPages.original.hero.title3}
-        content3={t.kombuchaDetailPages.original.hero.content3}
+        title1={t.kombuchaDetailPages.rooibos.hero.title1}
+        content1={t.kombuchaDetailPages.rooibos.hero.content1}
+        title2={t.kombuchaDetailPages.rooibos.hero.title2}
+        content2={t.kombuchaDetailPages.rooibos.hero.content2}
+        title3={t.kombuchaDetailPages.rooibos.hero.title3}
+        content3={t.kombuchaDetailPages.rooibos.hero.content3}
       />
       <section className="bg-rooibos-800">
         <Container py="xl" className="relative">
           <div className="relative z-20 pt-10">
             <Reveal>
               <Heading level={1} size="2xl" color="rich" hasMarginBottom>
-                {t.kombuchaDetailPages.original.about.title}
+                {t.kombuchaDetailPages.rooibos.about.title}
               </Heading>
             </Reveal>
             <Reveal>
@@ -45,7 +45,7 @@ export default function Home() {
                 className="!leading-tight"
                 hasMarginBottom
               >
-                <p>{t.kombuchaDetailPages.original.about.perex}</p>
+                <p>{t.kombuchaDetailPages.rooibos.about.perex}</p>
               </Heading>
             </Reveal>
             {/* <Reveal className="pt-10">
@@ -89,17 +89,17 @@ export default function Home() {
               <Reveal>
                 <CustomIcon iconNumber={2} />
                 <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                  {t.kombuchaDetailPages.original.about.subtitle1}
+                  {t.kombuchaDetailPages.rooibos.about.subtitle1}
                 </Heading>
-                <p>{t.kombuchaDetailPages.original.about.content1}</p>
+                <p>{t.kombuchaDetailPages.rooibos.about.content1}</p>
               </Reveal>
             </div>
             <Reveal className="my-auto">
               <CustomIcon iconNumber={3} />
               <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                {t.kombuchaDetailPages.original.about.subtitle2}
+                {t.kombuchaDetailPages.rooibos.about.subtitle2}
               </Heading>
-              <p>{t.kombuchaDetailPages.original.about.content2}</p>
+              <p>{t.kombuchaDetailPages.rooibos.about.content2}</p>
             </Reveal>
           </div>
         </Container>
@@ -107,14 +107,14 @@ export default function Home() {
         <Container className="grid gap-12 sm:grid-cols-12">
           <Reveal className="sm:col-span-7 sm:col-start-6">
             <Heading level={3} size="md" color="primary" hasMarginBottom>
-              {t.kombuchaDetailPages.original.otherInfo.title}
+              {t.kombuchaDetailPages.rooibos.otherInfo.title}
             </Heading>
             <Collapse.Group>
               <Collapse
-                title={t.kombuchaDetailPages.original.otherInfo.collapse1.title}
+                title={t.kombuchaDetailPages.rooibos.otherInfo.collapse1.title}
               >
                 <p>
-                  {t.kombuchaDetailPages.original.otherInfo.collapse1.content}
+                  {t.kombuchaDetailPages.rooibos.otherInfo.collapse1.content}
                 </p>
               </Collapse>
               {/* <Collapse
@@ -132,7 +132,7 @@ export default function Home() {
       {/*Sekce: Zdravotní benefity */}
       <HealthBenefits
         variant="rooibos"
-        title={t.kombuchaDetailPages.original.healthBenefitsTitle}
+        title={t.kombuchaDetailPages.rooibos.healthBenefitsTitle}
       />
 
       {/* Další odkazy - kam dál */}
