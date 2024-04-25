@@ -310,7 +310,51 @@ export const cs = {
       },
       healthBenefitsTitle: "Ideální start dne začíná bublinkami...",
     },
+    matcha: {
+      seo: {
+        title: "Prager's Kombucha Matcha",
+        description:
+          "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      },
+      hero: {
+        title1: "Čaj",
+        content1:
+          "Pro naši kombuchu jsme vybrali prémiovou Matchu typickou pro Japonsko. ",
+        title2: "Probiotické kultury",
+        content2: "V každé láhvi minimálně 33 milionů probiotických kultur.",
+        title3: "Funkce",
+        content3: "Matcha je bohatá na přírodní látky.",
+      },
+      about: {
+        title: "MATCHA",
+        perex:
+          "Naše Kombucha kombinuje sílu čaje matcha spolu s fermentací a vzniká nápoj charakteristický lahodnou chuťí a zvýšeným obsahem účinných látek, jako L-theanin a kofein. Ty ovlivňují kognitivní funkce organismu jako je pozornost, výkon a zvládání stresu.",
+        buttonLabel: "Zobrazit v e-shopu",
+        subtitle1: "L-Theanin",
+        content1:
+          "Tato aminokyselina v kombinaci s přírodním kofeinem (teinem) může přirozeně zvýšit mentální aktivitu mozku a zároveň vás udrží ve stavu relaxace.",
+        subtitle2: "Kofein",
+        content2:
+          "V čaji jej označujeme jako tein. Rozdíl mezi kofeinem a tei­nem je zejména ve vstřebávání, přičemž v čaji se vyskytuje ve vázané formě, tudíž účinkuje méně nárazově a jeho účinek trvá déle.",
+      },
+      otherInfo: {
+        title: "Další informace",
+        collapse1: {
+          title: "Výživové údaje na 100ml",
+          content:
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
+        },
+        collapse2: {
+          title: "Skladování",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        },
+      },
+      healthBenefitsTitle:
+        "Ideální start dne začíná bublinkami... čajem s bublinkami",
+    },
   },
+
   contact: {
     seo: {
       title: "Kontakt",

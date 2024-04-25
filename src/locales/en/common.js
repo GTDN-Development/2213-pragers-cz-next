@@ -302,6 +302,48 @@ export const en = {
       },
       healthBenefitsTitle: "Let's start the day with something fresh benefity",
     },
+    matcha: {
+      seo: {
+        title: "Prager's Kombucha Matcha",
+        description:
+          "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      },
+      hero: {
+        title1: "Probiotické kultury",
+        content1: "V každé láhvy minimálně 33 milionů probiotických kultur.",
+        title2: "Čaj",
+        content2:
+          "Pro naši kombuchu jsme vybrali prémiovou Matchu typickou pro Japonsko. ",
+        title3: "Funkce",
+        content3: "Matcha je bohatá na přírodní látky.",
+      },
+      about: {
+        title: "MATCHA",
+        perex:
+          "Naše Kombucha kombinuje sílu čaje matcha spolu s fermentací a vzniká nápoj charakteristický lahodnou chuťí a zvýšeným obsahem účinných látek, jako L-theanin a kofein. Ty ovlivňují kognitivní funkce organismu jako je pozornost, výkon a zvládání stresu.",
+        buttonLabel: "Zobrazit v e-shopu",
+        subtitle1: "Kofein",
+        content1:
+          "Zvýšený obsah kofeinu odstraňuje únavu a podporuje soustředění. Aktivizuje tukové zásoby a ve spojení s fyzickou aktivitou podporuje hubnutí.",
+        subtitle2: "Netradiční chuť",
+        content2:
+          "Naše varianta Yerby Maté je zpracována pražením - kombucha tak má jemnou kávovou, skoro až čokoládovou, chuť. a barvu",
+      },
+      otherInfo: {
+        title: "Další informace",
+        collapse1: {
+          title: "Výživové údaje na 100ml",
+          content:
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
+        },
+        collapse2: {
+          title: "Skladování",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        },
+      },
+      healthBenefitsTitle: "Ideální start dne začíná bublinkami...",
+    },
   },
   contact: {
     seo: {

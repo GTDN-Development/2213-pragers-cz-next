@@ -1,4 +1,3 @@
-// import Button from "@/components/Button";
 import Collapse from "@/components/Collapse";
 import Container from "@/components/Container";
 import CustomIcon from "@/components/CustomIcon";
@@ -17,24 +16,24 @@ export default function Home() {
   return (
     <Layout>
       <Seo
-        title={t.kombuchaDetailPages.original.seo.title}
-        description={t.kombuchaDetailPages.original.seo.description}
+        title={t.kombuchaDetailPages.matcha.seo.title}
+        description={t.kombuchaDetailPages.matcha.seo.description}
       />
       <Hero
         variant="matcha"
-        title1={t.kombuchaDetailPages.original.hero.title1}
-        content1={t.kombuchaDetailPages.original.hero.content1}
-        title2={t.kombuchaDetailPages.original.hero.title2}
-        content2={t.kombuchaDetailPages.original.hero.content2}
-        title3={t.kombuchaDetailPages.original.hero.title3}
-        content3={t.kombuchaDetailPages.original.hero.content3}
+        title1={t.kombuchaDetailPages.matcha.hero.title1}
+        content1={t.kombuchaDetailPages.matcha.hero.content1}
+        title2={t.kombuchaDetailPages.matcha.hero.title2}
+        content2={t.kombuchaDetailPages.matcha.hero.content2}
+        title3={t.kombuchaDetailPages.matcha.hero.title3}
+        content3={t.kombuchaDetailPages.matcha.hero.content3}
       />
       <section className="bg-matcha-800">
         <Container py="xl" className="relative">
           <div className="relative z-20 pt-10">
             <Reveal>
               <Heading level={1} size="2xl" color="rich" hasMarginBottom>
-                {t.kombuchaDetailPages.original.about.title}
+                {t.kombuchaDetailPages.matcha.about.title}
               </Heading>
             </Reveal>
             <Reveal>
@@ -45,7 +44,7 @@ export default function Home() {
                 className="!leading-tight"
                 hasMarginBottom
               >
-                <p>{t.kombuchaDetailPages.original.about.perex}</p>
+                <p>{t.kombuchaDetailPages.matcha.about.perex}</p>
               </Heading>
             </Reveal>
             {/* <Reveal className="pt-10">
@@ -84,22 +83,22 @@ export default function Home() {
               className="w-full object-contain md:scale-125"
             />
           </Reveal>
-          <div className="grid gap-x-10 gap-y-8 xs:grid-cols-2 sm:col-span-7">
+          <div className="grid items-start gap-x-10 gap-y-8 xs:grid-cols-2 sm:col-span-7">
             <div className="my-auto">
               <Reveal>
-                <CustomIcon iconNumber={2} />
+                <CustomIcon iconNumber={4} />
                 <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                  {t.kombuchaDetailPages.original.about.subtitle1}
+                  {t.kombuchaDetailPages.matcha.about.subtitle1}
                 </Heading>
-                <p>{t.kombuchaDetailPages.original.about.content1}</p>
+                <p>{t.kombuchaDetailPages.matcha.about.content1}</p>
               </Reveal>
             </div>
             <Reveal className="my-auto">
               <CustomIcon iconNumber={3} />
               <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                {t.kombuchaDetailPages.original.about.subtitle2}
+                {t.kombuchaDetailPages.matcha.about.subtitle2}
               </Heading>
-              <p>{t.kombuchaDetailPages.original.about.content2}</p>
+              <p>{t.kombuchaDetailPages.matcha.about.content2}</p>
             </Reveal>
           </div>
         </Container>
@@ -107,14 +106,14 @@ export default function Home() {
         <Container className="grid gap-12 sm:grid-cols-12">
           <Reveal className="sm:col-span-7 sm:col-start-6">
             <Heading level={3} size="md" color="primary" hasMarginBottom>
-              {t.kombuchaDetailPages.original.otherInfo.title}
+              {t.kombuchaDetailPages.matcha.otherInfo.title}
             </Heading>
             <Collapse.Group>
               <Collapse
-                title={t.kombuchaDetailPages.original.otherInfo.collapse1.title}
+                title={t.kombuchaDetailPages.matcha.otherInfo.collapse1.title}
               >
                 <p>
-                  {t.kombuchaDetailPages.original.otherInfo.collapse1.content}
+                  {t.kombuchaDetailPages.matcha.otherInfo.collapse1.content}
                 </p>
               </Collapse>
               {/* <Collapse
@@ -132,7 +131,7 @@ export default function Home() {
       {/*Sekce: Zdravotní benefity */}
       <HealthBenefits
         variant="matcha"
-        title={t.kombuchaDetailPages.original.healthBenefitsTitle}
+        title={t.kombuchaDetailPages.matcha.healthBenefitsTitle}
       />
 
       {/* Další odkazy - kam dál */}
