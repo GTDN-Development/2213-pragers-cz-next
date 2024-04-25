@@ -347,30 +347,31 @@ export const en = {
     },
     rooibos: {
       seo: {
-        title: "Prager's Kombucha Matcha",
+        title: "Prager's Kombucha Rooibos",
         description:
-          "Experience the ultimate fusion of Matcha's potency and the magic of fermentation with our Kombucha Matcha. It's your ideal, natural life booster!",
+          "Rooibos, also known as the Cape bush tea, originates from South Africa, specifically from the region of Western Cape in the Republic of South Africa. It is characterized by a subtly sweet taste, and among its great advantages is that it does not contain caffeine while being rich in antioxidants.",
       },
       hero: {
-        title1: "Tea",
+        title1: "Herb",
         content1:
-          "For our kombucha, we've selected premium Matcha, typical for Japan.",
+          "The Cape bush tea grows exclusively in South Africa, in a small area of the Western Cape, and its strength has been utilized by the native people of the region since ancient times.",
         title2: "Probiotic cultures",
         content2: "At least 33 million probiotic cultures in each bottle.",
-        title3: "Function",
-        content3: "Matcha is rich in natural compounds.",
+        title3: "Taste",
+        content3:
+          "A great combination of the sweet taste of rooibos with the tangy flavor of kombucha.",
       },
       about: {
-        title: "MATCHA",
+        title: "ROOIBOS",
         perex:
-          "Experience the fusion of Matcha's potency and the magic of fermentation in our Kombucha, crafting a beverage renowned for its exquisite flavor and enriched with performance-boosting compounds like L-theanine and caffeine. Elevate your cognitive functions effortlessly.",
+          "The unique blend of flavors and the health benefits of rooibos are largely attributed to the antioxidants it contains, especially polyphenols.",
         buttonLabel: "Zobrazit v e-shopu",
-        subtitle1: "L-Theanine",
+        subtitle1: "Caffeine free",
         content1:
-          "This amino acid, combined with natural caffeine (theine), can naturally enhance mental activity while keeping you relaxed.",
-        subtitle2: "Caffeine",
+          "Rooibos kombucha is naturally caffeine-free, making it a great choice for those looking to reduce their caffeine intake or for those who simply prefer to drink tea later in the day.",
+        subtitle2: "Rich in antioxodants",
         content2:
-          "In tea it is known as theine. The main difference between caffeine and theine lies in absorption. Theine in tea is found in a bound form, thus its effects are less abrupt and last longer.",
+          "Rooibos tea contains polyphenols and flavonoids, which are potent antioxidants. These substances help neutralize free radicals in the body and protect cells from damage.",
       },
       otherInfo: {
         title: "Other information",
