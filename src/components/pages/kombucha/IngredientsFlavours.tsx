@@ -32,11 +32,11 @@ export function IngredientsFlavoursMobile({
       className={clsx(
         "overflow-x-hidden transition-colors duration-700 ease-in-out",
         className,
-        originalInView && "bg-original-800",
-        yerbaInView && "bg-yerba-900",
-        matchaInView && "bg-yellow-400",
-        rooibosInView && "bg-rooibos-900",
-        noFlavour && "bg-gray-900"
+        noFlavour && "bg-gray-900",
+        originalInView && "bg-original-700",
+        yerbaInView && "bg-yerba-700",
+        matchaInView && "bg-matcha-600",
+        rooibosInView && "bg-rooibos-700"
       )}
     >
       {/* Vlastnosti */}
@@ -353,10 +353,10 @@ export function IngredientsFlavours({
       className={clsx(
         "relative transition-colors duration-700 ease-in-out",
         noFlavour && "bg-gray-900",
-        originalInView && "bg-original-800",
-        yerbaInView && "bg-yerba-900",
-        matchaInView && "bg-matcha-900",
-        rooibosInView && "bg-rooibos-900",
+        originalInView && "bg-original-700",
+        yerbaInView && "bg-yerba-700",
+        matchaInView && "bg-matcha-600",
+        rooibosInView && "bg-rooibos-700",
         className
       )}
     >

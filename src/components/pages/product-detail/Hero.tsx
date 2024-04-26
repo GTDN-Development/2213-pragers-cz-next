@@ -86,7 +86,7 @@ export default function Hero({
       className={clsx(
         "relative h-[calc(100vh-5rem)] min-h-[540px] overflow-hidden sm:overflow-visible",
         variant === "original" && "bg-original-700",
-        variant === "matcha" && "bg-matcha-700",
+        variant === "matcha" && "bg-matcha-600",
         variant === "yerba" && "bg-yerba-700",
         variant === "rooibos" && "bg-rooibos-700",
         className

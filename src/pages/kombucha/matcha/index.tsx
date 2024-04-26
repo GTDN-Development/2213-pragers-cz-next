@@ -39,7 +39,7 @@ export default function Home() {
             <Reveal>
               <Heading
                 level={"none"}
-                size="lg"
+                size="md"
                 color="primary"
                 className="!leading-tight"
                 hasMarginBottom
@@ -83,7 +83,7 @@ export default function Home() {
               className="w-full object-contain md:scale-125"
             />
           </Reveal>
-          <div className="grid items-start gap-x-10 gap-y-8 xs:grid-cols-2 sm:col-span-7">
+          <div className="grid items-start gap-x-10 gap-y-8 xs:grid-cols-1 sm:col-span-7 md:grid-cols-2">
             <div className="my-auto">
               <Reveal>
                 <CustomIcon iconNumber={4} />
