@@ -162,6 +162,26 @@ export default function Home() {
               text={t.common.ctaCards.yerba.content}
             />
           </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/kombucha/matcha"
+              src="/images/kombucha/matcha/artwork.jpg"
+              width={960}
+              height={1009}
+              title={t.common.ctaCards.matcha.title}
+              text={t.common.ctaCards.matcha.content}
+            />
+          </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/kombucha/original"
+              src="/images/kombucha/original/artwork.jpg"
+              width={960}
+              height={1009}
+              title={t.common.ctaCards.original.title}
+              text={t.common.ctaCards.original.content}
+            />
+          </Reveal>
         </Container>
       </section>
     </Layout>

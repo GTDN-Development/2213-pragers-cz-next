@@ -53,6 +53,16 @@ export const en = {
         content:
           "We have a special flavor for special occasions. We're talking about the South American Cesmina Paraguayan, or yerba mate.",
       },
+      matcha: {
+        title: "Kombucha matcha",
+        content:
+          "The combination of fermentation and natural caffeine is guaranteed to get you on your feet the way nature intended!",
+      },
+      rooibos: {
+        title: "Kombucha rooibos",
+        content:
+          "Rooibos, a perfect choice for those who want to experience the great taste of kombucha without caffeine.",
+      },
     },
   },
   home: {
