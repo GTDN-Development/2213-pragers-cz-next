@@ -3,16 +3,15 @@ import Container from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import UiLink from "@/components/UiLink";
 import { contact, socials } from "@/configs/navigation";
+import { Listbox } from "@headlessui/react";
 import { CheckIcon, ChevronDownIcon } from "@radix-ui/react-icons";
-import * as Select from "@radix-ui/react-select";
 import clsx from "clsx";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // i18n
 import { useTranslation } from "@/hooks/useTranslation";
 import { useRouter } from "next/router";
-import React from "react";
 
 // ToDo
 // - Rewrite styling to be more pretty and easier to customize
@@ -311,6 +310,30 @@ function TouchMenu() {
   );
 }
 
+const SelectItem = React.forwardRef(
+  ({ children, className, ...props }: any, forwardedRef) => {
+    return (
+      <Listbox.Option
+        className={clsx(
+          "cursor-pointer items-center justify-between transition-opacity focus:outline-none",
+          className
+        )}
+        {...props}
+        ref={forwardedRef}
+      >
+        {({ selected }) => (
+          <li className={clsx("flex items-center hover:opacity-40")}>
+            {children}
+            {selected && <CheckIcon />}
+          </li>
+        )}
+      </Listbox.Option>
+    );
+  }
+);
+
+SelectItem.displayName = "SelectItem";
+
 export default function Header() {
   // i18n
   const router = useRouter();
@@ -321,26 +344,6 @@ export default function Header() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
-
-  const SelectItem = React.forwardRef(
-    ({ children, className, ...props }: any, forwardedRef) => {
-      return (
-        <Select.Item
-          className={clsx(
-            "flex cursor-pointer items-center justify-between transition-opacity hover:opacity-40 focus:outline-none",
-            className
-          )}
-          {...props}
-          ref={forwardedRef}
-        >
-          <Select.ItemText>{children}</Select.ItemText>
-          <Select.ItemIndicator>
-            <CheckIcon />
-          </Select.ItemIndicator>
-        </Select.Item>
-      );
-    }
-  );
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -433,36 +436,31 @@ export default function Header() {
                       <ChevronDownIcon />
                     </div>
                   ) : (
-                    <Select.Root
+                    <Listbox
+                      as="div"
                       value={lang}
-                      onValueChange={(value) => {
+                      onChange={(value) => {
                         setLang(value);
                         router.push(router.pathname, router.pathname, {
                           locale: value,
                         });
                       }}
+                      className="relative"
                     >
-                      <Select.Trigger
+                      <Listbox.Button
                         aria-label="Language"
                         className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5"
                       >
-                        <Select.Value placeholder={locale} />
-                        <Select.Icon>
-                          <ChevronDownIcon />
-                        </Select.Icon>
-                      </Select.Trigger>
-                      <Select.Portal>
-                        <Select.Content className="mt-16 rounded-3xl border-4 border-white bg-white px-4 py-3 font-bold text-black">
-                          <Select.Viewport>
-                            <Select.Group>
-                              <SelectItem value="cs">CS</SelectItem>
-                              <SelectItem value="en">EN</SelectItem>
-                              <SelectItem value="pl">PL</SelectItem>
-                            </Select.Group>
-                          </Select.Viewport>
-                        </Select.Content>
-                      </Select.Portal>
-                    </Select.Root>
+                        {lang}
+
+                        <ChevronDownIcon />
+                      </Listbox.Button>
+                      <Listbox.Options className=" absolute mt-6 rounded-3xl border-4 border-white bg-white px-4 py-3 font-bold text-black">
+                        <SelectItem value="cs">CS</SelectItem>
+                        <SelectItem value="en">EN</SelectItem>
+                        <SelectItem value="pl">PL</SelectItem>
+                      </Listbox.Options>
+                    </Listbox>
                   )}
                 </li>
                 <li className="hidden md:block">

@@ -1,5 +1,6 @@
 import { cs } from "@/locales/cs/common";
 import { en } from "@/locales/en/common";
+import { pl } from "@/locales/pl/common";
 import { useRouter } from "next/router";
 
 // How to use:
@@ -13,6 +14,6 @@ import { useRouter } from "next/router";
 
 export const useTranslation = () => {
   const { locale } = useRouter();
-  const t = locale === "cs" ? cs : en;
+  const t = locale === "cs" ? cs : locale === "en" ? en : pl;
   return t;
 };
