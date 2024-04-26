@@ -19,10 +19,10 @@ export function IngredientsFlavoursMobile({
   const matchaRef = useRef<HTMLDivElement>(null);
   const rooibosRef = useRef<HTMLDivElement>(null);
 
-  const originalInView = useInView(originalRef, { margin: "-45%" });
-  const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
-  const matchaInView = useInView(matchaRef, { margin: "100% 0px -45% 0px" });
-  const rooibosInView = useInView(rooibosRef, { margin: "100% 0px -45% 0px" });
+  const originalInView = useInView(originalRef, { margin: "-50%" });
+  const yerbaInView = useInView(yerbaRef, { margin: "-50%" });
+  const matchaInView = useInView(matchaRef, { margin: "-50%" });
+  const rooibosInView = useInView(rooibosRef, { margin: "-50%" });
   const noFlavour =
     !originalInView && !yerbaInView && !matchaInView && !rooibosInView;
 
@@ -338,10 +338,10 @@ export function IngredientsFlavours({
   const matchaRef = useRef<HTMLDivElement>(null);
   const rooibosRef = useRef<HTMLDivElement>(null);
 
-  const originalInView = useInView(originalRef, { margin: "-45%" });
-  const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
-  const matchaInView = useInView(matchaRef, { margin: "100% 0px -45% 0px" });
-  const rooibosInView = useInView(rooibosRef, { margin: "100% 0px -45% 0px" });
+  const originalInView = useInView(originalRef, { margin: "-50%" });
+  const yerbaInView = useInView(yerbaRef, { margin: "-50%" });
+  const matchaInView = useInView(matchaRef, { margin: "-50%" });
+  const rooibosInView = useInView(rooibosRef, { margin: "-50%" });
 
   const noFlavour =
     !originalInView && !yerbaInView && !matchaInView && !rooibosInView;
@@ -352,11 +352,11 @@ export function IngredientsFlavours({
     <section
       className={clsx(
         "relative transition-colors duration-700 ease-in-out",
+        noFlavour && "bg-gray-900",
         originalInView && "bg-original-800",
         yerbaInView && "bg-yerba-900",
         matchaInView && "bg-matcha-900",
         rooibosInView && "bg-rooibos-900",
-        noFlavour && "bg-gray-900",
         className
       )}
     >
@@ -424,7 +424,9 @@ export function IngredientsFlavours({
             <div
               className={clsx(
                 "absolute left-16 top-2/3 z-40 h-24 w-24 -rotate-12 transition-opacity duration-700",
-                originalInView || yerbaInView ? "opacity-100" : "opacity-0"
+                originalInView || yerbaInView || matchaInView || rooibosInView
+                  ? "opacity-100"
+                  : "opacity-0"
               )}
             >
               <img

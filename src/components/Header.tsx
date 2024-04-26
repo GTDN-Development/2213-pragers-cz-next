@@ -3,6 +3,8 @@ import Container from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import UiLink from "@/components/UiLink";
 import { contact, socials } from "@/configs/navigation";
+import { CheckIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+import * as Select from "@radix-ui/react-select";
 import clsx from "clsx";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -10,6 +12,7 @@ import { useEffect, useState } from "react";
 // i18n
 import { useTranslation } from "@/hooks/useTranslation";
 import { useRouter } from "next/router";
+import React from "react";
 
 // ToDo
 // - Rewrite styling to be more pretty and easier to customize
@@ -309,6 +312,36 @@ function TouchMenu() {
 }
 
 export default function Header() {
+  // i18n
+  const router = useRouter();
+  const { locale } = router;
+  const t = useTranslation();
+
+  const [lang, setLang] = useState(locale);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  const SelectItem = React.forwardRef(
+    ({ children, className, ...props }: any, forwardedRef) => {
+      return (
+        <Select.Item
+          className={clsx(
+            "flex cursor-pointer items-center justify-between transition-opacity hover:opacity-40 focus:outline-none",
+            className
+          )}
+          {...props}
+          ref={forwardedRef}
+        >
+          <Select.ItemText>{children}</Select.ItemText>
+          <Select.ItemIndicator>
+            <CheckIcon />
+          </Select.ItemIndicator>
+        </Select.Item>
+      );
+    }
+  );
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -333,16 +366,6 @@ export default function Header() {
       }
     });
   }, [scrollY, setIsVisible, setIsScrolled]);
-
-  // i18n
-  const router = useRouter();
-  const { locale } = router;
-  const t = useTranslation();
-
-  function changeLanguage() {
-    const newLocale = locale === "cs" ? "en" : "cs";
-    router.push(router.pathname, router.pathname, { locale: newLocale });
-  }
 
   return (
     <header
@@ -402,11 +425,45 @@ export default function Header() {
             </div>
 
             <div>
-              <ul className="flex gap-3 xl:gap-6">
+              <ul className="flex flex-row gap-3 xl:gap-6">
                 <li>
-                  <Button onClick={changeLanguage} intent="white">{`${
-                    locale === "cs" ? "EN" : "CZ"
-                  }`}</Button>
+                  {!mounted ? (
+                    <div className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5">
+                      <span className="invisible font-bold">CS</span>
+                      <ChevronDownIcon />
+                    </div>
+                  ) : (
+                    <Select.Root
+                      value={lang}
+                      onValueChange={(value) => {
+                        setLang(value);
+                        router.push(router.pathname, router.pathname, {
+                          locale: value,
+                        });
+                      }}
+                    >
+                      <Select.Trigger
+                        aria-label="Language"
+                        className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5"
+                      >
+                        <Select.Value placeholder={locale} />
+                        <Select.Icon>
+                          <ChevronDownIcon />
+                        </Select.Icon>
+                      </Select.Trigger>
+                      <Select.Portal>
+                        <Select.Content className="mt-16 rounded-3xl border-4 border-white bg-white px-4 py-3 font-bold text-black">
+                          <Select.Viewport>
+                            <Select.Group>
+                              <SelectItem value="cs">CS</SelectItem>
+                              <SelectItem value="en">EN</SelectItem>
+                              <SelectItem value="pl">PL</SelectItem>
+                            </Select.Group>
+                          </Select.Viewport>
+                        </Select.Content>
+                      </Select.Portal>
+                    </Select.Root>
+                  )}
                 </li>
                 <li className="hidden md:block">
                   <Button href="https://eshop.fhprager.cz">E-shop</Button>
