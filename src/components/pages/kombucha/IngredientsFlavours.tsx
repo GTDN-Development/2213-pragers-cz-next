@@ -364,66 +364,66 @@ export function IngredientsFlavours({
       {/* Bottle grid - spanning the whole area and keeping the same grid layout as sections inner */}
       <Container className="absolute inset-0 grid h-full w-full grid-cols-3 items-start justify-start gap-10">
         <div className="sticky top-0 z-sticky col-span-1 col-start-2 col-end-3 flex h-screen items-center justify-center">
-          <div className="relative my-auto h-full max-h-[675px] w-full pt-8">
-            <div className="absolute inset-0 z-20 h-full w-full">
+          <div className="relative my-auto h-full max-h-[675px] w-full">
+            <div className="absolute inset-0 z-20 h-full w-full pt-36">
               <Image
-                src="/images/kombucha/original/render-bottle.png"
+                src="/images/kombucha/original/render-can.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
-                className="w-full origin-center scale-95 object-contain"
+                className="w-full origin-center scale-125 object-contain"
                 loading="lazy"
               />
             </div>
             <div
               className={clsx(
-                "absolute inset-0 z-30 h-full w-full transition-opacity duration-700",
+                "absolute inset-0 z-30 h-full w-full pt-36 transition-opacity duration-700",
                 yerbaInView ? "opacity-100" : "opacity-0"
               )}
             >
               <Image
-                src="/images/kombucha/yerba/render-bottle.png"
+                src="/images/kombucha/yerba/render-can.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
-                className="w-full origin-center scale-95 object-contain"
+                className="w-full origin-center scale-125 object-contain"
                 loading="lazy"
               />
             </div>
             <div
               className={clsx(
-                "absolute inset-0 z-30 h-full w-full transition-opacity duration-700",
+                "absolute inset-0 z-30 h-full w-full pt-36 transition-opacity duration-700",
                 matchaInView ? "opacity-100" : "opacity-0"
               )}
             >
               <Image
-                src="/images/kombucha/matcha/render-bottle.png"
+                src="/images/kombucha/matcha/render-can.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
-                className="w-full origin-center scale-95 object-contain"
+                className="w-full origin-center scale-125 object-contain"
                 loading="lazy"
               />
             </div>
             <div
               className={clsx(
-                "absolute inset-0 z-30 h-full w-full transition-opacity duration-700",
+                "absolute inset-0 z-30 h-full w-full pt-36 transition-opacity duration-700",
                 rooibosInView ? "opacity-100" : "opacity-0"
               )}
             >
               <Image
-                src="/images/kombucha/rooibos/render-bottle.png"
+                src="/images/kombucha/rooibos/render-can.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
-                className="w-full origin-center scale-95 object-contain"
+                className="w-full origin-center scale-125 object-contain"
                 loading="lazy"
               />
             </div>
 
             <div
               className={clsx(
-                "absolute left-16 top-2/3 z-40 h-24 w-24 -rotate-12 transition-opacity duration-700",
+                "absolute top-[30%] left-2 z-40 h-24 w-24 -rotate-12 transition-opacity duration-700",
                 originalInView || yerbaInView || matchaInView || rooibosInView
                   ? "opacity-100"
                   : "opacity-0"
