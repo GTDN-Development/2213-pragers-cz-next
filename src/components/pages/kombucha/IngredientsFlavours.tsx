@@ -341,7 +341,7 @@ export function IngredientsFlavours({
   const originalInView = useInView(originalRef, { margin: "-50%" });
   const yerbaInView = useInView(yerbaRef, { margin: "-50%" });
   const matchaInView = useInView(matchaRef, { margin: "-50%" });
-  const rooibosInView = useInView(rooibosRef, { margin: "-50%" });
+  const rooibosInView = useInView(rooibosRef, { margin: "100% 0px -50% 0px" });
 
   const noFlavour =
     !originalInView && !yerbaInView && !matchaInView && !rooibosInView;

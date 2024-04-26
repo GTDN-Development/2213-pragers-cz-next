@@ -59,7 +59,7 @@ export default function Hero({ className = "" }: Props) {
             style={{ rotate }}
             className="relative isolate z-0 col-span-1 flex items-center justify-center md:col-span-6 xl:col-span-5"
           >
-            <div className="aspect-square w-10/12 rounded-full bg-original-800"></div>
+            <div className="aspect-square w-10/12 rounded-full bg-original-800 xl:w-full"></div>
             {/* <div className="aspect-square w-full rounded-full bg-original-800"></div> */}
             <Reveal hasTriggerMargin={false} delay={0.2} noVertical>
               <Image
@@ -70,7 +70,7 @@ export default function Hero({ className = "" }: Props) {
                 height={1920}
                 priority
                 loading="eager"
-                className="absolute top-1/2 left-1/2 z-10 origin-center -translate-x-1/2 -translate-y-1/2 -rotate-6 scale-75 object-contain pb-28 md:translate-y-[calc(-50%+3rem)] md:scale-[0.85]"
+                className="absolute top-1/2 left-1/2 z-10 origin-center -translate-x-1/2 -translate-y-1/2 -rotate-6 scale-75 object-contain md:translate-y-[calc(-50%+3rem)] md:scale-[0.85] md:pb-28 xl:scale-110"
                 // className="absolute top-1/2 left-1/2 z-10 origin-center -translate-x-1/2 -translate-y-1/2 -rotate-6 scale-75 object-contain md:translate-y-[calc(-50%+3rem)] md:scale-[0.85]"
               />
             </Reveal>
