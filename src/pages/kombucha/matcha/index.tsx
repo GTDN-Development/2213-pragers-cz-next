@@ -56,7 +56,7 @@ export default function Home() {
           <Reveal noVertical>
             <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-matcha-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
               <img
-                src="/icons/leaf-original.svg"
+                src="/svgs/pragers-badge-white.svg"
                 alt="leaf"
                 aria-hidden="true"
                 width="720"
