@@ -239,7 +239,7 @@ export const cs = {
     rooibos: {
       title: "Rooibos",
       description:
-        "Rooibos,  neboli čajovec kapský, původem z jižní Afriky, konkrétně z regionu Západního Kapska v Jihoafrické republice. Vyznačuje se jemně nasládlou chuťí a k jeho velkým výhodám patří, že neobsahuje kofein, ale zároveň je bohatý na antioxidanty.",
+        "Rooibos,  neboli čajovec kapský, původem z jižní Afriky, konkrétně z regionu Západního Kapska v Jihoafrické republice. Vyznačuje se jemně nasládlou chuťí a k jeho velkým výhodám patří, že neobsahuje kofein, ale zároveň je bohatý na antioxidanty.",
       buttonLabel: "Zjistit více",
       buttonLabelShop: "Koupit",
       subtitle1: "Bez kofeinu",

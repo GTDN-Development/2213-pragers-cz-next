@@ -23,6 +23,8 @@ export function IngredientsFlavoursMobile({
   const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
   const matchaInView = useInView(matchaRef, { margin: "100% 0px -45% 0px" });
   const rooibosInView = useInView(rooibosRef, { margin: "100% 0px -45% 0px" });
+  const noFlavour =
+    !originalInView && !yerbaInView && !matchaInView && !rooibosInView;
 
   const t = useTranslation();
   return (
@@ -30,15 +32,11 @@ export function IngredientsFlavoursMobile({
       className={clsx(
         "overflow-x-hidden transition-colors duration-700 ease-in-out",
         className,
-        originalInView
-          ? "bg-original-800"
-          : yerbaInView
-          ? "bg-yerba-900"
-          : matchaInView
-          ? "bg-matcha-800"
-          : rooibosInView
-          ? "bg-rooibos-800"
-          : "bg-gray-900"
+        originalInView && "bg-original-800",
+        yerbaInView && "bg-yerba-900",
+        matchaInView && "bg-yellow-400",
+        rooibosInView && "bg-rooibos-900",
+        noFlavour && "bg-gray-900"
       )}
     >
       {/* Vlastnosti */}
@@ -345,18 +343,21 @@ export function IngredientsFlavours({
   const matchaInView = useInView(matchaRef, { margin: "100% 0px -45% 0px" });
   const rooibosInView = useInView(rooibosRef, { margin: "100% 0px -45% 0px" });
 
+  const noFlavour =
+    !originalInView && !yerbaInView && !matchaInView && !rooibosInView;
+
   const t = useTranslation();
 
   return (
     <section
       className={clsx(
         "relative transition-colors duration-700 ease-in-out",
-        className,
-        originalInView
-          ? "bg-original-800"
-          : yerbaInView
-          ? "bg-yerba-900"
-          : "bg-gray-900"
+        originalInView && "bg-original-800",
+        yerbaInView && "bg-yerba-900",
+        matchaInView && "bg-matcha-900",
+        rooibosInView && "bg-rooibos-900",
+        noFlavour && "bg-gray-900",
+        className
       )}
     >
       {/* *** */}
