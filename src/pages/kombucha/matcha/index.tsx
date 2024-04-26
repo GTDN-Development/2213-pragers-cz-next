@@ -83,23 +83,27 @@ export default function Home() {
               className="w-full object-contain md:scale-125"
             />
           </Reveal>
-          <div className="grid items-start gap-x-10 gap-y-8 xs:grid-cols-1 sm:col-span-7 md:grid-cols-2">
-            <div className="my-auto">
-              <Reveal>
-                <CustomIcon iconNumber={4} />
-                <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                  {t.kombuchaDetailPages.matcha.about.subtitle1}
-                </Heading>
-                <p>{t.kombuchaDetailPages.matcha.about.content1}</p>
-              </Reveal>
+          <div className="my-auto  sm:col-span-7 ">
+            <div className="flex w-full flex-col items-start gap-y-8 gap-x-10 md:flex-row">
+              <div>
+                <Reveal>
+                  <CustomIcon iconNumber={4} />
+                  <Heading level={3} size="sm" color="rich" hasMarginBottom>
+                    {t.kombuchaDetailPages.matcha.about.subtitle1}
+                  </Heading>
+                  <p>{t.kombuchaDetailPages.matcha.about.content1}</p>
+                </Reveal>
+              </div>
+              <div>
+                <Reveal>
+                  <CustomIcon iconNumber={3} />
+                  <Heading level={3} size="sm" color="rich" hasMarginBottom>
+                    {t.kombuchaDetailPages.matcha.about.subtitle2}
+                  </Heading>
+                  <p>{t.kombuchaDetailPages.matcha.about.content2}</p>
+                </Reveal>
+              </div>
             </div>
-            <Reveal className="my-auto">
-              <CustomIcon iconNumber={3} />
-              <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                {t.kombuchaDetailPages.matcha.about.subtitle2}
-              </Heading>
-              <p>{t.kombuchaDetailPages.matcha.about.content2}</p>
-            </Reveal>
           </div>
         </Container>
 
