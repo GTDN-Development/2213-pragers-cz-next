@@ -21,7 +21,7 @@ export const pl = {
     nav: {
       menu: "Menu",
       otherLinks: "Kontakt",
-      socialFollow: "Follow us",
+      socialFollow: "ŚLEDŹ NAS",
     },
     fhpLink: {
       label: "F.H. Prager",
@@ -218,7 +218,7 @@ export const pl = {
       buttonLabelShop: "Kup teraz",
       subtitle1: "Kofeina",
       content1:
-        "Zawartość naturalnej kofeiny zmniejsza zmęczenie i wspomaga koncentrację.  Regularne spożywanie Kombuchy Yerba Mate, w połączeniu z aktywnością fizyczną, może pozytywnie wpłynąć na proces utraty wagi.  ",
+        "Zawartość naturalnej kofeiny zmniejsza zmęczenie i wspomaga koncentrację.Regularne spożywanie Kombuchy Yerba Mate, w połączeniu z aktywnością fizyczną, może pozytywnie wpłynąć na proces utraty wagi.",
       subtitle2: "oryginalny smak",
       content2:
         "Nasz wariant herbaty Yerba Maté jest przetwarzany tradycyjną metodą palenia - co nadaje naszej Kombuchy subtelny kawowy, niemal czekoladowy posmak.",
