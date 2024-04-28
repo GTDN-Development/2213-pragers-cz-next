@@ -2,11 +2,11 @@ export const pl = {
   common: {
     routes: {
       home: {
-        label: "Home",
+        label: "strona główna",
         href: "/",
       },
       about: {
-        label: "About us",
+        label: "O nas",
         href: "/o-nas",
       },
       kombucha: {
@@ -14,13 +14,13 @@ export const pl = {
         href: "/kombucha",
       },
       contact: {
-        label: "Contact",
+        label: "Kontakt",
         href: "/kontakt",
       },
     },
     nav: {
       menu: "Menu",
-      otherLinks: "Contact",
+      otherLinks: "Kontakt",
       socialFollow: "Follow us",
     },
     fhpLink: {
@@ -31,27 +31,27 @@ export const pl = {
       copyright: "",
     },
     healthBenefits: {
-      title: "Health benefits",
-      subtitle1: "Energy booster",
-      subtitle2: "Antioxidants",
-      subtitle3: "Healthly gut",
-      subtitle4: "Probiotic cultures",
+      title: "Korzyści zdrowotne",
+      subtitle1: "WZMACNIACZ ENERGII",
+      subtitle2: "ANTYOKSYDANTY",
+      subtitle3: "ZDROWE JELITA",
+      subtitle4: "KULTURY PROBIOTYCZNE",
     },
     ctaCards: {
       kombucha: {
         title: "About kombucha",
         content:
-          "Fermented tea, or kombucha, is a beverage that has been known to mankind for centuries. It is a nutritious beverage that is created by fermenting tea using a symbiotic culture of bacteria and yeast.",
+          "Herbata Kombuchy Original została wyhodowana  w ojczyźnie herbaty w odległych Chinach i jest idealna do codziennego orzeźwienia.",
       },
       original: {
         title: "Kombucha original",
         content:
-          "Tea tree leaves support cognitive and mental health. The tea for our Original was grown in the motherland of tea in distant China and is ideal for daily invigoration.",
+          "Herbata Kombuchy Original została wyhodowana  w ojczyźnie herbaty w odległych Chinach i jest idealna do codziennego orzeźwienia.",
       },
       yerba: {
         title: "Kombucha yerba maté",
         content:
-          "We have a special flavor for special occasions. We're talking about the South American Cesmina Paraguayan, or yerba mate.",
+          "Mamy specjalny smak na specjalne okazje. Mowa o południowoamerykańskiej Cesmina Paraguayan, czyli yerba mate.",
       },
       matcha: {
         title: "Kombucha matcha",
@@ -67,43 +67,43 @@ export const pl = {
   },
   home: {
     seo: {
-      title: "The first tasty Kombucha",
+      title: "Kombucha z prawdziwej herbaty!",
       description:
         "Non-Alcoholic Cider F.H. Prager was our entry into the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
     },
     hero: {
-      title: "The first tasty kombucha",
+      title: "Kombucha z prawdziwej herbaty!",
       description:
         "Under the brand of F.H. Prager, they introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea. Since then, we have been dedicated to low-alcohol fermentation and bring you the first tasty kombucha.",
-      buttonLabel: "Learn more",
+      buttonLabel: "DOWIEDZ SIĘ WIĘCEJ",
     },
     about: {
-      title: "What is prager's?",
+      title: "czym jest prager’s?",
       perex:
-        "What came first - apple or tea? In 2021, under the brand of F.H. Prager, we introduced the the very first non-alcoholic cider to the Czechoslovak market. This was our ticket to the world of low-alcohol fermentation. And it was also the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
-      subtitle1: "From apple to tea",
+        "Co było pierwsze - jabłko czy herbata? W 2021 roku, pod marką F.H. Prager, wprowadziliśmy na czeski i słowacki rynek pierwszy bezalkoholowy cydr. To był nie tylko nasz bilet do świata fermentacji niskoalkoholowej, ale również początek PRAGER'S - projektu, w którym zdecydowaliśmy się eksperymentować z fermentacją. Zaczęliśmy od herbaty.",
+      subtitle1: "OD JABŁKA DO HERBATY",
       content1:
-        "Our first steps with low-alcoholic fermentation begun with the Non-alcoholic cider...",
+        "Nasze pierwsze kroki z fermentacją niskoalkoholową rozpoczęły się od bezalkoholowego cydru...",
       largeText:
-        "Besides apples, we were enchanted by tea and its fermentation. We have started to experiment with microbial cultures and various types of tea until we found the perfect combination of premium quality tea and acids created by fermentation. OUR FIRST KOMBUCHA WAS BORN.",
-      subtitle2: "Just the begining",
+        "GDY Zastanawialiśmy się, co jeszcze możemy sfermentować naszą uwagę PRZYCIĄGNĘŁY HERBATY - Tak powstała nasza pierwsza kombucha.",
+      subtitle2: "TO DOPIERO POCZĄTEK",
       content2:
-        "Our vision is to expand the PRAGER'S portfolio with more fermented beverages. Whether it is long forgotten recipes or drinks that might not exist yet, we will be looking for the most unique tastes and ideas.",
+        "Naszą wizją jest rozszerzanie portfolio PRAGER'S o kolejne napoje fermentowane. Stale poszukujemy unikalnych smaków i pomysłów na kolejne produkty - niezależenie od tego, czy bazą są zapomniane receptury, czy też innowacyjne rozwiązania o których nie słyszał dotąd rynek.",
     },
     productKombucha: {
       title: "Prager's kombucha",
       description:
-        "Let's start the day with something fresh. How about fizzy tea?",
-      buttonLabel: "Find out more",
+        "Zacznijmy dzień od czegoś świeżego. Co powiesz na fermentowaną  herbatę?",
+      buttonLabel: "DOWIEDZ SIĘ WIĘCEJ",
     },
     ctaContact: {
       marquee: "@ pragers_",
-      title: "Let's get in touch!",
+      title: "Skontaktuj się z nami!",
       description:
-        "Do you want PRAGER'S products at your pub? Or do you just wanna chat? Send us an email!",
-      buttonLabel: "Contact us",
+        "Chcesz posiadać asortyment PRAGER'S w swoim sklepie? A może po prostu chcesz porozmawiać? Wyślij nam e-mail!",
+      buttonLabel: "Szukasz czegoś więcej?",
     },
-    ctaPrager: "Visit F.H. Prager website",
+    ctaPrager: "Odwiedź stronę internetową F.H. Prager",
   },
   about: {
     seo: {
@@ -112,45 +112,45 @@ export const pl = {
         "Non-Alcoholic Cider F.H. Prager was our entry into the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
     },
     hero: {
-      title: "About us",
+      title: "O nas",
       description: "",
-      buttonLabel: "Learn more",
+      buttonLabel: "Chcesz dowiedzieć się więcej?",
     },
     about: {
-      title: "What is prager's?",
+      title: "Czym jest prager's?",
       perex:
-        "What came first - apple or tea? In 2021, under the brand of F.H. Prager, we introduced the the very first non-alcoholic cider to the Czechoslovak market. This was our ticket to the world of low-alcohol fermentation. And it was also the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
-      subtitle1: "From apple to tea",
+        "Co było pierwsze - jabłko czy herbata? W 2021 roku, pod marką F.H. Prager, wprowadziliśmy na czechosłowacki rynek pierwszy bezalkoholowy cydr. To był nasz bilet do świata fermentacji niskoalkoholowej. Był to również początek PRAGER'S - projektu, w którym zdecydowaliśmy się eksperymentować z fermentacją. Zaczęliśmy od herbaty.",
+      subtitle1: "OD JABŁKA DO HERBATY",
       content1:
-        "Our first steps with low-alcoholic fermentation begun with the Non-alcoholic cider...",
+        "Nasze pierwsze kroki z fermentacją niskoalkoholową rozpoczęły się od bezalkoholowego cydru...",
       largeText:
-        "Besides apples, we were enchanted by tea and its fermentation. We have started to experiment with microbial cultures and various types of tea until we found the perfect combination of premium quality tea and acids created by fermentation. OUR FIRST KOMBUCHA WAS BORN.",
-      subtitle2: "Just the begining",
+        "GDY Zastanawialiśmy się, co jeszcze możemy sfermentować naszą uwagę PRZYCIĄGNĘŁY HERBATY - Tak powstała nasza pierwsza kombucha.",
+      subtitle2: "TO DOPIERO POCZĄTEK",
       content2:
-        "Our vision is to expand the PRAGER'S portfolio with more fermented beverages. Whether it is long forgotten recipes or drinks that might not exist yet, we will be looking for the most unique tastes and ideas.",
+        "Naszą wizją jest rozszerzanie portfolio PRAGER'S o kolejne napoje fermentowane. Stale poszukujemy unikalnych smaków i pomysłów na kolejne produkty - niezależenie od tego, czy bazą są zapomniane receptury, czy też innowacyjne rozwiązania o których nie słyszał dotąd rynek.",
     },
     enviroment: {
-      title: "Sustainability",
+      title: "zrównoważony rozwój",
       content:
-        "Although our project is still in its early days, sustainability has been in our DNA from the very first steps. Whether it is the choice of raw materials, suppliers or packaging solutions, sustainability is one of the main decision factors along with quality and price. One of our most effective solutions has been a decision to choose returnable bottles.",
-      buttonLabel: "Learn more",
+        "Chociaż nasz projekt jest wciąż na wczesnym etapie, zrównoważony rozwój jest w naszym DNA od samego początku. Niezależnie od tego, czy chodzi o wybór surowców, dostawców czy rozwiązań opakowaniowych, zrównoważony rozwój jest jednym z głównych czynników decyzyjnych, obok jakości i ceny. ",
+      buttonLabel: "Co warto wiedzieć?",
     },
     ourMission: {
-      title: "Our mission",
+      title: "NASZA MISJA",
       content:
-        "We are explorers, we are brave and unconventional and we pursue our goals. We are looking for new and unique tastes and their combinations. We are fascinated by fermentation which has become our key to unknown and mysterious worlds.",
-      subtitle1: "Ingredients",
+        "Jesteśmy odkrywcami, odważnie i nieszablonowo dążymy do celu. Szukamy nowych, niepowtarzalnych smaków i ich połączeń. Fascynuje nas fermentacja, która stała się naszym kluczem do nieznanych i tajemniczych światów.",
+      subtitle1: "SKŁADNIKI",
       content1:
-        "You can't build a house without a solid foundation. Likewise, you can't make a quality drink without using the best ingredients!",
-      subtitle2: "Taste",
+        "Nie można zbudować domu bez solidnych fundamentów. Podobnie, nie można przygotować wysokiej jakości napoju bez użycia najlepszych składników!",
+      subtitle2: "Smak",
       content2:
-        "We want to produce quality and unusual drinks, but not at the expense of taste! It is crucial for us that our products are not only innovative, but also that their taste can put smiles on people's faces.",
-      subtitle3: "Fermentation",
+        "Chcemy produkować wysokiej jakości i niezwykłe napoje, ale nie kosztem smaku! Ważne jest dla nas, aby nasze produkty były nie tylko innowacyjne, ale także aby ich smak wywoływał uśmiech na twarzach ludzi.",
+      subtitle3: "Fermentacja",
       content3:
-        "One of the main pillars of PRAGER'S was to create drinks that not only taste good, but are also functional and add value where it is needed in today's hectic times.",
-      subtitle4: "Distinctive design",
+        "Jednym z głównych filarów PRAGER'S było tworzenie napojów, które nie tylko dobrze smakują, ale są również funkcjonalne i dodają wartości tam, gdzie jest to potrzebne w dzisiejszych gorączkowych czasach.",
+      subtitle4: "WYRÓŻNIAJĄCY SIĘ DESIGN",
       content4:
-        "Our product labels work as a portal to the worlds from which our products come. And thanks to them, you'll always recognize us!",
+        "Etykiety naszych produktów działają jak portal do światów, z których pochodzą nasze produkty. Dzięki nim zawsze nas rozpoznasz!",
     },
   },
   kombucha: {
@@ -161,94 +161,93 @@ export const pl = {
     },
     hero: {
       title: "Prager's Kombucha",
-      buttonLabel: "Learn more",
+      buttonLabel: "Dowiedz się więcej",
     },
     aboutKombucha: {
-      title: "what is a kombucha?",
+      title: "czym jest kombucha?",
       paragraph1:
-        "Fermented tea, or kombucha, is a beverage that has been known to mankind for centuries. It is a nutritious beverage that is created by fermenting tea using a symbiotic culture of bacteria and yeast.",
-      paragraph2:
-        "Kombucha is often considered good for overall well-being because it contains live cultures of bacteria that have positive benefits for the digestive system.",
+        "KOMBUCHA, CZYLI DELIKATNIE MUSUJĄCa, FERMENTOWANA HERBATA ZNANa JEST LUDZKOŚCI OD WIEKÓW. DOBROCZYNNY NAPÓJ POWSTAJE W WYNIKU FERMENTACJI HERBATY, PRZY UDZIALE SYMBIOTYCZNEJ KULTURY BAKTERII I DROŻDŻY, DZIĘKI CZEMU MOŻE KORZYSTNIE WPŁYWAĆ NA UKŁAD TRAWIENNY.",
+      paragraph2: "",
     },
     whyWeAreDifferent: {
-      kicker: "How are we different?",
-      title: "Production",
-      subtitle1: "Tea",
+      kicker: "Czym się wyróżniamy?",
+      title: "PRODUKCJA",
+      subtitle1: "HERBATA",
       content1:
-        "Our kombucha is made from premium teas supplied by LEROS, a company that specializes in growing and importing the finest teas and herbs from around the world.",
-      subtitle2: "Fermentation",
+        "Nasza kombucha jest wytwarzana z herbat premium dostarczanych przez firmę LEROS, która specjalizuje się w uprawie i imporcie najlepszych herbat i ziół z całego świata.",
+      subtitle2: "Fermentacja",
       content2:
-        "We have developed a controlled fermentation process tailored to the unique type of fermentation cultures that guarantees the best quality in every bottle.",
-      subtitle3: "Taste",
+        "Opracowaliśmy kontrolowany proces fermentacji, dostosowany do unikalnego rodzaju kultur fermentacyjnych, który gwarantuje najlepszą jakość w każdej puszce.",
+      subtitle3: "Smak",
       content3:
-        "Exceptional flavour crafted by the combination of a strong infusion of the finest teas and the sweet and sour taste of fermentation, created by unique variation of yeast cultures.",
+        "Wyjątkowy smak uzyskany dzięki połączeniu mocnego naparu z najlepszych herbat oraz słodko-kwaśnego smaku fermentacji, stworzonego przez unikalną odmianę kultur drożdży.",
     },
     properties: {
-      title: "Features",
-      subtitle1: "Healthly gut",
+      title: "Funkcje",
+      subtitle1: "Zdrowe Jelita",
       content1:
-        "The organic acids produced by fermentation help improve intestinal peristalsis and contribute to better digestion.",
-      subtitle2: "Antioxidants",
+        "Kwasy organiczne wytwarzane w procesie fermentacji pomagają poprawić perystaltykę jelit i przyczyniają się do lepszego trawienia.",
+      subtitle2: "ANTYOKSYDANTY",
       content2:
-        "Commonly found in tea leaves, antioxidants help to protect against oxidative stress to the body.",
-      subtitle3: "Probiotic cultures",
+        "Powszechnie występujące w liściach herbaty przeciwutleniacze pomagają chronić organizm przed stresem oksydacyjnym.",
+      subtitle3: "KULTURY PROBIOTYCZNE",
       content3:
-        "Each bottle of our kombucha contains 33 million probiotic cultures.",
-      subtitle4: "Energy boosters",
+        "Każda butelka naszej kombuchy zawiera 33 miliony kultur probiotycznych.",
+      subtitle4: "WZMACNIACZ ENERGII",
       content4:
-        "The combination of premium ingredients and their positive properties contribute to an optimal start of the day.",
+        "Połączenie najwyższej jakości składników i ich pozytywnych właściwości przyczynia się do optymalnego rozpoczęcia dnia.",
     },
     original: {
       title: "Original",
       description:
-        "The main ingredient in our Original is Camellia sinensis, also known as green tea. Native to India and China, this tea variety is characterised by its intense but balanced and refreshing flavour.",
-      buttonLabel: "Learn more",
-      buttonLabelShop: "Buy now",
-      subtitle1: "Probiotic cultures",
+        "Głównym składnikiem naszej Kombuchy Original jest zielona herbata (Camellia sinensis). Ta pochodząca z Indii i Chin odmiana herbaty charakteryzuje się intensywnym, ale zrównoważonym i orzeźwiającym smakiem.",
+      buttonLabel: "więcej informacji",
+      buttonLabelShop: "KUP TERAZ",
+      subtitle1: "KULTURY PROBIOTYCZNE",
       content1:
-        "Each of our kombuchas contains millions of probiotic cultures and lactic and acetic acids produced by fermentation.",
-      subtitle2: "Yeast cultures",
+        "Każda z naszych kombuch zawiera miliony kultur probiotycznych oraz kwasy mlekowy i octowy, wytwarzane w procesie fermentacji.",
+      subtitle2: "KULTURy DROŻDŻY",
       content2:
-        "Thanks to special yeast cultures, we are able to control the fermentation process and guarantee the same refreshing and gently sour taste each and every time.",
+        "Dzięki specjalnym kulturom drożdży jesteśmy w stanie kontrolować proces fermentacji, przez co możemy zagwarantować ten sam orzeźwiający, subtelnie kwaśny smak za każdym razem w każdej puszce.",
     },
     yerba: {
-      title: "Yerba Mate",
+      title: "Maté",
       description:
-        "Typical to South America, Yerba Mate beverages are becoming increasingly popular. This is mainly due to its delicious taste, which is characterised by herbal and fruity flavours.",
-      buttonLabel: "Find out more",
-      buttonLabelShop: "Buy now",
-      subtitle1: "Caffeine",
+        "Typowe dla Ameryki Południowej napary Yerba Mate znajdują coraz większe grono miłośników w naszych regionach świata. Dzieje się tak głównie ze względu na jej właściwości, które mogą wpływać na nasz poziom energii oraz pyszny smak.",
+      buttonLabel: "więcej informacji",
+      buttonLabelShop: "Kup teraz",
+      subtitle1: "Kofeina",
       content1:
-        "The natural caffeine content reduces fatigue and promotes concentration. It activates fat deposits and, in combination with physical activity, promotes weight loss.",
-      subtitle2: "Original taste",
+        "Zawartość naturalnej kofeiny zmniejsza zmęczenie i wspomaga koncentrację.  Regularne spożywanie Kombuchy Yerba Mate, w połączeniu z aktywnością fizyczną, może pozytywnie wpłynąć na proces utraty wagi.  ",
+      subtitle2: "oryginalny smak",
       content2:
-        "Our Yerba Maté tea variant is processed by traditional form of roasting - the kombucha has a subtle coffee, almost chocolatelike, taste.",
+        "Nasz wariant herbaty Yerba Maté jest przetwarzany tradycyjną metodą palenia - co nadaje naszej Kombuchy subtelny kawowy, niemal czekoladowy posmak.",
     },
     matcha: {
       title: "Matcha",
       description:
-        "Experience the ultimate fusion of Matcha's potency and the magic of fermentation with our Kombucha Matcha. It's your ideal, natural life booster!",
-      buttonLabel: "Find out more",
-      buttonLabelShop: "Buy now",
-      subtitle1: "Probiotic cultures",
+        "Doświadcz ostatecznego połączenia mocy Matcha i magii fermentacji z naszą Kombucha Matcha. To idealny, naturalny wzmacniacz życia!",
+      buttonLabel: "Więcej informacji",
+      buttonLabelShop: "E-sklep",
+      subtitle1: "Kultury probiotyczne",
       content1:
-        "Each of our kombuchas contains millions of probiotic cultures and lactic and acetic acids produced by fermentation.",
-      subtitle2: "Nature first",
+        "Każdy z naszych kombuchów zawiera miliony kultur probiotycznych oraz kwasy mlekowy i octowy wytwarzane w procesie fermentacji.",
+      subtitle2: "Najpierw natura",
       content2:
-        "Unlocking superior benefits, Matcha contains heightened levels of potent compounds like catechins, theanine, and caffeine. Enhancing cognitive functions, it elevates attention, performance, and stress resilience.",
+        "Matcha zawiera podwyższony poziom silnych związków, takich jak katechiny, teanina i kofeina. Poprawiając funkcje poznawcze, zwiększa uwagę, wydajność i odporność na stres.",
     },
     rooibos: {
       title: "Rooibos",
       description:
-        "Rooibos, also known as the Cape bush tea, originates from South Africa, specifically from the region of Western Cape in the Republic of South Africa. It is characterized by a subtly sweet taste, and among its great advantages is that it does not contain caffeine while being rich in antioxidants.",
-      buttonLabel: "Find out more",
-      buttonLabelShop: "Buy now",
-      subtitle1: "Caffeine free",
+        "Rooibos, znana również jako herbata z krzewu Cape, pochodzi z Republiki Południowej Afryki, a konkretnie z regionu Western Cape w Republice Południowej Afryki. Charakteryzuje się subtelnie słodkim smakiem, a wśród jej wielkich zalet jest to, że nie zawiera kofeiny, a jednocześnie jest bogata w przeciwutleniacze.",
+      buttonLabel: "Więcej informacji",
+      buttonLabelShop: "E-sklep",
+      subtitle1: "Bez kofeiny",
       content1:
-        "Rooibos kombucha is naturally caffeine-free, making it a great choice for those looking to reduce their caffeine intake or for those who simply prefer to drink tea later in the day.",
-      subtitle2: "Rich in antioxidants",
+        "Rooibos kombucha naturalnie nie zawiera kofeiny, dzięki czemu jest doskonałym wyborem dla osób, które chcą ograniczyć spożycie kofeiny lub dla tych, którzy po prostu wolą pić herbatę później w ciągu dnia.",
+      subtitle2: "Bogata w antyoksydanty",
       content2:
-        "Rooibos tea contains polyphenols and flavonoids, which are potent antioxidants. These substances help neutralize free radicals in the body and protect cells from damage.",
+        "Herbata Rooibos zawiera polifenole i flawonoidy, które są silnymi przeciwutleniaczami. Substancje te pomagają neutralizować wolne rodniki w organizmie i chronić komórki przed uszkodzeniem. ",
     },
     learnMore: "Learn more about our products",
   },
@@ -260,31 +259,32 @@ export const pl = {
           "The main ingredient in our Original is green tea. Originating from India and China, this variety of tea is characterized by an intense but balanced and fresh taste.",
       },
       hero: {
-        title1: "Tea",
+        title1: "Herbata",
         content1:
-          "The tea for our Original was grown in the motherland of tea in distant China and is ideal for daily invigoration.",
-        title2: "Probiotic cultures",
-        content2: "At least 33 million probiotic cultures in each bottle.",
-        title3: "Taste",
+          "Herbata do naszego Original została wyhodowana w ojczyźnie herbaty w odległych Chinach i jest idealna do codziennego orzeźwienia.",
+        title2: "Kultury probiotyczne",
+        content2:
+          "Co najmniej 33 miliony kultur probiotycznych w każdej butelce.",
+        title3: "Smak",
         content3:
-          "Unique combination of strong tea flavor and sweet-sour taste of fermentation",
+          "Unikalne połączenie mocnego herbacianego smaku i słodko-kwaśnego smaku fermentacji.",
       },
       about: {
         title: "Original",
         perex:
-          "We have developed a special brewing process to create a tea infusion rich in aroma and flavour but low in bitter tannins. As a result, our kombucha has a fresh and strong tea flavour.",
-        buttonLabel: "Go to shop",
-        subtitle1: "probiotic cultures",
+          "Opracowaliśmy specjalny proces parzenia, aby uzyskać napar bogaty w aromat i smak, ale o niskiej zawartości gorzkich garbników. W rezultacie uzyskaliśmy wyjątkowy smak kombuchy original.",
+        buttonLabel: "kup teraz",
+        subtitle1: "KULTURY probiotyczne",
         content1:
-          "Each of our kombuchas contains millions of probiotic cultures and lactic and acetic acids produced by fermentation.",
-        subtitle2: "Yeast cultures",
+          "Każda nasza kombucha zawiera miliony kultur probiotycznych oraz kwasy mlekowy i octowy powstający w procesie fermentacji.",
+        subtitle2: "KULTURY DROŻDŻY",
         content2:
-          "Thanks to special yeast cultures, we are able to control the fermentation process and guarantee the same refreshing and gently sour taste each and every time.",
+          "Dzięki specjalnym kulturom drożdży jesteśmy w stanie kontrolować proces fermentacji i zagwarantować ten sam orzeźwiający i delikatnie kwaśny smak za każdym razem.",
       },
       otherInfo: {
         title: "Other information",
         collapse1: {
-          title: "Nutritional information per 100ml",
+          title: "fakty żywieniowe",
           content:
             "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
         },
@@ -294,7 +294,7 @@ export const pl = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
         },
       },
-      healthBenefitsTitle: "Let's start the day with something fresh benefity",
+      healthBenefitsTitle: "ZACZNIJ DZIEŃ OD KOMBUCHY ",
     },
     yerba: {
       seo: {
@@ -303,30 +303,31 @@ export const pl = {
           "Typical of South America, Yerba Maté is becoming increasingly popular. This is mainly due to its delicious taste, which is characterized by herbal and fruity notes.",
       },
       hero: {
-        title1: "Tea",
+        title1: "Herbata",
         content1:
-          "Yerba Maté is originally from South America, our variety is specifically from Argentina.",
-        title2: "Probiotic cultures",
-        content2: "At least 33 million probiotic cultures in each bottle.",
-        title3: "Taste",
-        content3: "Roasted Yerba leaves have an almost coffee-like taste.",
+          "Yerba mate pochodzi z Ameryki Południowej, a nasza odmiana z Argentyny.",
+        title2: "kultury probiotyczne",
+        content2:
+          "Co najmniej 33 miliony kultur probiotycznych w każdej butelce.",
+        title3: "Smak",
+        content3: "Prażone liście Yerba mają niemal kawowy smak.",
       },
       about: {
-        title: "YERBA Maté",
+        title: "Maté",
         perex:
-          "Our infusion is made by the traditional South American method of tea preparation, which results in a smoky flavour and rich colour.",
-        buttonLabel: "Go to shop",
-        subtitle1: "Caffeine",
+          "Nasz napar jest przygotowywany tradycyjną południowoamerykańską metodą, która pozwala uzyskać dymny smak i bogaty kolor.",
+        buttonLabel: "E-sklep",
+        subtitle1: "Kofeina",
         content1:
-          "The natural caffeine content reduces fatigue and promotes concentration. It activates fat deposits and, in combination with physical activity, promotes weight loss.",
-        subtitle2: "Unusual taste",
+          "Zawartość naturalnej kofeiny zmniejsza zmęczenie i wspomaga koncentrację. Aktywuje złogi tłuszczu, a w połączeniu z aktywnością fizyczną wspomaga utratę wagi.",
+        subtitle2: "niezwykły smak",
         content2:
-          "Our Yerba Maté tea variant is processed by traditional form of roasting - the kombucha has a subtle coffee, almost chocolatelike, taste.",
+          "Nasz wariant herbaty Yerba Maté jest przetwarzany tradycyjną metodą palenia - kombucha ma subtelny kawowy, niemal czekoladowy smak.",
       },
       otherInfo: {
         title: "Other information",
         collapse1: {
-          title: "Nutritional information per 100ml",
+          title: "fakty żywieniowe",
           content:
             "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
         },
@@ -336,7 +337,7 @@ export const pl = {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
         },
       },
-      healthBenefitsTitle: "Let's start the day with something fresh benefity",
+      healthBenefitsTitle: "Zacznijmy dzień od czegoś świeżego",
     },
     matcha: {
       seo: {
@@ -345,30 +346,31 @@ export const pl = {
           "Experience the ultimate fusion of Matcha's potency and the magic of fermentation with our Kombucha Matcha. It's your ideal, natural life booster!",
       },
       hero: {
-        title1: "Tea",
+        title1: "Herbata",
         content1:
-          "For our kombucha, we've selected premium Matcha, typical for Japan.",
-        title2: "Probiotic cultures",
-        content2: "At least 33 million probiotic cultures in each bottle.",
-        title3: "Function",
-        content3: "Matcha is rich in natural compounds.",
+          "Do naszej kombuchy wybraliśmy najwyższej jakości herbatę Matcha, typową dla Japonii.",
+        title2: "Kultury probiotyczne",
+        content2:
+          "Co najmniej 33 miliony kultur probiotycznych w każdej butelce.",
+        title3: "Funkcja",
+        content3: "Matcha jest bogata w naturalne związki.",
       },
       about: {
         title: "MATCHA",
         perex:
-          "Experience the fusion of Matcha's potency and the magic of fermentation in our Kombucha, crafting a beverage renowned for its exquisite flavor and enriched with performance-boosting compounds like L-theanine and caffeine. Elevate your cognitive functions effortlessly.",
-        buttonLabel: "Zobrazit v e-shopu",
-        subtitle1: "L-Theanine",
+          "Doświadcz połączenia mocy Matchy i magii fermentacji w naszej Kombuchy, które tworzą napój znany ze swojego wyśmienitego smaku. KOMBUCHA MATCHA WZBOGACONA JEST o związki zwiększające wydajność, takie jak L-teanina i kofeina. Podnieś swoje funkcje poznawcze bez wysiłku.",
+        buttonLabel: "E-sklep",
+        subtitle1: "L-Teanina",
         content1:
-          "This amino acid, combined with natural caffeine (theine), can naturally enhance mental activity while keeping you relaxed.",
-        subtitle2: "Caffeine",
+          "Ten aminokwas, w połączeniu z naturalną kofeiną (teiną), może naturalnie zwiększyć aktywność umysłową, jednocześnie zapewniając relaks.",
+        subtitle2: "Kofeina",
         content2:
-          "In tea it is known as theine. The main difference between caffeine and theine lies in absorption. Theine in tea is found in a bound form, thus its effects are less abrupt and last longer.",
+          "W herbacie znana jest jako teina. Główna różnica między kofeiną a teiną polega na wchłanianiu. Teina w herbacie występuje w formie związanej, dzięki czemu jej działanie jest mniej gwałtowne i trwa dłużej.",
       },
       otherInfo: {
         title: "Other information",
         collapse1: {
-          title: "Nutritional information per 100ml",
+          title: "Dane żywieniowe",
           content:
             "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
         },
@@ -379,7 +381,7 @@ export const pl = {
         },
       },
       healthBenefitsTitle:
-        "The ideal start of your day begins with bubbles... tea with bubbles",
+        "Idealny początek dnia zaczyna się od bąbelków... herbatY z bąbelkami",
     },
     rooibos: {
       seo: {
@@ -388,31 +390,32 @@ export const pl = {
           "Rooibos, also known as the Cape bush tea, originates from South Africa, specifically from the region of Western Cape in the Republic of South Africa. It is characterized by a subtly sweet taste, and among its great advantages is that it does not contain caffeine while being rich in antioxidants.",
       },
       hero: {
-        title1: "Herb",
+        title1: "zioło",
         content1:
-          "The Cape bush tea grows exclusively in South Africa, in a small area of the Western Cape, and its strength has been utilized by the native people of the region since ancient times.",
-        title2: "Probiotic cultures",
-        content2: "At least 33 million probiotic cultures in each bottle.",
-        title3: "Taste",
+          "Herbata krzewiasta Cape rośnie wyłącznie w Republice Południowej Afryki, na niewielkim obszarze Przylądka Zachodniego, a jej siła była wykorzystywana przez rdzennych mieszkańców tego regionu od czasów starożytnych.",
+        title2: "Kultury probiotyczne",
+        content2:
+          "Co najmniej 33 miliony kultur probiotycznych w każdej butelce.",
+        title3: "Smak",
         content3:
-          "A great combination of the sweet taste of rooibos with the tangy flavor of kombucha.",
+          "Doskonałe połączenie słodkiego smaku herbaty rooibos z pikantnym smakiem kombuchy.",
       },
       about: {
         title: "ROOIBOS",
         perex:
-          "The unique blend of flavors and the health benefits of rooibos are largely attributed to the antioxidants it contains, especially polyphenols.",
-        buttonLabel: "Zobrazit v e-shopu",
-        subtitle1: "Caffeine free",
+          "Unikalna mieszanka smaków i korzyści zdrowotne herbaty rooibos są w dużej mierze przypisywane zawartym w niej przeciwutleniaczom, zwłaszcza polifenolom.",
+        buttonLabel: "E-sklep",
+        subtitle1: "Bez kofeiny",
         content1:
-          "Rooibos kombucha is naturally caffeine-free, making it a great choice for those looking to reduce their caffeine intake or for those who simply prefer to drink tea later in the day.",
-        subtitle2: "Rich in antioxodants",
+          "Rooibos kombucha naturalnie nie zawiera kofeiny, dzięki czemu jest doskonałym wyborem dla osób, które chcą ograniczyć spożycie kofeiny lub dla tych, którzy po prostu wolą pić herbatę później w ciągu dnia.",
+        subtitle2: "bogata w antyoksydanty",
         content2:
-          "Rooibos tea contains polyphenols and flavonoids, which are potent antioxidants. These substances help neutralize free radicals in the body and protect cells from damage.",
+          "Herbata Rooibos zawiera polifenole i flawonoidy, które są silnymi przeciwutleniaczami. Substancje te pomagają neutralizować wolne rodniki w organizmie i chronić komórki przed uszkodzeniem.",
       },
       otherInfo: {
         title: "Other information",
         collapse1: {
-          title: "Nutritional information per 100ml",
+          title: "Dane żywieniowe",
           content:
             "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
         },
@@ -423,24 +426,24 @@ export const pl = {
         },
       },
       healthBenefitsTitle:
-        "The ideal start of your day begins with bubbles... tea with bubbles",
+        "Idealny początek dnia zaczyna się od bąbelków... herbaty z bąbelkami",
     },
   },
   contact: {
     seo: {
-      title: "Contact",
+      title: "Kontakt",
       description: "",
     },
-    title: "Contact",
+    title: "Kontakt",
     item1: {
-      title: "Phone / E-mail",
+      title: "Kontakt",
     },
     item2: {
-      title: "Adress",
+      title: "Adres",
       content: "U Národní galerie 470, 156 00 Zbraslav, Česká republika",
     },
     item3: {
-      title: "Billing information",
+      title: "Faktura",
       content:
         "F.H.Prager s.r.o. U Národní galerie 470, Zbraslav, 156 00 Praha, IČO: 29153379",
     },
