@@ -14,6 +14,7 @@ module.exports = {
       },
       screens: {
         xs: "374px",
+        "3xl": "2560px",
       },
       colors: {
         gray: colors.zinc,

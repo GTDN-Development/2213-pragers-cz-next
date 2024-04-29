@@ -10,6 +10,7 @@ import Image from "next/image";
 
 export function HeroMobile({ className = "" }: { className?: string }) {
   const t = useTranslation();
+
   return (
     <>
       <section
@@ -39,6 +40,7 @@ export function HeroMobile({ className = "" }: { className?: string }) {
   );
 }
 
+// Desktop
 export function Hero({ className = "" }: { className?: string }) {
   const t = useTranslation();
   return (
@@ -56,7 +58,7 @@ export function Hero({ className = "" }: { className?: string }) {
           <div
             className="h-full"
             style={{
-              backgroundImage: `url(/images/kombucha/parallax-base-xs-better-q.jpg)`,
+              backgroundImage: `url(/images/kombucha/parallax-base.jpg)`,
               backgroundSize: "3264px",
               backgroundPosition: "center",
               backgroundRepeat: "repeat-x",
@@ -84,7 +86,7 @@ export function Hero({ className = "" }: { className?: string }) {
           <div
             className="h-full"
             style={{
-              backgroundImage: `url(/images/kombucha/parallax-middle-xs.png)`,
+              backgroundImage: `url(/images/kombucha/parallax-middle.png)`,
               backgroundSize: "3264px",
               backgroundPosition: "center",
               backgroundRepeat: "repeat-x",
@@ -98,7 +100,7 @@ export function Hero({ className = "" }: { className?: string }) {
           <div
             className="h-full"
             style={{
-              backgroundImage: `url(/images/kombucha/parallax-top-xs.png)`,
+              backgroundImage: `url(/images/kombucha/parallax-top.png)`,
               backgroundSize: "3264px",
               backgroundPosition: "center",
               backgroundRepeat: "repeat-x",
