@@ -93,6 +93,22 @@ export default function Contact() {
                 </div>
               </div>
             </Reveal>
+
+            {/* pragers badge */}
+            <Reveal className="col-span-1 flex items-center justify-start sm:justify-center">
+              <div
+                className={clsx(
+                  "flex h-72 w-72 flex-col items-center justify-center rounded-full bg-gray-900 text-center"
+                )}
+              >
+                <img
+                  src="/svgs/pragers-badge-white.svg"
+                  alt="F.H. Prager badge"
+                  width={233}
+                  height={83}
+                />
+              </div>
+            </Reveal>
           </Container>
         </Container>
       </section>

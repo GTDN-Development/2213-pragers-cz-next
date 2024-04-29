@@ -256,7 +256,7 @@ export function IngredientsFlavoursMobile({
           </div>
         </Container>
         <img
-          src="/svgs/text-original-vertical.svg"
+          src="/svgs/text-matcha-vertical.svg"
           alt="Original"
           width="392"
           height="1002"
@@ -315,7 +315,7 @@ export function IngredientsFlavoursMobile({
           </div>
         </Container>
         <img
-          src="/svgs/text-original-vertical.svg"
+          src="/svgs/text-rooibos-vertical.svg"
           alt="Original"
           width="392"
           height="1002"
@@ -604,7 +604,7 @@ export function IngredientsFlavours({
           className="relative grid min-h-screen grid-cols-3 gap-10"
         >
           <img
-            src="/svgs/text-original.svg"
+            src="/svgs/text-matcha.svg"
             alt="Original"
             width="1002"
             height="392"
@@ -660,7 +660,7 @@ export function IngredientsFlavours({
           className="relative grid min-h-screen grid-cols-3 gap-10"
         >
           <img
-            src="/svgs/text-original.svg"
+            src="/svgs/text-rooibos.svg"
             alt="Original"
             width="1002"
             height="392"

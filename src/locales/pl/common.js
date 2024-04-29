@@ -440,12 +440,12 @@ export const pl = {
     },
     item2: {
       title: "Adres",
-      content: "U Národní galerie 470, 156 00 Zbraslav, Česká republika",
+      content: "Św. Andrzeja Boboli 20,05-504, Złotokłos, Polska",
     },
     item3: {
       title: "Faktura",
       content:
-        "F.H.Prager s.r.o. U Národní galerie 470, Zbraslav, 156 00 Praha, IČO: 29153379",
+        "Premium Rosa Sp. z o.o.ul. Św. Andrzeja Boboli 20,05-504, Złotokłos, Polska, REGON: 141232155",
     },
   },
 };

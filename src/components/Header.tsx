@@ -4,7 +4,7 @@ import { Logo } from "@/components/Logo";
 import UiLink from "@/components/UiLink";
 import { contact, socials } from "@/configs/navigation";
 import { Listbox } from "@headlessui/react";
-import { CheckIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -323,8 +323,16 @@ const SelectItem = React.forwardRef(
       >
         {({ selected }) => (
           <li className={clsx("flex items-center hover:opacity-40")}>
-            {children}
-            {selected && <CheckIcon />}
+            <span className="flex w-6 items-center justify-center">
+              {selected && (
+                <img
+                  src="/icons/check-icon.svg"
+                  alt=""
+                  className="mx-2 scale-75"
+                />
+              )}
+            </span>
+            <p className="pl-1">{children}</p>
           </li>
         )}
       </Listbox.Option>
@@ -428,7 +436,7 @@ export default function Header() {
             </div>
 
             <div>
-              <ul className="flex flex-row gap-3 xl:gap-6">
+              <ul className="flex flex-row items-center justify-center gap-3 xl:gap-6">
                 <li>
                   {!mounted ? (
                     <div className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5">
@@ -445,20 +453,32 @@ export default function Header() {
                           locale: value,
                         });
                       }}
-                      className="relative"
+                      className="relative flex justify-center"
                     >
                       <Listbox.Button
                         aria-label="Language"
-                        className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5"
+                        className="group inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5"
                       >
                         {lang}
-
-                        <ChevronDownIcon />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          className="lucide lucide-chevron-down transition duration-300 group-hover:stroke-black"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
                       </Listbox.Button>
-                      <Listbox.Options className=" absolute mt-6 rounded-3xl border-4 border-white bg-white px-4 py-3 font-bold text-black">
-                        <SelectItem value="cs">CS</SelectItem>
-                        <SelectItem value="en">EN</SelectItem>
-                        <SelectItem value="pl">PL</SelectItem>
+                      <Listbox.Options className=" absolute mt-14 rounded-3xl border-4 border-white bg-white py-3 pr-4 pl-3 font-bold text-black">
+                        <SelectItem value="cs">Česky</SelectItem>
+                        <SelectItem value="en">English</SelectItem>
+                        <SelectItem value="pl">Polski</SelectItem>
                       </Listbox.Options>
                     </Listbox>
                   )}
