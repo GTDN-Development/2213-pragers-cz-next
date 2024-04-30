@@ -13,6 +13,7 @@ export default function CtaCard({
   text,
   disableBg = false,
   disableShadow = false,
+  isSmall = false,
 }: {
   className?: string;
   href: string;
@@ -23,6 +24,7 @@ export default function CtaCard({
   text: string;
   disableBg?: boolean;
   disableShadow?: boolean;
+  isSmall?: boolean;
 }) {
   return (
     <UiLink
@@ -44,8 +46,8 @@ export default function CtaCard({
           loading="lazy"
         />
       </div>
-      <div className="p-6 lg:p-16">
-        <Heading level={3} size="md" hasMarginBottom>
+      <div className={clsx("p-6 lg:p-16", isSmall && "lg:p-10")}>
+        <Heading level={3} size={isSmall ? "sm" : "md"} hasMarginBottom>
           {title}
         </Heading>
         <p>{text}</p>

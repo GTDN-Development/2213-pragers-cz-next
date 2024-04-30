@@ -251,6 +251,32 @@ export default function Kombucha() {
               className="bg-yerba-800"
             />
           </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/kombucha/matcha"
+              src="/images/kombucha/matcha/artwork.jpg"
+              width={960}
+              height={1009}
+              disableBg
+              disableShadow
+              title={t.common.ctaCards.matcha.title}
+              text={t.common.ctaCards.matcha.content}
+              className="bg-matcha-600"
+            />
+          </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/kombucha/rooibos"
+              src="/images/kombucha/rooibos/artwork.jpg"
+              width={960}
+              height={1009}
+              disableBg
+              disableShadow
+              title={t.common.ctaCards.rooibos.title}
+              text={t.common.ctaCards.rooibos.content}
+              className="bg-rooibos-800"
+            />
+          </Reveal>
         </Container>
       </section>
     </Layout>

@@ -137,17 +137,7 @@ export default function Yerba() {
 
       {/* Další odkazy - kam dál */}
       <section className="bg-yerba-800">
-        <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-2">
-          <Reveal>
-            <CtaCard
-              href="/kombucha"
-              src="/images/kombucha/original/artwork.jpg"
-              width={960}
-              height={1009}
-              title={t.common.ctaCards.kombucha.title}
-              text={t.common.ctaCards.kombucha.content}
-            />
-          </Reveal>
+        <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-3">
           <Reveal>
             <CtaCard
               href="/kombucha/original"
@@ -156,6 +146,7 @@ export default function Yerba() {
               height={1009}
               title={t.common.ctaCards.original.title}
               text={t.common.ctaCards.original.content}
+              isSmall
             />
           </Reveal>
           <Reveal>
@@ -166,6 +157,7 @@ export default function Yerba() {
               height={1009}
               title={t.common.ctaCards.matcha.title}
               text={t.common.ctaCards.matcha.content}
+              isSmall
             />
           </Reveal>
           <Reveal>
@@ -176,6 +168,7 @@ export default function Yerba() {
               height={1009}
               title={t.common.ctaCards.rooibos.title}
               text={t.common.ctaCards.rooibos.content}
+              isSmall
             />
           </Reveal>
         </Container>

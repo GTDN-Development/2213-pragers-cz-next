@@ -140,17 +140,7 @@ export default function Home() {
 
       {/* Další odkazy - kam dál */}
       <section className="bg-matcha-800">
-        <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-2">
-          <Reveal>
-            <CtaCard
-              href="/kombucha"
-              src="/images/kombucha/original/artwork.jpg"
-              width={960}
-              height={1009}
-              title={t.common.ctaCards.kombucha.title}
-              text={t.common.ctaCards.kombucha.content}
-            />
-          </Reveal>
+        <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-3">
           <Reveal>
             <CtaCard
               href="/kombucha/yerba-mate"
@@ -159,6 +149,7 @@ export default function Home() {
               height={1009}
               title={t.common.ctaCards.yerba.title}
               text={t.common.ctaCards.yerba.content}
+              isSmall
             />
           </Reveal>
           <Reveal>
@@ -169,6 +160,7 @@ export default function Home() {
               height={1009}
               title={t.common.ctaCards.original.title}
               text={t.common.ctaCards.original.content}
+              isSmall
             />
           </Reveal>
           <Reveal>
@@ -179,6 +171,7 @@ export default function Home() {
               height={1009}
               title={t.common.ctaCards.rooibos.title}
               text={t.common.ctaCards.rooibos.content}
+              isSmall
             />
           </Reveal>
         </Container>

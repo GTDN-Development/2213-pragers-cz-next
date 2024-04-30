@@ -249,7 +249,7 @@ export const pl = {
       content2:
         "Herbata Rooibos zawiera polifenole i flawonoidy, które są silnymi przeciwutleniaczami. Substancje te pomagają neutralizować wolne rodniki w organizmie i chronić komórki przed uszkodzeniem. ",
     },
-    learnMore: "Learn more about our products",
+    learnMore: "DOWIEDZ SIĘ WIĘCEJ O NASZYCH PRODUKTACH",
   },
   kombuchaDetailPages: {
     original: {
