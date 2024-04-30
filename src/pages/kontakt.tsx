@@ -95,7 +95,7 @@ export default function Contact() {
             </Reveal>
 
             {/* pragers badge */}
-            <Reveal className="col-span-1 flex items-center justify-start sm:justify-center">
+            <Reveal className="col-span-1 flex items-center justify-end sm:justify-center">
               <div
                 className={clsx(
                   "flex h-72 w-72 flex-col items-center justify-center rounded-full bg-gray-900 text-center"
