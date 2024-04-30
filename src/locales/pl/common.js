@@ -56,12 +56,12 @@ export const pl = {
       matcha: {
         title: "Kombucha matcha",
         content:
-          "The combination of fermentation and natural caffeine is guaranteed to get you on your feet the way nature intended!",
+          "Połączenie fermentacji i naturalnej kofeiny gwarantuje, że staniesz na nogi tak, jak chciała tego natura!",
       },
       rooibos: {
         title: "Kombucha rooibos",
         content:
-          "Rooibos, a perfect choice for those who want to experience the great taste of kombucha without caffeine.",
+          "Rooibos, idealny wybór dla tych, którzy chcą doświadczyć wspaniałego smaku kombuchy bez kofeiny. ",
       },
     },
   },
@@ -69,12 +69,12 @@ export const pl = {
     seo: {
       title: "Kombucha z prawdziwej herbaty!",
       description:
-        "Non-Alcoholic Cider F.H. Prager was our entry into the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
+        "Cydr bezalkoholowy F.H. Prager był naszym wejściem w świat fermentacji niskoalkoholowej.To był początek PRAGER'S - projektu, w którym postanowiliśmy poeksperymentować z fermentacją.Zaczęliśmy od herbaty.",
     },
     hero: {
       title: "Kombucha z prawdziwej herbaty!",
       description:
-        "Under the brand of F.H. Prager, they introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea. Since then, we have been dedicated to low-alcohol fermentation and bring you the first tasty kombucha.",
+        "Pod marką F.H. Prager wprowadzili na czechosłowacki rynek pierwszy bezalkoholowy cydr, który był naszą przepustką do świata fermentacji niskoalkoholowej. To był początek PRAGER'S - projektu, w którym zdecydowaliśmy się eksperymentować z fermentacją. Zaczęliśmy od herbaty. Od tego czasu zajmujemy się fermentacją niskoalkoholową i oferujemy pierwszą smaczną kombuchę.",
       buttonLabel: "DOWIEDZ SIĘ WIĘCEJ",
     },
     about: {
@@ -109,7 +109,7 @@ export const pl = {
     seo: {
       title: "Pragers",
       description:
-        "Non-Alcoholic Cider F.H. Prager was our entry into the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea.",
+        "Cydr bezalkoholowy F.H. Prager był naszym wejściem w świat fermentacji niskoalkoholowej. To był początek PRAGER'S - projektu, w którym postanowiliśmy poeksperymentować z fermentacją. Zaczęliśmy od herbaty.",
     },
     hero: {
       title: "O nas",
@@ -157,7 +157,7 @@ export const pl = {
     seo: {
       title: "Kombucha",
       description:
-        "Kombucha has been known to mankind for centuries. It is a beneficial drink that is created by fermenting tea using a symbiotic culture of bacteria and yeast.",
+        "Kombucha jest znana ludzkości od wieków. Jest to korzystny napój, który powstaje w wyniku fermentacji herbaty przy użyciu symbiotycznej kultury bakterii i drożdży.",
     },
     hero: {
       title: "Prager's Kombucha",
@@ -256,7 +256,7 @@ export const pl = {
       seo: {
         title: "Prager's Kombucha Original",
         description:
-          "The main ingredient in our Original is green tea. Originating from India and China, this variety of tea is characterized by an intense but balanced and fresh taste.",
+          "Głównym składnikiem naszego Original jest zielona herbata. Ta pochodząca z Indii i Chin odmiana herbaty charakteryzuje się intensywnym, ale zrównoważonym i świeżym smakiem.",
       },
       hero: {
         title1: "Herbata",
@@ -282,11 +282,11 @@ export const pl = {
           "Dzięki specjalnym kulturom drożdży jesteśmy w stanie kontrolować proces fermentacji i zagwarantować ten sam orzeźwiający i delikatnie kwaśny smak za każdym razem.",
       },
       otherInfo: {
-        title: "Other information",
+        title: "Inne informacje",
         collapse1: {
           title: "fakty żywieniowe",
           content:
-            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
+            "Energia: 97 kJ / 23 kcal; Tłuszcze: 0 g; w tym nasycone kwasy tłuszczowe: 0 g; Węglowodany: 5,7 g; w tym cukry: 5,7 g; Białko: 0 g; Sól: 0 g",
         },
         collapse2: {
           title: "Skladování",
@@ -300,7 +300,7 @@ export const pl = {
       seo: {
         title: "Prager's Kombucha Yerba Maté",
         description:
-          "Typical of South America, Yerba Maté is becoming increasingly popular. This is mainly due to its delicious taste, which is characterized by herbal and fruity notes.",
+          "Typowa dla Ameryki Południowej Yerba Maté staje się coraz bardziej popularna. Wynika to głównie z jej pysznego smaku, który charakteryzuje się nutami ziołowymi i owocowymi.",
       },
       hero: {
         title1: "Herbata",
@@ -322,14 +322,14 @@ export const pl = {
           "Zawartość naturalnej kofeiny zmniejsza zmęczenie i wspomaga koncentrację. Aktywuje złogi tłuszczu, a w połączeniu z aktywnością fizyczną wspomaga utratę wagi.",
         subtitle2: "niezwykły smak",
         content2:
-          "Nasz wariant herbaty Yerba Maté jest przetwarzany tradycyjną metodą palenia - kombucha ma subtelny kawowy, niemal czekoladowy smak.",
+          "Nasz wariant herbaty Yerba Maté  jest przetwarzany tradycyjną metodą palenia - kombucha ma subtelny kawowy, niemal czekoladowy smak.",
       },
       otherInfo: {
-        title: "Other information",
+        title: "Inne informacje",
         collapse1: {
           title: "fakty żywieniowe",
           content:
-            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
+            "Energia: 97 kJ / 23 kcal; Tłuszcze: 0 g; w tym nasycone kwasy tłuszczowe: 0 g; Węglowodany: 5,7 g; w tym cukry: 5,7 g; Białko: 0 g; Sól: 0 g",
         },
         collapse2: {
           title: "Skladování",
@@ -343,7 +343,7 @@ export const pl = {
       seo: {
         title: "Prager's Kombucha Matcha",
         description:
-          "Experience the ultimate fusion of Matcha's potency and the magic of fermentation with our Kombucha Matcha. It's your ideal, natural life booster!",
+          "Doświadcz ostatecznego połączenia mocy Matcha i magii fermentacji z naszą Kombucha Matcha. To idealny, naturalny wzmacniacz życia!",
       },
       hero: {
         title1: "Herbata",
@@ -368,11 +368,11 @@ export const pl = {
           "W herbacie znana jest jako teina. Główna różnica między kofeiną a teiną polega na wchłanianiu. Teina w herbacie występuje w formie związanej, dzięki czemu jej działanie jest mniej gwałtowne i trwa dłużej.",
       },
       otherInfo: {
-        title: "Other information",
+        title: "Inne informacje",
         collapse1: {
           title: "Dane żywieniowe",
           content:
-            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
+            "Energia: 97 kJ / 23 kcal; Tłuszcze: 0 g; w tym nasycone kwasy tłuszczowe: 0 g; Węglowodany: 5,7 g; w tym cukry: 5,7 g; Białko: 0 g; Sól: 0 g",
         },
         collapse2: {
           title: "Skladování",
@@ -387,7 +387,7 @@ export const pl = {
       seo: {
         title: "Prager's Kombucha Rooibos",
         description:
-          "Rooibos, also known as the Cape bush tea, originates from South Africa, specifically from the region of Western Cape in the Republic of South Africa. It is characterized by a subtly sweet taste, and among its great advantages is that it does not contain caffeine while being rich in antioxidants.",
+          "Rooibos, znana również jako herbata z krzewu Cape, pochodzi z Republiki Południowej Afryki, a konkretnie z regionu Western Cape w Republice Południowej Afryki. Charakteryzuje się subtelnie słodkim smakiem, a wśród jej wielkich zalet jest to, że nie zawiera kofeiny, a jednocześnie jest bogata w przeciwutleniacze.",
       },
       hero: {
         title1: "zioło",
@@ -413,11 +413,11 @@ export const pl = {
           "Herbata Rooibos zawiera polifenole i flawonoidy, które są silnymi przeciwutleniaczami. Substancje te pomagają neutralizować wolne rodniki w organizmie i chronić komórki przed uszkodzeniem.",
       },
       otherInfo: {
-        title: "Other information",
+        title: "Inne informacje",
         collapse1: {
           title: "Dane żywieniowe",
           content:
-            "Energy: 97 kJ / 23 kcal; Fats: 0 g; of which saturated fatty acids: 0 g; Carbohydrates: 5.7 g; of which sugars: 5.7 g; Protein: 0 g; Salt: 0 g",
+            "Energia: 97 kJ / 23 kcal; Tłuszcze: 0 g; w tym nasycone kwasy tłuszczowe: 0 g; Węglowodany: 5,7 g; w tym cukry: 5,7 g; Białko: 0 g; Sól: 0 g",
         },
         collapse2: {
           title: "Skladování",
