@@ -475,11 +475,20 @@ export default function Header() {
                           <path d="m6 9 6 6 6-6" />
                         </svg>
                       </Listbox.Button>
-                      <Listbox.Options className=" absolute mt-14 rounded-3xl border-4 border-white bg-white py-3 pr-4 pl-3 font-bold text-black">
-                        <SelectItem value="cs">Česky</SelectItem>
-                        <SelectItem value="en">English</SelectItem>
-                        <SelectItem value="pl">Polski</SelectItem>
-                      </Listbox.Options>
+                      <AnimatePresence>
+                        <Listbox.Options
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2, ease: "easeOut" }}
+                          className=" absolute mt-14 rounded-3xl border-4 border-white bg-white py-3 pr-4 pl-3 font-bold text-black"
+                        >
+                          <SelectItem value="cs">Česky</SelectItem>
+                          <SelectItem value="en">English</SelectItem>
+                          <SelectItem value="pl">Polski</SelectItem>
+                        </Listbox.Options>
+                      </AnimatePresence>
                     </Listbox>
                   )}
                 </li>
