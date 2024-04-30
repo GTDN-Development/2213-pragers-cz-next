@@ -53,7 +53,7 @@ export default function Hero({ className = "" }: Props) {
             delay={0.3}
             className="relative isolate z-0 col-span-1 flex items-center justify-center md:col-span-6 xl:col-span-5"
           >
-            <div className="aspect-square overflow-hidden rounded-full bg-gray-700 ring-8 ring-primary">
+            <div className="aspect-square h-[490px] w-[490px] shrink-0 overflow-hidden rounded-full bg-gray-700 ring-8 ring-primary">
               <Image
                 src="/images/common/pragers-common-6.jpg"
                 alt="Pragers"
