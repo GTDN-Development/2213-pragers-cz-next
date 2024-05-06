@@ -86,7 +86,7 @@ export default function Hero({
       className={clsx(
         "relative h-[calc(100vh-5rem)] min-h-[540px] overflow-hidden sm:overflow-visible",
         variant === "original" && "bg-original-700",
-        variant === "matcha" && "bg-matcha-600",
+        variant === "matcha" && "bg-matcha-900",
         variant === "yerba" && "bg-yerba-700",
         variant === "rooibos" && "bg-rooibos-700",
         className
@@ -99,7 +99,7 @@ export default function Hero({
           className={clsx(
             "absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2",
             variant === "original" && "bg-original-800",
-            variant === "matcha" && "bg-matcha-800",
+            variant === "matcha" && "bg-matcha-950",
             variant === "yerba" && "bg-yerba-800",
             variant === "rooibos" && "bg-rooibos-800"
           )}

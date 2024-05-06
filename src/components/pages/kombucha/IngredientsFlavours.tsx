@@ -34,8 +34,8 @@ export function IngredientsFlavoursMobile({
         className,
         noFlavour && "bg-gray-900",
         originalInView && "bg-original-700",
-        yerbaInView && "bg-yerba-700",
-        matchaInView && "bg-matcha-600",
+        yerbaInView && "bg-yerba-800",
+        matchaInView && "bg-matcha-950",
         rooibosInView && "bg-rooibos-700"
       )}
     >
@@ -354,8 +354,8 @@ export function IngredientsFlavours({
         "relative transition-colors duration-700 ease-in-out",
         noFlavour && "bg-gray-900",
         originalInView && "bg-original-700",
-        yerbaInView && "bg-yerba-700",
-        matchaInView && "bg-matcha-600",
+        yerbaInView && "bg-yerba-800",
+        matchaInView && "bg-matcha-950",
         rooibosInView && "bg-rooibos-700",
         className
       )}

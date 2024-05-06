@@ -28,7 +28,7 @@ export default function Home() {
         title3={t.kombuchaDetailPages.matcha.hero.title3}
         content3={t.kombuchaDetailPages.matcha.hero.content3}
       />
-      <section className="bg-matcha-800">
+      <section className="bg-matcha-950">
         <Container py="xl" className="relative">
           <div className="relative z-20 pt-10">
             <Reveal>
@@ -54,7 +54,7 @@ export default function Home() {
             </Reveal> */}
           </div>
           <Reveal noVertical>
-            <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-matcha-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
+            <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-matcha-800 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
               <img
                 src="/svgs/pragers-badge-white.svg"
                 alt="leaf"
@@ -68,7 +68,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-matcha-800">
+      <section className="bg-matcha-950">
         <Container py="md" className="grid gap-12 sm:grid-cols-12">
           <Reveal
             noVertical
@@ -139,7 +139,7 @@ export default function Home() {
       />
 
       {/* Další odkazy - kam dál */}
-      <section className="bg-matcha-800">
+      <section className="bg-matcha-950">
         <Container pb="xl" className="grid gap-x-10 gap-y-16 sm:grid-cols-3">
           <Reveal>
             <CtaCard

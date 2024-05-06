@@ -25,7 +25,7 @@ export default function HealthBenefits({
         variant === "original" && "bg-original-800",
         variant === "yerba" && "bg-yerba-800",
         variant === "default" && "bg-gray-800",
-        variant === "matcha" && "bg-matcha-800",
+        variant === "matcha" && "bg-matcha-950",
         variant === "rooibos" && "bg-rooibos-800",
         className
       )}
@@ -53,7 +53,7 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700",
+                variant === "matcha" && "bg-matcha-900",
                 variant === "rooibos" && "bg-rooibos-700"
               )}
             >
@@ -77,7 +77,7 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700",
+                variant === "matcha" && "bg-matcha-900",
                 variant === "rooibos" && "bg-rooibos-700"
               )}
             >
@@ -101,7 +101,7 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700",
+                variant === "matcha" && "bg-matcha-900",
                 variant === "rooibos" && "bg-rooibos-700"
               )}
             >
@@ -125,7 +125,7 @@ export default function HealthBenefits({
                 variant === "original" && "bg-original-700",
                 variant === "yerba" && "bg-yerba-700",
                 variant === "default" && "bg-gray-900",
-                variant === "matcha" && "bg-matcha-700",
+                variant === "matcha" && "bg-matcha-900",
                 variant === "rooibos" && "bg-rooibos-700"
               )}
             >
