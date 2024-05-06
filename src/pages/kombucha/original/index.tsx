@@ -40,7 +40,7 @@ export default function Home() {
             <Reveal>
               <Heading
                 level={"none"}
-                size="lg"
+                size="md"
                 color="primary"
                 className="!leading-tight"
                 hasMarginBottom
@@ -57,7 +57,7 @@ export default function Home() {
           <Reveal noVertical>
             <div className="absolute top-10 right-0 z-10 h-52 w-52 origin-top text-original-700 md:top-2/3 md:h-2/3 md:w-1/2 md:-translate-y-2/3">
               <img
-                src="/icons/leaf-original.svg"
+                src="/svgs/pragers-badge-white.svg"
                 alt="leaf"
                 aria-hidden="true"
                 width="720"
@@ -84,23 +84,27 @@ export default function Home() {
               className="w-full object-contain md:scale-125"
             />
           </Reveal>
-          <div className="grid gap-x-10 gap-y-8 xs:grid-cols-2 sm:col-span-7">
-            <div className="my-auto">
-              <Reveal>
-                <CustomIcon iconNumber={2} />
-                <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                  {t.kombuchaDetailPages.original.about.subtitle1}
-                </Heading>
-                <p>{t.kombuchaDetailPages.original.about.content1}</p>
-              </Reveal>
+          <div className="my-auto  sm:col-span-7 ">
+            <div className="flex w-full flex-col items-start gap-y-8 gap-x-10 md:flex-row">
+              <div>
+                <Reveal>
+                  <CustomIcon iconNumber={2} />
+                  <Heading level={3} size="sm" color="rich" hasMarginBottom>
+                    {t.kombuchaDetailPages.original.about.subtitle1}
+                  </Heading>
+                  <p>{t.kombuchaDetailPages.original.about.content1}</p>
+                </Reveal>
+              </div>
+              <div>
+                <Reveal>
+                  <CustomIcon iconNumber={3} />
+                  <Heading level={3} size="sm" color="rich" hasMarginBottom>
+                    {t.kombuchaDetailPages.original.about.subtitle2}
+                  </Heading>
+                  <p>{t.kombuchaDetailPages.original.about.content2}</p>
+                </Reveal>
+              </div>
             </div>
-            <Reveal className="my-auto">
-              <CustomIcon iconNumber={3} />
-              <Heading level={3} size="sm" color="rich" hasMarginBottom>
-                {t.kombuchaDetailPages.original.about.subtitle2}
-              </Heading>
-              <p>{t.kombuchaDetailPages.original.about.content2}</p>
-            </Reveal>
           </div>
         </Container>
 
@@ -156,6 +160,26 @@ export default function Home() {
               height={1009}
               title={t.common.ctaCards.yerba.title}
               text={t.common.ctaCards.yerba.content}
+            />
+          </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/kombucha/matcha"
+              src="/images/kombucha/matcha/artwork.jpg"
+              width={960}
+              height={1009}
+              title={t.common.ctaCards.matcha.title}
+              text={t.common.ctaCards.matcha.content}
+            />
+          </Reveal>
+          <Reveal>
+            <CtaCard
+              href="/kombucha/rooibos"
+              src="/images/kombucha/rooibos/artwork.jpg"
+              width={960}
+              height={1009}
+              title={t.common.ctaCards.rooibos.title}
+              text={t.common.ctaCards.rooibos.content}
             />
           </Reveal>
         </Container>

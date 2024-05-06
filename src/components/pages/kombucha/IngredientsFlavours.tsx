@@ -16,9 +16,15 @@ export function IngredientsFlavoursMobile({
 }) {
   const originalRef = useRef<HTMLDivElement>(null);
   const yerbaRef = useRef<HTMLDivElement>(null);
+  const matchaRef = useRef<HTMLDivElement>(null);
+  const rooibosRef = useRef<HTMLDivElement>(null);
 
-  const originalInView = useInView(originalRef, { margin: "-45%" });
-  const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
+  const originalInView = useInView(originalRef, { margin: "-50%" });
+  const yerbaInView = useInView(yerbaRef, { margin: "-50%" });
+  const matchaInView = useInView(matchaRef, { margin: "-50%" });
+  const rooibosInView = useInView(rooibosRef, { margin: "-50%" });
+  const noFlavour =
+    !originalInView && !yerbaInView && !matchaInView && !rooibosInView;
 
   const t = useTranslation();
   return (
@@ -26,11 +32,11 @@ export function IngredientsFlavoursMobile({
       className={clsx(
         "overflow-x-hidden transition-colors duration-700 ease-in-out",
         className,
-        originalInView
-          ? "bg-original-800"
-          : yerbaInView
-          ? "bg-yerba-900"
-          : "bg-gray-900"
+        noFlavour && "bg-gray-900",
+        originalInView && "bg-original-700",
+        yerbaInView && "bg-yerba-800",
+        matchaInView && "bg-matcha-950",
+        rooibosInView && "bg-rooibos-700"
       )}
     >
       {/* Vlastnosti */}
@@ -200,6 +206,124 @@ export function IngredientsFlavoursMobile({
           className="pointer-events-none absolute inset-y-0 right-0 z-10 h-full origin-right scale-50 opacity-20"
         />
       </div>
+
+      {/* Matcha */}
+
+      <div ref={matchaRef} className="relative overflow-hidden">
+        <Container py="xl" className="relative z-20">
+          <Reveal>
+            <Heading level={2} size="xl" color="rich" hasMarginBottom>
+              {t.kombucha.matcha.title}
+            </Heading>
+          </Reveal>
+
+          <div className="grid grid-cols-5 gap-5 pt-5">
+            <div className="col-span-3 flex flex-col gap-10">
+              <Reveal>
+                <p>{t.kombucha.matcha.description}</p>
+                <div className="flex flex-wrap gap-5 pt-5">
+                  <Button href="/kombucha/matcha">
+                    {t.kombucha.matcha.buttonLabel}
+                  </Button>
+                  {/* <Button href="https://eshop.fhprager.cz">
+                    {t.kombucha.original.buttonLabelShop}
+                  </Button> */}
+                </div>
+              </Reveal>
+              <Reveal className="pt-16">
+                <CustomIcon iconNumber={2} />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  {t.kombucha.matcha.subtitle1}
+                </Heading>
+                <p className="text-sm">{t.kombucha.original.content1}</p>
+              </Reveal>
+              <Reveal>
+                <CustomIcon iconNumber={3} />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  {t.kombucha.matcha.subtitle2}
+                </Heading>
+                <p className="text-sm">{t.kombucha.matcha.content2}</p>
+              </Reveal>
+            </div>
+            <Image
+              src="/images/kombucha/matcha/render-bottle.png"
+              alt="Lahev Pragers Kombucha"
+              width={1080}
+              height={1920}
+              className="col-span-2 h-full translate-x-1/2 scale-[2.4] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              loading="lazy"
+            />
+          </div>
+        </Container>
+        <img
+          src="/svgs/text-matcha-vertical.svg"
+          alt="Original"
+          width="392"
+          height="1002"
+          loading="lazy"
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 -right-0 z-10 h-full origin-right scale-[0.6] opacity-20"
+        />
+      </div>
+
+      {/* Rooibos */}
+
+      <div ref={rooibosRef} className="relative overflow-hidden">
+        <Container py="xl" className="relative z-20">
+          <Reveal>
+            <Heading level={2} size="xl" color="rich" hasMarginBottom>
+              {t.kombucha.rooibos.title}
+            </Heading>
+          </Reveal>
+
+          <div className="grid grid-cols-5 gap-5 pt-5">
+            <div className="col-span-3 flex flex-col gap-10">
+              <Reveal>
+                <p>{t.kombucha.rooibos.description}</p>
+                <div className="flex flex-wrap gap-5 pt-5">
+                  <Button href="/kombucha/rooibos">
+                    {t.kombucha.rooibos.buttonLabel}
+                  </Button>
+                  {/* <Button href="https://eshop.fhprager.cz">
+                    {t.kombucha.original.buttonLabelShop}
+                  </Button> */}
+                </div>
+              </Reveal>
+              <Reveal className="pt-16">
+                <CustomIcon iconNumber={2} />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  {t.kombucha.rooibos.subtitle1}
+                </Heading>
+                <p className="text-sm">{t.kombucha.rooibos.content1}</p>
+              </Reveal>
+              <Reveal>
+                <CustomIcon iconNumber={3} />
+                <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                  {t.kombucha.rooibos.subtitle2}
+                </Heading>
+                <p className="text-sm">{t.kombucha.rooibos.content2}</p>
+              </Reveal>
+            </div>
+            <Image
+              src="/images/kombucha/rooibos/render-bottle.png"
+              alt="Lahev Pragers Kombucha"
+              width={1080}
+              height={1920}
+              className="col-span-2 h-full translate-x-1/2 scale-[2.4] object-contain min-[500px]:translate-x-0 min-[500px]:scale-150"
+              loading="lazy"
+            />
+          </div>
+        </Container>
+        <img
+          src="/svgs/text-rooibos-vertical.svg"
+          alt="Original"
+          width="392"
+          height="1002"
+          loading="lazy"
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 -right-0 z-10 h-full origin-right scale-[0.6] opacity-20"
+        />
+      </div>
     </section>
   );
 }
@@ -211,9 +335,16 @@ export function IngredientsFlavours({
 }) {
   const originalRef = useRef<HTMLDivElement>(null);
   const yerbaRef = useRef<HTMLDivElement>(null);
+  const matchaRef = useRef<HTMLDivElement>(null);
+  const rooibosRef = useRef<HTMLDivElement>(null);
 
-  const originalInView = useInView(originalRef, { margin: "-45%" });
-  const yerbaInView = useInView(yerbaRef, { margin: "100% 0px -45% 0px" });
+  const originalInView = useInView(originalRef, { margin: "-50%" });
+  const yerbaInView = useInView(yerbaRef, { margin: "-50%" });
+  const matchaInView = useInView(matchaRef, { margin: "-50%" });
+  const rooibosInView = useInView(rooibosRef, { margin: "100% 0px -50% 0px" });
+
+  const noFlavour =
+    !originalInView && !yerbaInView && !matchaInView && !rooibosInView;
 
   const t = useTranslation();
 
@@ -221,48 +352,81 @@ export function IngredientsFlavours({
     <section
       className={clsx(
         "relative transition-colors duration-700 ease-in-out",
-        className,
-        originalInView
-          ? "bg-original-800"
-          : yerbaInView
-          ? "bg-yerba-900"
-          : "bg-gray-900"
+        noFlavour && "bg-gray-900",
+        originalInView && "bg-original-700",
+        yerbaInView && "bg-yerba-800",
+        matchaInView && "bg-matcha-950",
+        rooibosInView && "bg-rooibos-700",
+        className
       )}
     >
       {/* *** */}
       {/* Bottle grid - spanning the whole area and keeping the same grid layout as sections inner */}
       <Container className="absolute inset-0 grid h-full w-full grid-cols-3 items-start justify-start gap-10">
         <div className="sticky top-0 z-sticky col-span-1 col-start-2 col-end-3 flex h-screen items-center justify-center">
-          <div className="relative my-auto h-full max-h-[675px] w-full pt-8">
-            <div className="absolute inset-0 z-20 h-full w-full">
+          <div className="relative my-auto h-full max-h-[675px] w-full">
+            <div className="absolute inset-0 z-20 h-full w-full pt-36">
               <Image
-                src="/images/kombucha/original/render-bottle.png"
+                src="/images/kombucha/original/render-can.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
-                className="w-full origin-center scale-95 object-contain"
+                className="w-full origin-center scale-125 object-contain"
                 loading="lazy"
               />
             </div>
             <div
               className={clsx(
-                "absolute inset-0 z-30 h-full w-full transition-opacity duration-700",
+                "absolute inset-0 z-30 h-full w-full pt-36 transition-opacity duration-700",
                 yerbaInView ? "opacity-100" : "opacity-0"
               )}
             >
               <Image
-                src="/images/kombucha/yerba/render-bottle.png"
+                src="/images/kombucha/yerba/render-can.png"
                 alt="Lahev Pragers Kombucha"
                 width={1080}
                 height={1920}
-                className="w-full origin-center scale-95 object-contain"
+                className="w-full origin-center scale-125 object-contain"
                 loading="lazy"
               />
             </div>
             <div
               className={clsx(
-                "absolute left-16 top-2/3 z-40 h-24 w-24 -rotate-12 transition-opacity duration-700",
-                originalInView || yerbaInView ? "opacity-100" : "opacity-0"
+                "absolute inset-0 z-30 h-full w-full pt-36 transition-opacity duration-700",
+                matchaInView ? "opacity-100" : "opacity-0"
+              )}
+            >
+              <Image
+                src="/images/kombucha/matcha/render-can.png"
+                alt="Lahev Pragers Kombucha"
+                width={1080}
+                height={1920}
+                className="w-full origin-center scale-125 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div
+              className={clsx(
+                "absolute inset-0 z-30 h-full w-full pt-36 transition-opacity duration-700",
+                rooibosInView ? "opacity-100" : "opacity-0"
+              )}
+            >
+              <Image
+                src="/images/kombucha/rooibos/render-can.png"
+                alt="Lahev Pragers Kombucha"
+                width={1080}
+                height={1920}
+                className="w-full origin-center scale-125 object-contain"
+                loading="lazy"
+              />
+            </div>
+
+            <div
+              className={clsx(
+                "absolute top-[30%] left-2 z-40 h-24 w-24 -rotate-12 transition-opacity duration-700",
+                originalInView || yerbaInView || matchaInView || rooibosInView
+                  ? "opacity-100"
+                  : "opacity-0"
               )}
             >
               <img
@@ -426,6 +590,118 @@ export function IngredientsFlavours({
                 {t.kombucha.yerba.subtitle2}
               </Heading>
               <p>{t.kombucha.yerba.content2}</p>
+            </Reveal>
+          </div>
+        </Container>
+      </div>
+
+      {/* *** */}
+      {/* Screen - Flavour - Matcha */}
+
+      <div ref={matchaRef}>
+        <Container
+          py="xl"
+          className="relative grid min-h-screen grid-cols-3 gap-10"
+        >
+          <img
+            src="/svgs/text-matcha.svg"
+            alt="Original"
+            width="1002"
+            height="392"
+            loading="lazy"
+            aria-hidden="true"
+            className="pointer-events-none absolute top-1/2 left-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 opacity-20"
+          />
+          {/* Left side */}
+          <div className="relative z-20 col-span-1 col-start-1 col-end-2">
+            <Reveal>
+              <Heading level={2} size="xl" color="rich" hasMarginBottom>
+                {t.kombucha.matcha.title}
+              </Heading>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p>{t.kombucha.matcha.description}</p>
+            </Reveal>
+            <Reveal delay={0.2} className="flex gap-6 pt-8">
+              <Button href="/kombucha/matcha" size="lg">
+                {t.kombucha.matcha.buttonLabel}
+              </Button>
+              {/* <Button href="https://eshop.fhprager.cz" size="lg">
+                {t.kombucha.yerba.buttonLabelShop}
+              </Button> */}
+            </Reveal>
+          </div>
+          {/* Right side */}
+          <div className="relative z-20 col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
+            <Reveal delay={0.3} className="mt-auto">
+              <CustomIcon iconNumber={9} />
+              <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                {t.kombucha.matcha.subtitle1}
+              </Heading>
+              <p>{t.kombucha.matcha.content1}</p>
+            </Reveal>
+            <Reveal delay={0.4} className="mb-auto">
+              <CustomIcon iconNumber={7} />
+              <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                {t.kombucha.matcha.subtitle2}
+              </Heading>
+              <p>{t.kombucha.matcha.content2}</p>
+            </Reveal>
+          </div>
+        </Container>
+      </div>
+
+      {/* *** */}
+      {/* Screen - Flavour - Rooibos */}
+
+      <div ref={rooibosRef}>
+        <Container
+          py="xl"
+          className="relative grid min-h-screen grid-cols-3 gap-10"
+        >
+          <img
+            src="/svgs/text-rooibos.svg"
+            alt="Original"
+            width="1002"
+            height="392"
+            loading="lazy"
+            aria-hidden="true"
+            className="pointer-events-none absolute top-1/2 left-1/2 z-10 w-full -translate-x-1/2 -translate-y-1/2 opacity-20"
+          />
+          {/* Left side */}
+          <div className="relative z-20 col-span-1 col-start-1 col-end-2">
+            <Reveal>
+              <Heading level={2} size="xl" color="rich" hasMarginBottom>
+                {t.kombucha.rooibos.title}
+              </Heading>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p>{t.kombucha.rooibos.description}</p>
+            </Reveal>
+            <Reveal delay={0.2} className="flex gap-6 pt-8">
+              <Button href="/kombucha/rooibos" size="lg">
+                {t.kombucha.rooibos.buttonLabel}
+              </Button>
+              {/* <Button href="https://eshop.fhprager.cz" size="lg">
+                {t.kombucha.yerba.buttonLabelShop}
+              </Button> */}
+            </Reveal>
+          </div>
+          {/* Right side */}
+          <div className="relative z-20 col-span-1 col-start-3 col-end-4 flex flex-col items-start justify-between gap-10">
+            <Reveal delay={0.3} className="mt-auto">
+              <CustomIcon iconNumber={9} />
+              <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                {t.kombucha.rooibos.subtitle1}
+              </Heading>
+              <p>{t.kombucha.rooibos.content1}</p>
+            </Reveal>
+            <Reveal delay={0.4} className="mb-auto">
+              <CustomIcon iconNumber={7} />
+              <Heading level={3} size="xs" color="rich" hasMarginBottom>
+                {t.kombucha.rooibos.subtitle2}
+              </Heading>
+              <p>{t.kombucha.rooibos.content2}</p>
             </Reveal>
           </div>
         </Container>

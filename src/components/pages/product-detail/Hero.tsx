@@ -73,7 +73,7 @@ export default function Hero({
   content3 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 }: {
   className?: string;
-  variant: "original" | "yerba";
+  variant: "original" | "yerba" | "matcha" | "rooibos";
   title1: string;
   content1: string;
   title2: string;
@@ -85,7 +85,10 @@ export default function Hero({
     <section
       className={clsx(
         "relative h-[calc(100vh-5rem)] min-h-[540px] overflow-hidden sm:overflow-visible",
-        variant === "original" ? "bg-original-700" : "bg-yerba-700",
+        variant === "original" && "bg-original-700",
+        variant === "matcha" && "bg-matcha-900",
+        variant === "yerba" && "bg-yerba-700",
+        variant === "rooibos" && "bg-rooibos-700",
         className
       )}
     >
@@ -95,7 +98,10 @@ export default function Hero({
         <LargeBadge
           className={clsx(
             "absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2",
-            variant === "original" ? "bg-original-800" : "bg-yerba-800"
+            variant === "original" && "bg-original-800",
+            variant === "matcha" && "bg-matcha-950",
+            variant === "yerba" && "bg-yerba-800",
+            variant === "rooibos" && "bg-rooibos-800"
           )}
         />
         <div className="absolute inset-y-0 left-1/2 z-20 h-full w-72 -translate-x-1/2 sm:w-96">
@@ -103,6 +109,10 @@ export default function Hero({
             src={
               variant === "original"
                 ? "/images/kombucha/original/render-bottle.png"
+                : variant === "matcha"
+                ? "/images/kombucha/matcha/render-bottle.png"
+                : variant === "rooibos"
+                ? "/images/kombucha/rooibos/render-bottle.png"
                 : "/images/kombucha/yerba/render-bottle.png"
             }
             alt="Lahev Pragers Kombucha"

@@ -3,9 +3,11 @@ import Container from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import UiLink from "@/components/UiLink";
 import { contact, socials } from "@/configs/navigation";
+import { Listbox } from "@headlessui/react";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import clsx from "clsx";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // i18n
 import { useTranslation } from "@/hooks/useTranslation";
@@ -308,7 +310,49 @@ function TouchMenu() {
   );
 }
 
+const SelectItem = React.forwardRef(
+  ({ children, className, ...props }: any, forwardedRef) => {
+    return (
+      <Listbox.Option
+        className={clsx(
+          "cursor-pointer items-center justify-between transition-opacity focus:outline-none",
+          className
+        )}
+        {...props}
+        ref={forwardedRef}
+      >
+        {({ selected }) => (
+          <li className={clsx("flex items-center hover:opacity-40")}>
+            <span className="flex w-6 items-center justify-center">
+              {selected && (
+                <img
+                  src="/icons/check-icon.svg"
+                  alt=""
+                  className="mx-2 scale-75"
+                />
+              )}
+            </span>
+            <p className="pl-1">{children}</p>
+          </li>
+        )}
+      </Listbox.Option>
+    );
+  }
+);
+
+SelectItem.displayName = "SelectItem";
+
 export default function Header() {
+  // i18n
+  const router = useRouter();
+  const { locale } = router;
+  const t = useTranslation();
+
+  const [lang, setLang] = useState(locale);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -333,16 +377,6 @@ export default function Header() {
       }
     });
   }, [scrollY, setIsVisible, setIsScrolled]);
-
-  // i18n
-  const router = useRouter();
-  const { locale } = router;
-  const t = useTranslation();
-
-  function changeLanguage() {
-    const newLocale = locale === "cs" ? "en" : "cs";
-    router.push(router.pathname, router.pathname, { locale: newLocale });
-  }
 
   return (
     <header
@@ -402,11 +436,61 @@ export default function Header() {
             </div>
 
             <div>
-              <ul className="flex gap-3 xl:gap-6">
+              <ul className="flex flex-row items-center justify-center gap-3 xl:gap-6">
                 <li>
-                  <Button onClick={changeLanguage} intent="white">{`${
-                    locale === "cs" ? "EN" : "CZ"
-                  }`}</Button>
+                  {!mounted ? (
+                    <div className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5">
+                      <span className="invisible font-bold">CS</span>
+                      <ChevronDownIcon />
+                    </div>
+                  ) : (
+                    <Listbox
+                      as="div"
+                      value={lang}
+                      onChange={(value) => {
+                        setLang(value);
+                        router.push(router.pathname, router.pathname, {
+                          locale: value,
+                        });
+                      }}
+                      className="relative flex justify-center"
+                    >
+                      <Listbox.Button
+                        aria-label="Language"
+                        className="group inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5"
+                      >
+                        {lang}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="white"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          className="lucide lucide-chevron-down transition duration-300 group-hover:stroke-black"
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </Listbox.Button>
+                      <AnimatePresence>
+                        <Listbox.Options
+                          as={motion.div}
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2, ease: "easeOut" }}
+                          className=" absolute mt-14 rounded-3xl border-4 border-white bg-white py-3 pr-4 pl-3 font-bold text-black"
+                        >
+                          <SelectItem value="cs">Česky</SelectItem>
+                          <SelectItem value="en">English</SelectItem>
+                          <SelectItem value="pl">Polski</SelectItem>
+                        </Listbox.Options>
+                      </AnimatePresence>
+                    </Listbox>
+                  )}
                 </li>
                 <li className="hidden md:block">
                   <Button href="https://eshop.fhprager.cz">E-shop</Button>

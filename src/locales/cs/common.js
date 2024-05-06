@@ -53,6 +53,16 @@ export const cs = {
         content:
           "Pro speciální příležitosti máme speciální příchuť. Řeč je o jihoamerické Cesmíně paraguayské nebo také yerbě maté.",
       },
+      matcha: {
+        title: "Kombucha matcha",
+        content:
+          "Spojení fermentace a přírodního kofeinu tě zaručeně postaví na nohy tak, jak to příroda zamyšlela!",
+      },
+      rooibos: {
+        title: "Kombucha rooibos",
+        content:
+          "Rooibos,  vhodná volba pro ty, kteří chtějí zažít skvělou chuť kombuchy bez kofeinu.",
+      },
     },
   },
   home: {
@@ -213,6 +223,32 @@ export const cs = {
       content2:
         "Naše varianta Yerby Maté je zpracována pražením - kombucha tak má jemnou kávovou, skoro až čokoládovou, chuť.",
     },
+    matcha: {
+      title: "Matcha",
+      description:
+        "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      buttonLabel: "Zjistit více",
+      buttonLabelShop: "Koupit",
+      subtitle1: "PROBIOTICKÉ KULTURY",
+      content1:
+        "Každá naše kombucha v sobě obsahuje miliony probiotických kultur a organické kyseliny: mléčnou a octovou. Ty přirozeně vznikají fermentačním procesem.",
+      subtitle2: "Přírodní funkce na prvním místě",
+      content2:
+        "Matcha obsahuje oproti klasickému zelenému čaji zvýšené množství účinných látek, a to zejména katechiny, theanin a kofein, které ovlivňují kognitivní funkce organismu jako je pozornost, výkon a zvládání stresu.",
+    },
+    rooibos: {
+      title: "Rooibos",
+      description:
+        "Rooibos,  neboli čajovec kapský, původem z jižní Afriky, konkrétně z regionu Západního Kapska v Jihoafrické republice. Vyznačuje se jemně nasládlou chuťí a k jeho velkým výhodám patří, že neobsahuje kofein, ale zároveň je bohatý na antioxidanty.",
+      buttonLabel: "Zjistit více",
+      buttonLabelShop: "Koupit",
+      subtitle1: "Bez kofeinu",
+      content1:
+        "Kombucha Rooibos je přirozeně bez kofeinu, což jí činí skvělou volbou pro ty, kteří chtějí omezit příjem tohoto stimulantu nebo pro ty, kteří si chtějí dopřát čaj později během dne.",
+      subtitle2: "Bohatý na antioxidanty",
+      content2:
+        "Rooibos čaj obsahuje polyfenoly a flavonoidy, které jsou silnými antioxidanty. Tyto látky pomáhají neutralizovat volné radikály v těle a chrání buňky před poškozením.",
+    },
     learnMore: "Zjistit více o našich produktech",
   },
   kombuchaDetailPages: {
@@ -300,7 +336,95 @@ export const cs = {
       },
       healthBenefitsTitle: "Ideální start dne začíná bublinkami...",
     },
+    matcha: {
+      seo: {
+        title: "Prager's Kombucha Matcha",
+        description:
+          "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      },
+      hero: {
+        title1: "Čaj",
+        content1:
+          "Pro naši kombuchu jsme vybrali prémiovou Matchu typickou pro Japonsko. ",
+        title2: "Probiotické kultury",
+        content2: "V každé láhvi minimálně 33 milionů probiotických kultur.",
+        title3: "Funkce",
+        content3: "Matcha je bohatá na přírodní látky.",
+      },
+      about: {
+        title: "MATCHA",
+        perex:
+          "Naše Kombucha kombinuje sílu čaje matcha spolu s fermentací a vzniká nápoj charakteristický lahodnou chuťí a zvýšeným obsahem účinných látek, jako L-theanin a kofein. Ty ovlivňují kognitivní funkce organismu jako je pozornost, výkon a zvládání stresu.",
+        buttonLabel: "Zobrazit v e-shopu",
+        subtitle1: "L-Theanin",
+        content1:
+          "Tato aminokyselina v kombinaci s přírodním kofeinem (teinem) může přirozeně zvýšit mentální aktivitu mozku a zároveň vás udrží ve stavu relaxace.",
+        subtitle2: "Kofein",
+        content2:
+          "V čaji jej označujeme jako tein. Rozdíl mezi kofeinem a tei­nem je zejména ve vstřebávání, přičemž v čaji se vyskytuje ve vázané formě, tudíž účinkuje méně nárazově a jeho účinek trvá déle.",
+      },
+      otherInfo: {
+        title: "Další informace",
+        collapse1: {
+          title: "Výživové údaje na 100ml",
+          content:
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
+        },
+        collapse2: {
+          title: "Skladování",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        },
+      },
+      healthBenefitsTitle:
+        "Ideální start dne začíná bublinkami... čajem s bublinkami",
+    },
+    rooibos: {
+      seo: {
+        title: "Prager's Kombucha Rooibos",
+        description:
+          "Síla čaje Matcha posunutá na vrchol kouzlem fermentace. To je naše Kombucha Matcha. Ideální přírodní životabudič.",
+      },
+      hero: {
+        title1: "Čaj",
+        content1:
+          "Čajovec kapský, roste výlučně v Jižní Africe, na malém území Západního Kapska. Jeho sílu využívali tamní domorodci už odpradávna.",
+        title2: "Probiotické kultury",
+        content2: "V každé láhvi minimálně 33 milionů probiotických kultur.",
+        title3: "Chuť",
+        content3:
+          "Skvělé spojení nasládlé chuti Rooibosu spolu s lehce kyselou chutí Kombuchy.",
+      },
+      about: {
+        title: "ROOIBOS",
+        perex:
+          "Jedinečná směs chuťí a blahodárnost rooibosu je z velké části připisována právě obsaženým antioxidantům, zejména polyfenolům.",
+        buttonLabel: "Zobrazit v e-shopu",
+        subtitle1: "Bez kofeinu",
+        content1:
+          "Kombucha Rooibos je přirozeně bez kofeinu, což jí činí skvělou volbou pro ty, kteří chtějí omezit příjem tohoto stimulantu nebo pro ty, kteří si chtějí dopřát čaj později během dne.",
+        subtitle2: "Bohatý na antioxidanty",
+        content2:
+          "Rooibos  obsahuje polyfenoly a flavonoidy, které jsou silnými antioxidanty. Tyto látky pomáhají neutralizovat volné radikály v těle a chrání buňky před poškozením.",
+      },
+      otherInfo: {
+        title: "Další informace",
+        collapse1: {
+          title: "Výživové údaje na 100ml",
+          content:
+            "Energie: 97 kJ / 23 kcal; Tuky: 0 g; z toho nasycené mastné kyseliny: 0 g; Sacharidy: 5,7 g; z toho cukry: 5,7 g; Bílkoviny: 0 g; Sůl: 0 g",
+        },
+        collapse2: {
+          title: "Skladování",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+        },
+      },
+      healthBenefitsTitle:
+        "Ideální start dne začíná bublinkami... čajem s bublinkami",
+    },
   },
+
   contact: {
     seo: {
       title: "Kontakt",
