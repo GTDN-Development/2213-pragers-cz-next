@@ -261,7 +261,7 @@ export default function Kombucha() {
               disableShadow
               title={t.common.ctaCards.matcha.title}
               text={t.common.ctaCards.matcha.content}
-              className="bg-matcha-600"
+              className="bg-matcha-800"
             />
           </Reveal>
           <Reveal>
