@@ -69,11 +69,6 @@ export default function Parallax({
     return () => window.removeEventListener("resize", onResize);
   }, [ref]);
 
-  // log value of the scrollYProgress to console every time it changes
-  useEffect(() => {
-    console.log(scrollYProgress.get());
-  }, [scrollYProgress]);
-
   // Return only div when user has "reduced motion" enabled
   if (prefersReducedMotion) {
     return (
