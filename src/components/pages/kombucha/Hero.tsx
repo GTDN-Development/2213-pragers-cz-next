@@ -43,10 +43,10 @@ export function HeroMobile({ className = "" }: { className?: string }) {
 // Desktop - old
 export function Hero({
   className = "",
-  parallaxTargetRef = null,
+  parallaxTargetRef,
 }: {
   className?: string;
-  parallaxTargetRef: React.RefObject<HTMLDivElement> | null;
+  parallaxTargetRef: React.RefObject<HTMLElement>;
 }) {
   const t = useTranslation();
   return (

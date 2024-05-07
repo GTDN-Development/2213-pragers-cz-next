@@ -12,7 +12,7 @@ type ParallaxProps = {
   children?: React.ReactNode;
   offset?: number;
   className?: string;
-  target?: RefObject<HTMLDivElement> | null;
+  target?: RefObject<HTMLElement>;
 
   [x: string]: any;
 };
@@ -21,7 +21,7 @@ export default function Parallax({
   offset = 50,
   className = "",
   children,
-  target = null,
+  target,
   ...rest
 }: ParallaxProps) {
   const prefersReducedMotion = useReducedMotion();
@@ -30,7 +30,7 @@ export default function Parallax({
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollY } = useScroll();
-  const { scrollYProgress } = useScroll({ target: target || undefined });
+  const { scrollYProgress } = useScroll({ target, layoutEffect: false });
 
   const initial = elementTop - clientHeight;
   const final = elementTop + offset;
@@ -68,6 +68,11 @@ export default function Parallax({
 
     return () => window.removeEventListener("resize", onResize);
   }, [ref]);
+
+  // log value of the scrollYProgress to console every time it changes
+  useEffect(() => {
+    console.log(scrollYProgress.get());
+  }, [scrollYProgress]);
 
   // Return only div when user has "reduced motion" enabled
   if (prefersReducedMotion) {
