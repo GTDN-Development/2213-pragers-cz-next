@@ -74,7 +74,7 @@ export function Hero({
         </Parallax>
         <Parallax
           target={parallaxTargetRef}
-          offset={-200}
+          offset={-50}
           className="absolute top-[250px] z-10 flex w-full origin-[50%_0%] items-center justify-center"
         >
           <Reveal noVertical>
@@ -89,8 +89,8 @@ export function Hero({
         </Parallax>
         <Parallax
           target={parallaxTargetRef}
-          offset={500}
-          className="absolute inset-x-0 top-[-500px] z-20 h-[1358px] origin-[50%_0%]"
+          offset={75}
+          className="absolute inset-x-0 top-[-75px] z-20 h-[1358px] origin-[50%_0%]"
         >
           <div
             className="h-full"
@@ -104,8 +104,8 @@ export function Hero({
         </Parallax>
         <Parallax
           target={parallaxTargetRef}
-          offset={1000}
-          className="absolute inset-x-0 top-[-1000px] z-30 h-[1645px] origin-[50%_0%]"
+          offset={125}
+          className="absolute inset-x-0 top-[-125px] z-30 h-[1645px] origin-[50%_0%]"
         >
           <div
             className="h-full"
