@@ -74,7 +74,7 @@ export const en = {
     hero: {
       title: "The first tasty kombucha",
       description:
-        "Under the brand of F.H. Prager, they introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea. Since then, we have been dedicated to low-alcohol fermentation and bring you the first tasty kombucha.",
+        "Under the brand of F.H. Prager, we introduced the first non-alcoholic cider to the Czechoslovak market, which was our ticket to the world of low-alcohol fermentation. And that was the beginning of PRAGER'S - a project in which we decided to experiment with fermentation. And we started with tea. Since then, we have been dedicated to low-alcohol fermentation and bring you the first tasty kombucha.",
       buttonLabel: "Learn more",
     },
     about: {
