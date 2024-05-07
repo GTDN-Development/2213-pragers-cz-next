@@ -5,12 +5,15 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+import type { RefObject } from "react";
 import { useEffect, useRef, useState } from "react";
 
 type ParallaxProps = {
   children?: React.ReactNode;
   offset?: number;
   className?: string;
+  target?: RefObject<HTMLElement>;
+
   [x: string]: any;
 };
 
@@ -18,6 +21,7 @@ export default function Parallax({
   offset = 50,
   className = "",
   children,
+  target,
   ...rest
 }: ParallaxProps) {
   const prefersReducedMotion = useReducedMotion();
@@ -26,12 +30,25 @@ export default function Parallax({
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollY } = useScroll();
+  const { scrollYProgress } = useScroll({ target, layoutEffect: false });
 
   const initial = elementTop - clientHeight;
   const final = elementTop + offset;
 
   const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
-  const y = useSpring(yRange, { stiffness: 400, damping: 90 });
+  const yRangeProgress = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [offset, -offset]
+  );
+
+  const ySpring = useSpring(yRange, { stiffness: 400, damping: 90 });
+  const ySpringProgress = useSpring(yRangeProgress, {
+    stiffness: 400,
+    damping: 90,
+  });
+
+  const y = target ? ySpringProgress : ySpring;
 
   useEffect(() => {
     const element = ref.current;

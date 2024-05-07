@@ -12,61 +12,67 @@ import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
+import { useRef } from "react";
 
 export default function Kombucha() {
   const t = useTranslation();
+  const parallaxRef = useRef<HTMLDivElement>(null);
   return (
     <Layout>
       <Seo
         title={t.kombucha.seo.title}
         description={t.kombucha.seo.description}
       />
-      <Hero />
-      <HeroMobile />
 
-      {/*Sekce: Co je kombucha? */}
-      <section id="vice" className="bg-gray-900">
-        <Container py="lg" className="grid gap-10 lg:grid-cols-2">
-          <Reveal className="pb-10 lg:col-span-2">
-            <Heading level={2} size="xl" className="mx-auto text-center">
-              {t.kombucha.aboutKombucha.title}
-            </Heading>
-          </Reveal>
-          <div className="flex items-center justify-start">
-            <Reveal className="pb-10">
-              <Heading
-                level={"none"}
-                size="sm"
-                color="primary"
-                className="text-center !leading-relaxed lg:text-left"
-                hasMarginBottom
-              >
-                <p>{t.kombucha.aboutKombucha.paragraph1}</p>
-              </Heading>
-              <Heading
-                level={"none"}
-                size="sm"
-                color="primary"
-                className="pt-10 text-center !leading-relaxed lg:text-left"
-                hasMarginBottom
-              >
-                <p>{t.kombucha.aboutKombucha.paragraph2}</p>
+      {/* Parallax target ref */}
+      <div ref={parallaxRef} id="parallax-target">
+        <Hero parallaxTargetRef={parallaxRef} />
+        <HeroMobile />
+
+        {/*Sekce: Co je kombucha? */}
+        <section id="vice" className="bg-gray-900">
+          <Container py="lg" className="grid gap-10 lg:grid-cols-2">
+            <Reveal className="pb-10 lg:col-span-2">
+              <Heading level={2} size="xl" className="mx-auto text-center">
+                {t.kombucha.aboutKombucha.title}
               </Heading>
             </Reveal>
-          </div>
-          <Reveal className="flex items-center justify-start">
-            <div className="aspect-square h-max w-full">
-              <Image
-                src="/images/common/photo-1.jpg"
-                alt="pragers"
-                width={1920}
-                height={1280}
-                className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary bg-gray-800 object-cover"
-              />
+            <div className="flex items-center justify-start">
+              <Reveal className="pb-10">
+                <Heading
+                  level={"none"}
+                  size="sm"
+                  color="primary"
+                  className="text-center !leading-relaxed lg:text-left"
+                  hasMarginBottom
+                >
+                  <p>{t.kombucha.aboutKombucha.paragraph1}</p>
+                </Heading>
+                <Heading
+                  level={"none"}
+                  size="sm"
+                  color="primary"
+                  className="pt-10 text-center !leading-relaxed lg:text-left"
+                  hasMarginBottom
+                >
+                  <p>{t.kombucha.aboutKombucha.paragraph2}</p>
+                </Heading>
+              </Reveal>
             </div>
-          </Reveal>
-        </Container>
-      </section>
+            <Reveal className="flex items-center justify-start">
+              <div className="aspect-square h-max w-full">
+                <Image
+                  src="/images/common/photo-1.jpg"
+                  alt="pragers"
+                  width={1920}
+                  height={1280}
+                  className="aspect-square h-full w-full overflow-hidden rounded-full border-8 border-primary bg-gray-800 object-cover"
+                />
+              </div>
+            </Reveal>
+          </Container>
+        </section>
+      </div>
 
       {/*Sekce: Výroba */}
       <section className="relative w-screen overflow-hidden bg-gray-800">
@@ -77,7 +83,7 @@ export default function Kombucha() {
           width="743"
           height="2012"
           aria-hidden="true"
-          className="pointer-events-none absolute top-1/2 left-1/2 z-20 hidden -translate-y-1/2 -translate-x-1/2 scale-x-90 md:block"
+          className="pointer-events-none absolute left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 scale-x-90 md:block"
         />
         <img
           src="/svgs/path-long.svg"
@@ -85,7 +91,7 @@ export default function Kombucha() {
           width="489"
           height="2262"
           aria-hidden="true"
-          className="pointer-events-none absolute top-1/2 left-1/2 z-20 -translate-y-1/2 -translate-x-1/2 scale-x-90 md:hidden"
+          className="pointer-events-none absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2 scale-x-90 md:hidden"
         />
 
         <Container py="md" className="relative z-30">

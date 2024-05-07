@@ -40,68 +40,78 @@ export function HeroMobile({ className = "" }: { className?: string }) {
   );
 }
 
-// Desktop
-export function Hero({ className = "" }: { className?: string }) {
+// Desktop - old
+export function Hero({
+  className = "",
+  parallaxTargetRef,
+}: {
+  className?: string;
+  parallaxTargetRef: React.RefObject<HTMLElement>;
+}) {
   const t = useTranslation();
   return (
     <>
       <section
         className={clsx(
-          "relative isolate hidden h-[100rem] w-screen overflow-hidden bg-gray-900 lg:block",
+          "relative isolate hidden h-[86rem] w-screen overflow-hidden bg-gray-900 lg:block",
           className
         )}
       >
         <Parallax
-          offset={-50}
-          className="absolute inset-x-0 -top-16 z-10 h-[2187px] origin-[50%_0%] opacity-75"
+          target={parallaxTargetRef}
+          offset={0}
+          className="absolute inset-x-0 z-10 h-[1358px] origin-[50%_0%] opacity-75"
         >
           <div
             className="h-full"
             style={{
-              backgroundImage: `url(/images/kombucha/parallax-base.jpg)`,
-              backgroundSize: "3264px",
+              backgroundImage: `url(/images/kombucha/parallax-wide-base.jpg)`,
+              backgroundSize: "3841px",
               backgroundPosition: "center",
               backgroundRepeat: "repeat-x",
             }}
           />
         </Parallax>
         <Parallax
-          offset={-80}
-          className="absolute top-[200px] z-10 flex w-full origin-[50%_0%] items-center justify-center"
+          target={parallaxTargetRef}
+          offset={-50}
+          className="absolute top-[250px] z-10 flex w-full origin-[50%_0%] items-center justify-center"
         >
           <Reveal noVertical>
             <Heading
               level={1}
               size="inherit"
-              className="mx-auto max-w-6xl text-center text-9xl text-white 2xl:text-[10.5rem]"
+              className="mx-auto max-w-6xl text-center text-8xl text-white 2xl:text-9xl"
             >
               {t.kombucha.hero.title}
             </Heading>
           </Reveal>
         </Parallax>
         <Parallax
+          target={parallaxTargetRef}
           offset={75}
-          className="absolute inset-x-0 top-[430px] z-20 h-[1709px] origin-[50%_0%]"
+          className="absolute inset-x-0 top-[-75px] z-20 h-[1358px] origin-[50%_0%]"
         >
           <div
             className="h-full"
             style={{
-              backgroundImage: `url(/images/kombucha/parallax-middle.png)`,
-              backgroundSize: "3264px",
+              backgroundImage: `url(/images/kombucha/parallax-wide-middle.png)`,
+              backgroundSize: "3841px",
               backgroundPosition: "center",
               backgroundRepeat: "repeat-x",
             }}
           />
         </Parallax>
         <Parallax
-          offset={150}
-          className="absolute inset-x-0 top-[920px] z-30 h-[1250px] origin-[50%_0%]"
+          target={parallaxTargetRef}
+          offset={125}
+          className="absolute inset-x-0 top-[-125px] z-30 h-[1645px] origin-[50%_0%]"
         >
           <div
             className="h-full"
             style={{
-              backgroundImage: `url(/images/kombucha/parallax-top.png)`,
-              backgroundSize: "3264px",
+              backgroundImage: `url(/images/kombucha/parallax-wide-top.png)`,
+              backgroundSize: "3841px",
               backgroundPosition: "center",
               backgroundRepeat: "repeat-x",
             }}
@@ -112,3 +122,76 @@ export function Hero({ className = "" }: { className?: string }) {
     </>
   );
 }
+
+// Desktop - old
+// export function HeroOld({ className = "" }: { className?: string }) {
+//   const t = useTranslation();
+//   return (
+//     <>
+//       <section
+//         className={clsx(
+//           "relative isolate hidden h-[100rem] w-screen overflow-hidden bg-gray-900 lg:block",
+//           className
+//         )}
+//       >
+//         <Parallax
+//           offset={-50}
+//           className="absolute inset-x-0 -top-16 z-10 h-[2187px] origin-[50%_0%] opacity-75"
+//         >
+//           <div
+//             className="h-full"
+//             style={{
+//               backgroundImage: `url(/images/kombucha/parallax-base.jpg)`,
+//               backgroundSize: "3264px",
+//               backgroundPosition: "center",
+//               backgroundRepeat: "repeat-x",
+//             }}
+//           />
+//         </Parallax>
+//         <Parallax
+//           offset={-80}
+//           className="absolute top-[200px] z-10 flex w-full origin-[50%_0%] items-center justify-center"
+//         >
+//           <Reveal noVertical>
+//             <Heading
+//               level={1}
+//               size="inherit"
+//               className="mx-auto max-w-6xl text-center text-9xl text-white 2xl:text-[10.5rem]"
+//             >
+//               {t.kombucha.hero.title}
+//             </Heading>
+//           </Reveal>
+//         </Parallax>
+//         <Parallax
+//           offset={75}
+//           className="absolute inset-x-0 top-[430px] z-20 h-[1709px] origin-[50%_0%]"
+//         >
+//           <div
+//             className="h-full"
+//             style={{
+//               backgroundImage: `url(/images/kombucha/parallax-middle.png)`,
+//               backgroundSize: "3264px",
+//               backgroundPosition: "center",
+//               backgroundRepeat: "repeat-x",
+//             }}
+//           />
+//         </Parallax>
+//         <Parallax
+//           offset={150}
+//           className="absolute inset-x-0 top-[920px] z-30 h-[1250px] origin-[50%_0%]"
+//         >
+//           <div
+//             className="h-full"
+//             style={{
+//               backgroundImage: `url(/images/kombucha/parallax-top.png)`,
+//               backgroundSize: "3264px",
+//               backgroundPosition: "center",
+//               backgroundRepeat: "repeat-x",
+//             }}
+//           />
+//         </Parallax>
+//       </section>
+//       <BrandStrip className="hidden lg:block" />
+//     </>
+//   );
+// }

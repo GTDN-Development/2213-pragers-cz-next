@@ -177,7 +177,7 @@ function TouchMenu() {
               {/* Menu */}
               <Container
                 size="md"
-                className="h-full pt-24 pb-8 sm:pb-12 lg:flex lg:items-center"
+                className="h-full pb-8 pt-24 sm:pb-12 lg:flex lg:items-center"
               >
                 <div className="grid w-full gap-8 lg:grid-cols-7 lg:pb-16">
                   {/* Navigace */}
@@ -400,7 +400,7 @@ export default function Header() {
             </UiLink>
 
             {/* Desktop navigation */}
-            <div className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 translate-y-[calc(-50%+0.3rem)] lg:block">
+            <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 translate-y-[calc(-50%+0.3rem)] lg:block">
               <ul className="flex gap-5 xl:gap-8">
                 <li>
                   <DesktopNavLink
@@ -439,7 +439,7 @@ export default function Header() {
               <ul className="flex flex-row items-center justify-center gap-3 xl:gap-6">
                 <li>
                   {!mounted ? (
-                    <div className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5">
+                    <div className="inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent px-3 py-1 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:px-4 md:py-1.5 md:text-sm md:leading-5">
                       <span className="invisible font-bold">CS</span>
                       <ChevronDownIcon />
                     </div>
@@ -457,7 +457,7 @@ export default function Header() {
                     >
                       <Listbox.Button
                         aria-label="Language"
-                        className="group inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-1 px-3 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:py-1.5 md:px-4 md:text-sm md:leading-5"
+                        className="group inline-flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent px-3 py-1 text-xs font-bold uppercase leading-5 text-white no-underline ring-4 ring-white transition duration-300 hover:bg-white hover:text-gray-900 md:px-4 md:py-1.5 md:text-sm md:leading-5"
                       >
                         {lang}
                         <svg
@@ -467,7 +467,7 @@ export default function Header() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="white"
-                          stroke-width="3"
+                          strokeWidth="3"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                           className="lucide lucide-chevron-down transition duration-300 group-hover:stroke-black"
@@ -482,7 +482,7 @@ export default function Header() {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -10 }}
                           transition={{ duration: 0.2, ease: "easeOut" }}
-                          className=" absolute mt-14 rounded-3xl border-4 border-white bg-white py-3 pr-4 pl-3 font-bold text-black"
+                          className=" absolute mt-14 rounded-3xl border-4 border-white bg-white py-3 pl-3 pr-4 font-bold text-black"
                         >
                           <SelectItem value="cs">Česky</SelectItem>
                           <SelectItem value="en">English</SelectItem>
