@@ -17,20 +17,19 @@ export default function Reveal({
 }: RevealProps) {
   const prefersReducedMotion = useReducedMotion();
 
-  // Return only div if user has "reduced motion" enabled
-  if (prefersReducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
   return (
     <motion.div
-      initial={{ opacity: 0, y: noVertical ? 0 : 24 }}
+      initial={{
+        opacity: prefersReducedMotion ? 1 : 0,
+        y: noVertical ? 0 : prefersReducedMotion ? 0 : 24,
+      }}
       whileInView={{
         opacity: 1,
         y: 0,
       }}
       viewport={{ once: true, margin: hasTriggerMargin ? "-128px" : "0px" }}
       transition={{
-        duration: 1,
+        duration: prefersReducedMotion ? 0 : 1,
         delay: delay || 0,
         ease: [0.21, 0.47, 0.32, 0.98],
       }}
